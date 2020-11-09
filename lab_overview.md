@@ -25,21 +25,21 @@
 Labs for this course are available at endpoints shared below. Update `<host-ip>` with the lab environment DNS.
 
 1. ##### Introduction to Natural Language Processing
-		* <host-ip>:<port>/lab/workspaces/lab
+		* http://<host-ip>/lab/workspaces/lab1_Introduction
 2. ##### Basic Feature Extraction Methods
-		* <host-ip>:<port>/lab/workspaces/lab
+		* http://<host-ip>/lab/workspaces/lab2_Extraction
 3. ##### Developing a Text classifier
-		* <host-ip>:<port>/lab/workspaces/lab
+		* http://<host-ip>/lab/workspaces/lab3_Classifier
 4. ##### Collecting Text Data from the Web
-		* <host-ip>:<port>/lab/workspaces/lab
+		* http://<host-ip>/lab/workspaces/lab4_Data
 5. ##### Topic Modeling
-		* <host-ip>:<port>/lab/workspaces/lab
+		* http://<host-ip>/lab/workspaces/lab5_Modeling
 6. ##### Text Summarization and Text Generation
-		* <host-ip>:<port>/lab/workspaces/lab
+		* http://<host-ip>/lab/workspaces/lab6_Text
 7. ##### Vector Representation
-		* <host-ip>:<port>/lab/workspaces/lab
+		* http://<host-ip>/lab/workspaces/lab7_Vector
 8. ##### Sentiment Analysis
-		* <host-ip>:<port>/lab/workspaces/lab
+		* http://<host-ip>/lab/workspaces/lab8_Analysis
 
 
 ### About
