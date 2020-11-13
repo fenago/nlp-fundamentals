@@ -1,6 +1,6 @@
 <img align="right" src="./logo.png">
 
-<h2><span style="color:red;"></span></h2>
+<h2><span style="color:red;">Natural Language Processing Fundamentals</span></h2>
 
 ### Description
 
@@ -43,7 +43,7 @@ Labs for this course are available at endpoints shared below. Update `<host-ip>`
 
 
 ### About
-If NLP hasn't been your forte, Natural Language Processing Fundamentals will make sure you set off to a steady start. This comprehensive guide will show you how to effectively use Python libraries and NLP concepts to solve various problems.
+If NLP hasn't been your forte, this course will make sure you set off to a steady start. This comprehensive guide will show you how to effectively use Python libraries and NLP concepts to solve various problems.
 
 You'll be introduced to natural language processing and its applications through examples and exercises. This will be followed by an introduction to the initial stages of solving a problem, which includes problem definition, getting text data, and preparing it for modeling. With exposure to concepts like advanced natural language processing algorithms and visualization techniques, you'll learn how to create applications that can extract information from unstructured data and present it as impactful visuals. Although you will continue to learn NLP-based techniques, the focus will gradually shift to developing useful applications. In these sections, you'll understand how to apply NLP techniques to answer questions as can be used in chatbots.
 
