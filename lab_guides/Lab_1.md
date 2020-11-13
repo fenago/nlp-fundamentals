@@ -75,10 +75,10 @@ the following format:
 
 
 
-![Figure 1.1: Format of call data](./images/C13142_01_01.jpg)
+![](./images/C13142_01_01.jpg)
 
 
-##### Figure 1.1: Format of call data
+
 
 In the preceding figure, the first two fields represent the **date** and
 **time** at which the call was made or the SMS was sent. The third field
@@ -96,10 +96,10 @@ The following figure shows records of call data stored in a text file:
 
 
 
-![Figure 1.2: Call records in a text file](./images/C13142_01_02.jpg)
+![](./images/C13142_01_02.jpg)
 
 
-##### Figure 1.2: Call records in a text file
+
 
 Now, the data shown in the preceding figure is not exactly a human
 language. But it contains various information that can be extracted by
@@ -150,7 +150,7 @@ text data. Follow these steps to implement this exercise:
     ```
     sentence = 'The quick brown fox jumps over the lazy dog'
     ```
-    :::
+
 
 3.  Check whether the word \'`quick`\' belongs to that text
     using the following code:
@@ -160,7 +160,7 @@ text data. Follow these steps to implement this exercise:
     ```
     'quick' in sentence
     ```
-    :::
+
 
     The preceding code will return the output \'**True**\'.
 
@@ -172,7 +172,7 @@ text data. Follow these steps to implement this exercise:
     ```
     sentence.index('fox')
     ```
-    :::
+
 
     The code will return the output **16**.
 
@@ -184,7 +184,7 @@ text data. Follow these steps to implement this exercise:
     ```
     sentence.split().index('lazy')
     ```
-    :::
+
 
     The code generates the output **7**.
 
@@ -196,7 +196,7 @@ text data. Follow these steps to implement this exercise:
     ```
     sentence.split()[2]
     ```
-    :::
+
 
     This will return the output \'**brown**\'.
 
@@ -208,7 +208,7 @@ text data. Follow these steps to implement this exercise:
     ```
     sentence.split()[2][::-1]
     ```
-    :::
+
 
     This will return the output \'**nworb**\'.
 
@@ -220,7 +220,7 @@ text data. Follow these steps to implement this exercise:
     ```
     words = sentence.split()first_word = words[0]last_word = words[len(words)-1]concat_word = first_word + last_word print(concat_word)
     ```
-    :::
+
 
     The code will generate the output \'**Thedog**\'.
 
@@ -231,16 +231,15 @@ text data. Follow these steps to implement this exercise:
     ```
     [words[i] for i in range(len(words)) if i%2 == 0]
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.3: List of words at even
-    positions](./images/C13142_01_03.jpg)
-    :::
+    ![](./images/C13142_01_03.jpg)
 
-    ##### Figure 1.3: List of words at even positions
+
+
 
 10. To print the last three letters of the text, use the following code:
 
@@ -249,7 +248,7 @@ text data. Follow these steps to implement this exercise:
     ```
     sentence[-3:]
     ```
-    :::
+
 
     This will generate the output \'**dog**\'.
 
@@ -260,15 +259,15 @@ text data. Follow these steps to implement this exercise:
     ```
     sentence[::-1]
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.4: Text in reverse order](./images/C13142_01_04.jpg)
-    :::
+    ![](./images/C13142_01_04.jpg)
 
-    ##### Figure 1.4: Text in reverse order
+
+
 
 12. To print each word of the given text in reverse order, maintaining
     their sequence, use the following code:
@@ -278,7 +277,7 @@ text data. Follow these steps to implement this exercise:
     ```
     print(' '.join([word[::-1] for word in words]))
     ```
-    :::
+
 
     The code generates the following output:
 
@@ -288,7 +287,7 @@ text data. Follow these steps to implement this exercise:
 sequence](./images/C13142_01_05.jpg)
 
 
-##### Figure 1.5: Printing the text in reverse order while preserving word sequence
+
 
 We are now well acquainted with NLP. In the next section, let\'s dive
 deeper into the various steps involved in it.
@@ -358,7 +357,7 @@ exercise:
     import nltk
     from nltk import word_tokenize
     ```
-    :::
+
 
 3.  The `word_tokenize()` method is used to split the sentence
     into words/tokens. We need to add a sentence as input to the
@@ -371,7 +370,7 @@ exercise:
     ```
     words = word_tokenize("I am reading NLP Fundamentals")
     ```
-    :::
+
 
 4.  In order to view the list of tokens generated, we need to view it
     using the `print()` function. Insert a new cell and add
@@ -382,15 +381,15 @@ exercise:
     ```
     print(words)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.6: List of tokens](./images/C13142_01_06.jpg)
-    :::
+    ![](./images/C13142_01_06.jpg)
 
-##### Figure 1.6: List of tokens
+
+
 
 Thus we can see the list of tokens generated with the help of the
 `word_tokenize()` method. In the next section, we will see
@@ -445,7 +444,7 @@ steps to implement this exercise:
     import nltk
     from nltk import word_tokenize
     ```
-    :::
+
 
 3.  For finding the tokens in the sentence, we make use of the
     `word_tokenize()` method. Insert a new cell and add the
@@ -455,7 +454,7 @@ steps to implement this exercise:
     ```
     words = word_tokenize("I am reading NLP Fundamentals")
     ```
-    :::
+
 
 4.  Print the tokens with the help of the `print()` function.
     To implement this, add a new cell and write the following code:
@@ -465,15 +464,15 @@ steps to implement this exercise:
     ```
     print(words)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.7: List of tokens](./images/C13142_01_07.jpg)
-    :::
+    ![](./images/C13142_01_07.jpg)
 
-    ##### Figure 1.7: List of tokens
+
+
 
 5.  In order to find the PoS for each word, we make use of the
     `pos_tag()` method of the `nltk` library. Insert
@@ -484,15 +483,15 @@ steps to implement this exercise:
     ```
     nltk.pos_tag(words)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.8: PoS tag of words](./images/C13142_01_08.jpg)
-    :::
+    ![](./images/C13142_01_08.jpg)
 
-    ##### Figure 1.8: PoS tag of words
+
+
 
 6.  In the preceding output, we can see that for each token, a PoS has
     been allotted. Here, **PRP** stands for **personal pronoun**,
@@ -541,7 +540,7 @@ exercise:
     from nltk import word_tokenize
     from nltk.corpus import stopwords
     ```
-    :::
+
 
 3.  In order to check the list of stopwords provided for the
     `English` language, we pass it as a parameter to the
@@ -552,7 +551,7 @@ exercise:
     ```
     stop_words = stopwords.words('English')
     ```
-    :::
+
 
 4.  In the code, the list of stopwords provided by the
     `English` language is stored in the `stop_words`
@@ -565,16 +564,15 @@ exercise:
     ```
     print(stop_words)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.9: List of stopwords provided by the English
-    language](./images/C13142_01_09.jpg)
-    :::
+    ![](./images/C13142_01_09.jpg)
 
-    ##### Figure 1.9: List of stopwords provided by the English language
+
+
 
 5.  To remove the stop words from a sentence, we first assign a string
     to the `sentence` variable and tokenize it into words
@@ -586,7 +584,7 @@ exercise:
     sentence = "I am learning Python. It is one of the most popular programming languages"
     sentence_words = word_tokenize(sentence)
     ```
-    :::
+
 
 6.  To print the list of tokens, insert a new cell and add the following
     code:
@@ -596,16 +594,15 @@ exercise:
     ```
     print(sentence_words)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.10: List of tokens in the sentence\_words
-    variable](./images/C13142_01_10.jpg)
-    :::
+    ![](./images/C13142_01_10.jpg)
 
-    ##### Figure 1.10: List of tokens in the sentence\_words variable
+
+
 
 7.  To remove the stopwords, first we need to loop through each word in
     the sentence, check whether there are any stop words, and then
@@ -616,7 +613,7 @@ exercise:
     ```
     sentence_no_stops = ' '.join([word for word in sentence_words if word not in stop_words])
     ```
-    :::
+
 
 8.  To check whether the stopwords are filtered out from our sentence,
     we print the `sentence_no_stops` variable. Insert a new
@@ -627,16 +624,16 @@ exercise:
     ```
     print(sentence_no_stops)
     ```
-    :::
+
 
     The code generates the following output:
 
 
 
-![Figure 1.11: Text without stopwords](./images/C13142_01_11.jpg)
+![](./images/C13142_01_11.jpg)
 
 
-##### Figure 1.11: Text without stopwords
+
 
 As you can see in the preceding figure, stopwords such as \"**am,**\"
 \"**is,**\" \"**of,**\" \"**the,**\" and \"**most**\" are being filtered
@@ -684,7 +681,7 @@ Follow these steps to implement this exercise:
     ```
     sentence = "I visited US from UK on 22-10-18"
     ```
-    :::
+
 
 3.  We want to replace \"`US`\" with
     \"`United States`\", \"`UK`\" with
@@ -698,7 +695,7 @@ Follow these steps to implement this exercise:
     ```
     normalized_sentence = sentence.replace("US", "United States").replace("UK", "United Kingdom").replace("-18", "-2018")
     ```
-    :::
+
 
 4.  Now, in order to check whether the text has been normalized, we
     insert a new cell and add the following code to print it:
@@ -708,16 +705,16 @@ Follow these steps to implement this exercise:
     ```
     print(normalized_sentence)
     ```
-    :::
+
 
     The code generates the following output:
 
 
 
-![Figure 1.12: Normalized text](./images/C13142_01_12.jpg)
+![](./images/C13142_01_12.jpg)
 
 
-##### Figure 1.12: Normalized text
+
 
 In the preceding figure, we can see that our text has been normalized.
 
@@ -755,7 +752,7 @@ Python. Follow these steps in order to implement this exercise:
     from nltk import word_tokenize
     from autocorrect import spell
     ```
-    :::
+
 
 3.  In order to correct the spelling of a word, pass a wrongly spelled
     word as a parameter to the `spell()` function. Insert a
@@ -766,15 +763,15 @@ Python. Follow these steps in order to implement this exercise:
     ```
     spell('Natureal')
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.13: Corrected word](./images/C13142_01_13.jpg)
-    :::
+    ![](./images/C13142_01_13.jpg)
 
-    ##### Figure 1.13: Corrected word
+
+
 
 4.  In order to correct the spelling of a sentence, we first need to
     tokenize it into words. After that, we loop through each word in
@@ -785,7 +782,7 @@ Python. Follow these steps in order to implement this exercise:
     ```
     sentence = word_tokenize("Ntural Luanguage Processin deals with the art of extracting insightes from Natural Languaes")
     ```
-    :::
+
 
 5.  We make use of the `print()` function to print all tokens.
     Insert a new cell and add the following code to print tokens:
@@ -795,15 +792,15 @@ Python. Follow these steps in order to implement this exercise:
     ```
     print(sentence)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.14: Tokens in sentences](./images/C13142_01_14.jpg)
-    :::
+    ![](./images/C13142_01_14.jpg)
 
-    ##### Figure 1.14: Tokens in sentences
+
+
 
 6.  Now that we have got the tokens, we loop through each token in
     `sentence`, correct them, and assign them to new variable.
@@ -813,7 +810,7 @@ Python. Follow these steps in order to implement this exercise:
     ```
     sentence_corrected = ' '.join([spell(word) for word in sentence])
     ```
-    :::
+
 
 7.  To print the correct sentence, we insert a new cell and add the
     following code:
@@ -823,15 +820,15 @@ Python. Follow these steps in order to implement this exercise:
     ```
     print(sentence_corrected)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.15: Corrected sentence ](./images/C13142_01_15.jpg)
-    :::
+    ![](./images/C13142_01_15.jpg)
 
-    ##### Figure 1.15: Corrected sentence
+
+
 
 8.  In the preceding figure, we can see that most of the wrongly spelled
     words have been corrected. But the word \"**Processin**\" was
@@ -860,10 +857,10 @@ transformed into their base forms:
 
 
 
-![Figure 1.16: Stemming of the word product](./images/C13142_01_16.jpg)
+![](./images/C13142_01_16.jpg)
 
 
-##### Figure 1.16: Stemming of the word product
+
 
 To get a better understanding about stemming, we shall look into an
 exercise in the next section.
@@ -887,7 +884,7 @@ to implement this exercise:
     import nltk
     stemmer = nltk.stem.PorterStemmer()
     ```
-    :::
+
 
 3.  Now pass the following words as parameters to the `stem()`
     method. To implement this, insert a new cell and add the following
@@ -898,65 +895,64 @@ to implement this exercise:
     ```
     stemmer.stem("production")
     ```
-    :::
+
 
     When the input is \"`production`\", the following output
     is generated:
 
     
-    ![Figure 1.17: Stemmed word for production
-    ](./images/C13142_01_17.jpg)
-    :::
+    ![](./images/C13142_01_17.jpg)
 
-    ##### Figure 1.17: Stemmed word for production
+
+
 
 
 
     ```
     stemmer.stem("coming")
     ```
-    :::
+
 
     When the input is \"`coming`\", the following output is
     generated:
 
     
-    ![Figure 1.18: Stemmed word for coming ](./images/C13142_01_18.jpg)
-    :::
+    ![](./images/C13142_01_18.jpg)
 
-    ##### Figure 1.18: Stemmed word for coming
+
+
 
 
 
     ```
     stemmer.stem("firing")
     ```
-    :::
+
 
     When the input is \"`firing`\", the following output is
     generated:
 
     
-    ![Figure 1.19: Stemmed word for firing ](./images/C13142_01_19.jpg)
-    :::
+    ![](./images/C13142_01_19.jpg)
 
-    ##### Figure 1.19: Stemmed word for firing
+
+
 
 
 
     ```
     stemmer.stem("battling")
     ```
-    :::
+
 
     When the input is \"`battling`\", the following output is
     generated:
 
     
-    ![Figure 1.20: Stemmed word for battling ](./images/C13142_01_20.jpg)
-    :::
+    ![](./images/C13142_01_20.jpg)
 
-    ##### Figure 1.20: Stemmed word for battling
+
+
 
 4.  From the preceding figures, we can see that the entered words are
     converted into their base forms.
@@ -997,7 +993,7 @@ form of a given word. Follow these steps to implement this exercise:
     nltk.download('wordnet')
     from nltk.stem.wordnet import WordNetLemmatizer
     ```
-    :::
+
 
 3.  Create object of the `WordNetLemmatizer` class. Insert a
     new cell and add the following code to implement this:
@@ -1006,7 +1002,7 @@ form of a given word. Follow these steps to implement this exercise:
     ```
     lemmatizer = WordNetLemmatizer()
     ```
-    :::
+
 
 4.  Bring the word to its proper form by using the
     `lemmatize()` method of the `WordNetLemmatizer`
@@ -1018,17 +1014,17 @@ form of a given word. Follow these steps to implement this exercise:
     ```
     lemmatizer.lemmatize('products')
     ```
-    :::
+
 
     With the input \"`products`\", the following output is
     generated:
 
 
 
-![Figure 1.21: Lemmatized word](./images/C13142_01_21.jpg)
+![](./images/C13142_01_21.jpg)
 
 
-##### Figure 1.21: Lemmatized word
+
 
 ```
 lemmatizer.lemmatize('production')
@@ -1039,10 +1035,10 @@ generated:
 
 
 
-![Figure 1.22: Lemmatized word](./images/C13142_01_22.jpg)
+![](./images/C13142_01_22.jpg)
 
 
-##### Figure 1.22: Lemmatized word
+
 
 ```
 lemmatizer.lemmatize('coming')
@@ -1052,10 +1048,10 @@ With the input \"`coming`\", the following output is generated:
 
 
 
-![Figure 1.23: Lemmatized word](./images/C13142_01_23.jpg)
+![](./images/C13142_01_23.jpg)
 
 
-##### Figure 1.23: Lemmatized word
+
 
 ```
 lemmatizer.lemmatize('battle')
@@ -1066,10 +1062,10 @@ generated:
 
 
 
-![Figure 1.24: Lemmatized word](./images/C13142_01_24.jpg)
+![](./images/C13142_01_24.jpg)
 
 
-##### Figure 1.24: Lemmatized word
+
 
 We have learned how to use the lemmatization process to transform a
 given word into its base form.
@@ -1109,7 +1105,7 @@ Follow these steps to implement this exercise:
     nltk.download('maxent_ne_chunker')
     nltk.download('words')
     ```
-    :::
+
 
 3.  Declare the `sentence` variable and assign it a string.
     Insert a new cell and add the following code to implement this:
@@ -1118,7 +1114,7 @@ Follow these steps to implement this exercise:
     ```
     sentence = "We are reading a book published by Packt which is based out of Birmingham."
     ```
-    :::
+
 
 4.  To find the named entities from the preceding text, insert a new
     cell and the following code:
@@ -1129,16 +1125,16 @@ Follow these steps to implement this exercise:
     i = nltk.ne_chunk(nltk.pos_tag(word_tokenize(sentence)), binary=True)
     [a for a in i if len(a)==1]
     ```
-    :::
+
 
     The code generates the following output:
 
 
 
-![Figure 1.25: Named entity](./images/C13142_01_25.jpg)
+![](./images/C13142_01_25.jpg)
 
 
-##### Figure 1.25: Named entity
+
 
 In the preceding figure, we can see that the code identifies the named
 entities \"**Packt**\" and \"**Birmingham**\" and maps them to an
@@ -1165,10 +1161,10 @@ sentences:
 
 
 
-![Figure 1.26: Word sense disambiguition](./images/C13142_01_26.jpg)
+![](./images/C13142_01_26.jpg)
 
 
-##### Figure 1.26: Word sense disambiguition
+
 
 To get a better understanding about this process, let\'s look at an
 exercise in the next section.
@@ -1192,7 +1188,7 @@ different sentences. Follow these steps to implement this exercise:
     from nltk.wsd import lesk
     from nltk import word_tokenize
     ```
-    :::
+
 
 3.  Declare two variables, `sentence1` and
     `sentence2`, and assign them with appropriate strings.
@@ -1203,7 +1199,7 @@ different sentences. Follow these steps to implement this exercise:
     sentence1 = "Keep your savings in the bank"
     sentence2 = "It's so risky to drive over the banks of the road"
     ```
-    :::
+
 
 4.  In order to find the sense of the word \"bank\" in the preceding two
     sentences, we make use of the `lesk` algorithm provided by
@@ -1215,7 +1211,7 @@ different sentences. Follow these steps to implement this exercise:
     ```
     print(lesk(word_tokenize(sentence1), 'bank'))
     ```
-    :::
+
 
     The code generates the following output:
 
@@ -1225,7 +1221,7 @@ different sentences. Follow these steps to implement this exercise:
 sentence1](./images/C13142_01_27.jpg)
 
 
-##### Figure 1.27: Sense carried by the word \"bank\" in sentence1
+
 
 Here, `savings_bank.n.02` refers to a container for keeping
 money safely at home. To check the other sense of the word bank, write
@@ -1243,7 +1239,7 @@ The code generates the following output:
 sentence2](./images/C13142_01_28.jpg)
 
 
-##### Figure 1.28: Sense carried by the word \"bank\" in sentence2
+
 
 Here, `bank.v.07` refers to a slope in the turn of a road.
 
@@ -1284,7 +1280,7 @@ these steps to implement this exercise:
     import nltk
     from nltk.tokenize import sent_tokenize
     ```
-    :::
+
 
 3.  We make use of the `sent_tokenize()` method to detect
     sentences in a given text. Insert a new cell and add the following
@@ -1295,16 +1291,16 @@ these steps to implement this exercise:
     ```
     sent_tokenize("We are reading a book. Do you know who is the publisher? It is Packt. Packt is based out of Birmingham.")
     ```
-    :::
+
 
     The code generates the following output:
 
 
 
-![Figure 1.29: List of sentences ](./images/C13142_01_29.jpg)
+![](./images/C13142_01_29.jpg)
 
 
-##### Figure 1.29: List of sentences
+
 
 As you can see in the figure, we are able to separate out the sentences
 from given text.
@@ -1372,10 +1368,10 @@ phases, which are outlined in the following figure:
 
 
 
-![Figure 1.30: Phases of an NLP project](./images/C13142_01_30.jpg)
+![](./images/C13142_01_30.jpg)
 
 
-##### Figure 1.30: Phases of an NLP project
+
 
 Suppose you are working on a project in which you need to collect tweets
 and analyze their sentiments. We will explain how this is carried out by

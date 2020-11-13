@@ -47,7 +47,7 @@ activity, follow these steps:
     from nltk.tokenize import sent_tokenize
     import string
     ```
-    :::
+
 
 3.  Read the content of `file.txt` and store it in a variable
     named \"`sentence`\". Insert a new cell and add the
@@ -57,7 +57,7 @@ activity, follow these steps:
     ```
     sentence = open("data_ch1/file.txt", 'r').read()
     ```
-    :::
+
 
 4.  Apply tokenization on the given text corpus. Insert a new cell and
     add the following code to implement this:
@@ -66,7 +66,7 @@ activity, follow these steps:
     ```
     words = word_tokenize(sentence)
     ```
-    :::
+
 
 5.  To print the list of tokens, we insert a new cell and add the
     following code:
@@ -76,15 +76,15 @@ activity, follow these steps:
     ```
     print(words[0:20])
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.31: Tokenized words ](./images/C13142_01_31.jpg)
-    :::
+    ![](./images/C13142_01_31.jpg)
 
-    ##### Figure 1.31: Tokenized words
+
+
 
     In the preceding figure, we can see the initial 20 tokens of our
     text corpus.
@@ -112,16 +112,16 @@ activity, follow these steps:
             corrected_sentence = corrected_sentence + wd
             corrected_word_list.append(wd)
     ```
-    :::
+
 
     The code generates the following output:
 
     
     ![Figure 1.32: Words that have been
     corrected](./images/C13142_01_32.jpg)
-    :::
 
-    ##### Figure 1.32: Words that have been corrected
+
+
 
 7.  To print the corrected text corpus, we add a new cell and write the
     following code:
@@ -131,15 +131,15 @@ activity, follow these steps:
     ```
     corrected_sentence
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.33: Corrected text corpus](./images/C13142_01_33.jpg)
-    :::
+    ![](./images/C13142_01_33.jpg)
 
-    ##### Figure 1.33: Corrected text corpus
+
+
 
 8.  To print a list of the initial 20 tokens of the corrected words, we
     insert a new cell and add the following code:
@@ -149,15 +149,15 @@ activity, follow these steps:
     ```
     print(corrected_word_list[0:20])
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.34: List of corrected words ](./images/C13142_01_34.jpg)
-    :::
+    ![](./images/C13142_01_34.jpg)
 
-    ##### Figure 1.34: List of corrected words
+
+
 
 9.  We want to add a PoS tag to all the corrected words in the list. In
     order to do this, we insert a new cell and add the following code:
@@ -167,16 +167,15 @@ activity, follow these steps:
     ```
     print(nltk.pos_tag(corrected_word_list))
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.35: List of corrected words tagged with appropriate PoS
-    ](./images/C13142_01_35.jpg)
-    :::
+    ![](./images/C13142_01_35.jpg)
 
-    ##### Figure 1.35: List of corrected words tagged with appropriate PoS
+
+
 
 10. From the list, we now want to remove the stop words. In order to do
     that, we insert a new cell and add the following code:
@@ -191,16 +190,15 @@ activity, follow these steps:
             corrected_word_list_without_stopwords.append(wd)
     corrected_word_list_without_stopwords[:20]
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 1.36: List excluding the stop words
-    ](./images/C13142_01_36.jpg)
-    :::
+    ![](./images/C13142_01_36.jpg)
 
-    ##### Figure 1.36: List excluding the stop words
+
+
 
     In the preceding figure, we can see that the stop words are being
     removed and a new list is being returned.
@@ -217,15 +215,15 @@ activity, follow these steps:
         corrected_word_list_without_stopwords_stemmed.append(stemmer.stem(wd))
     corrected_word_list_without_stopwords_stemmed[:20]
     ```
-    :::
+
 
     This code generates the following output:
 
     
-    ![Figure 1.37: List of stemmed words ](./images/C13142_01_37.jpg)
-    :::
+    ![](./images/C13142_01_37.jpg)
 
-    ##### Figure 1.37: List of stemmed words
+
+
 
     In the preceding code, we looped through each word in the
     `corrected_word_list_without_stopwords` list and applied
@@ -245,15 +243,15 @@ activity, follow these steps:
         corrected_word_list_without_stopwords_lemmatized.append(lemmatizer.lemmatize(wd))
     corrected_word_list_without_stopwords_lemmatized[:20]
     ```
-    :::
+
 
     This code generates the following output:
 
     
-    ![Figure 1.38: List of lemmatized words ](./images/C13142_01_38.jpg)
-    :::
+    ![](./images/C13142_01_38.jpg)
 
-    ##### Figure 1.38: List of lemmatized words
+
+
 
     In the preceding code, we looped through each word in the
     `corrected_word_list_without_stopwords` list and applied
@@ -269,16 +267,16 @@ activity, follow these steps:
     ```
     print(sent_tokenize(corrected_sentence))
     ```
-    :::
+
 
     The above code generates the following output:
 
 
 
-![Figure 1.39: List of sentences ](./images/C13142_01_39.jpg)
+![](./images/C13142_01_39.jpg)
 
 
-##### Figure 1.39: List of sentences
+
 
 We have learned about and achieved the preprocessing of given data.
 
@@ -314,7 +312,7 @@ to implement this activity:
     from nltk import word_tokenize
     from collections import Counter
     ```
-    :::
+
 
 3.  Now let\'s see what different kinds of PoS nltk provides. Add the
     following code to do this:
@@ -325,15 +323,15 @@ to implement this activity:
     tagdict = load('help/tagsets/upenn_tagset.pickle')
     list(tagdict.keys())
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.54: List of PoS ](./images/C13142_02_54.jpg)
-    :::
+    ![](./images/C13142_02_54.jpg)
 
-    ##### Figure 2.54: List of PoS
+
+
 
 4.  The number of occurrences of each PoS is calculated by iterating
     through each document and annotating each word with the
@@ -354,16 +352,15 @@ to implement this activity:
     feature_df = pd.DataFrame(pos_di)
     feature_df.head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.55: Number of occurrences of each PoS in the sentence
-    ](./images/C13142_02_55.jpg)
-    :::
+    ![](./images/C13142_02_55.jpg)
 
-    ##### Figure 2.55: Number of occurrences of each PoS in the sentence
+
+
 
 5.  To calculate the number of punctuation marks present in each text of
     the DataFrame, add the following code:
@@ -374,16 +371,15 @@ to implement this activity:
     feature_df['num_of_unique_punctuations'] = data['text'].apply(lambda x : len(set(x).intersection(set(punctuation))))
     feature_df['num_of_unique_punctuations'].head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.56: Number of punctuation marks present in each sentence
-    ](./images/C13142_02_56.jpg)
-    :::
+    ![](./images/C13142_02_56.jpg)
 
-    ##### Figure 2.56: Number of punctuation marks present in each sentence
+
+
 
 6.  To calculate the number of capitalized words, add the following
     code:
@@ -395,16 +391,15 @@ to implement this activity:
                                                 len([word for word in word_tokenize(str(x)) if word[0].isupper()]))
     feature_df['number_of_capital_words'].head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.57: Number of capitalized words in each sentence
-    ](./images/C13142_02_57.jpg)
-    :::
+    ![](./images/C13142_02_57.jpg)
 
-    ##### Figure 2.57: Number of capitalized words in each sentence
+
+
 
 7.  To calculate the number of uncapitalized words, add the following
     code:
@@ -416,16 +411,15 @@ to implement this activity:
                                                 len([word for word in word_tokenize(str(x)) if word[0].islower()]))
     feature_df['number_of_small_words'].head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.58: Number of small lettered words in each sentence
-    ](./images/C13142_02_58.jpg)
-    :::
+    ![](./images/C13142_02_58.jpg)
 
-    ##### Figure 2.58: Number of small lettered words in each sentence
+
+
 
 8.  To calculate the number of letters in the DataFrame, use the
     following code:
@@ -436,16 +430,15 @@ to implement this activity:
     feature_df['number_of_alphabets'] = data['text'].apply(lambda x : len([ch for ch in str(x) if ch.isalpha()]))
     feature_df['number_of_alphabets'].head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.59: Number of letters present in each sentence
-    ](./images/C13142_02_59.jpg)
-    :::
+    ![](./images/C13142_02_59.jpg)
 
-    ##### Figure 2.59: Number of letters present in each sentence
+
+
 
 9.  To calculate the number of digits in the DataFrame, add the
     following code:
@@ -456,16 +449,15 @@ to implement this activity:
     feature_df['number_of_digits'] = data['text'].apply(lambda x : len([ch for ch in str(x) if ch.isdigit()]))
     feature_df['number_of_digits'].head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.60: Number of digits present in each sentence
-    ](./images/C13142_02_60.jpg)
-    :::
+    ![](./images/C13142_02_60.jpg)
 
-    ##### Figure 2.60: Number of digits present in each sentence
+
+
 
 10. To calculate the number of words in the DataFrame, add the following
     code:
@@ -476,16 +468,15 @@ to implement this activity:
     feature_df['number_of_words'] = data['text'].apply(lambda x : len(word_tokenize(str(x))))
     feature_df['number_of_words'].head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.61: Number of words present in each sentence
-    ](./images/C13142_02_61.jpg)
-    :::
+    ![](./images/C13142_02_61.jpg)
 
-    ##### Figure 2.61: Number of words present in each sentence
+
+
 
 11. To calculate the number of whitespaces in the DataFrame, add the
     following code:
@@ -496,16 +487,15 @@ to implement this activity:
     feature_df['number_of_white_spaces'] = data['text'].apply(lambda x : len(str(x).split(' '))-1)
     feature_df['number_of_white_spaces'].head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.62: Number of whitespaces present in each sentence
-    ](./images/C13142_02_62.jpg)
-    :::
+    ![](./images/C13142_02_62.jpg)
 
-    ##### Figure 2.62: Number of whitespaces present in each sentence
+
+
 
 12. Now let\'s view the full feature set we have just created. Add the
     following code to implement this:
@@ -515,17 +505,16 @@ to implement this activity:
     ```
     feature_df.head()
     ```
-    :::
+
 
     The code generates the following output:
 
 
 
-![Figure 2.63: DataFrame consisting of features we have created
-](./images/C13142_02_63.jpg)
+![](./images/C13142_02_63.jpg)
 
 
-##### Figure 2.63: DataFrame consisting of features we have created
+
 
 
 
@@ -559,7 +548,7 @@ implement this activity:
     newsgroups_data_sample = fetch_20newsgroups(subset='train')
     lemmatizer = WordNetLemmatizer()
     ```
-    :::
+
 
 3.  In order to store the text data in a DataFrame, insert a new cell
     and add the following code:
@@ -570,16 +559,15 @@ implement this activity:
     newsgroups_text_df = pd.DataFrame({'text' : newsgroups_data_sample['data']})
     newsgroups_text_df.head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.64: Storing the corpus in a DataFrame
-    ](./images/C13142_02_64.jpg)
-    :::
+    ![](./images/C13142_02_64.jpg)
 
-    ##### Figure 2.64: Storing the corpus in a DataFrame
+
+
 
 4.  The data present in the DataFrame is not clean. In order to clean
     it, insert a new cell and add the following code:
@@ -592,7 +580,7 @@ implement this activity:
     lambda x : ' '.join([lemmatizer.lemmatize(word.lower()) \
         for word in word_tokenize(re.sub(r'([^\s\w]|_)+', ' ', str(x))) if word.lower() not in stop_words]))
     ```
-    :::
+
 
 5.  Now that we have clean data, we add the following code to create a
     BoW model:
@@ -605,16 +593,15 @@ implement this activity:
     bag_of_word_df.columns = sorted(bag_of_words_model.vocabulary_)
     bag_of_word_df.head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.65: BoW representation of the 20 most frequent terms
-    ](./images/C13142_02_65.jpg)
-    :::
+    ![](./images/C13142_02_65.jpg)
 
-    ##### Figure 2.65: BoW representation of the 20 most frequent terms
+
+
 
 6.  To create a TF-IDF model, insert a new cell and add the following
     code:
@@ -627,16 +614,15 @@ implement this activity:
     tfidf_df.columns = sorted(tfidf_model.vocabulary_)
     tfidf_df.head()
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.66: TF-IDF representation of the 20 most frequent terms
-    ](./images/C13142_02_66.jpg)
-    :::
+    ![](./images/C13142_02_66.jpg)
 
-    ##### Figure 2.66: TF-IDF representation of the 20 most frequent terms
+
+
 
 7.  Once both the models are created, we need to compare them. To check
     the most informative terms for the second document, as ascertained
@@ -648,16 +634,15 @@ implement this activity:
     rw = 2
     list(bag_of_word_df.columns[bag_of_word_df.iloc[rw,:] == bag_of_word_df.iloc[rw,:].max()])
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.67: Most informative term as per the BoW model
-    ](./images/C13142_02_67.jpg)
-    :::
+    ![](./images/C13142_02_67.jpg)
 
-    ##### Figure 2.67: Most informative term as per the BoW model
+
+
 
 8.  To check the most informative terms for the second document, as
     ascertained by the TF-IDF model, we write the following code:
@@ -668,16 +653,15 @@ implement this activity:
     rw = 2
     list(tfidf_df.columns[tfidf_df.iloc[rw,:] == tfidf_df.iloc[rw,:].max()])
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.68: Most informative term as per the TF-IDF model
-    ](./images/C13142_02_68.jpg)
-    :::
+    ![](./images/C13142_02_68.jpg)
 
-    ##### Figure 2.68: Most informative term as per the TF-IDF model
+
+
 
 9.  To check the occurrence of the word \"line\" in the documents, we
     write the following code:
@@ -687,16 +671,16 @@ implement this activity:
     ```
     bag_of_word_df[bag_of_word_df['line']!=0].shape[0]
     ```
-    :::
+
 
     The code generates the following code:
 
     
     ![Figure 2.69: Number of times the word \"line\" occurred in the
     corpus ](./images/C13142_02_69.jpg)
-    :::
 
-    ##### Figure 2.69: Number of times the word \"line\" occurred in the corpus
+
+
 
 10. To check the occurrence of the word \"edu\" in the documents, we
     write the following code:
@@ -706,17 +690,16 @@ implement this activity:
     ```
     bag_of_word_df[bag_of_word_df['edu']!=0].shape[0]
     ```
-    :::
+
 
     The code generates the following output:
 
 
 
-![Figure 2.70: Number of times the word \"edu\" occurred in the corpus
-](./images/C13142_02_70.jpg)
+![](./images/C13142_02_70.jpg)
 
 
-##### Figure 2.70: Number of times the word \"edu\" occurred in the corpus
+
 
 As we can see from the last two steps, the difference arises because the
 word \"line\" occurs in 11,282 documents, whereas the word \"edu\"
@@ -748,7 +731,7 @@ Activity 4: Text Visualization
     from collections import Counter
     import re
     ```
-    :::
+
 
 3.  To fetch the dataset and read its content, add the following code:
 
@@ -758,15 +741,15 @@ Activity 4: Text Visualization
     text = open('data_ch2/text_corpus.txt', 'r').read()
     text
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.71: Text corpus ](./images/C13142_02_71.jpg)
-    :::
+    ![](./images/C13142_02_71.jpg)
 
-    ##### Figure 2.71: Text corpus
+
+
 
 4.  The text in the fetched data is not clean. In order to clean it, we
     make use of various pre-processing steps, such as tokenization and
@@ -779,7 +762,7 @@ Activity 4: Text Visualization
     cleaned_lemmatized_tokens = [lemmatizer.lemmatize(word.lower()) \
                                  for word in word_tokenize(re.sub(r'([^\s\w]|_)+', ' ', text))]
     ```
-    :::
+
 
 5.  Now we need to check the set of unique words, along with their
     frequencies, to find the 50 most frequently occurring words. Add the
@@ -790,16 +773,15 @@ Activity 4: Text Visualization
     ```
     Counter(cleaned_lemmatized_tokens).most_common(50)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 2.72: The 50 most frequent words
-    ](./images/C13142_02_72.jpg)
-    :::
+    ![](./images/C13142_02_72.jpg)
 
-    ##### Figure 2.72: The 50 most frequent words
+
+
 
 6.  Once we get the set of unique words along with their frequencies, we
     will remove the stop words. After that, we generate the word cloud
@@ -820,17 +802,16 @@ Activity 4: Text Visualization
     plt.axis("off")
     plt.show()
     ```
-    :::
+
 
     The code generates the following output:
 
 
 
-![Figure 2.73: Word cloud representation of the 50 most frequent words
-](./images/C13142_02_73.jpg)
+![](./images/C13142_02_73.jpg)
 
 
-##### Figure 2.73: Word cloud representation of the 50 most frequent words
+
 
 As you can see in the figure, words that occur more frequently, such as
 \"program,\" \"effect,\" and \"choice,\" appear in larger sizes in the
@@ -875,7 +856,7 @@ comments. Follow these steps to implement this activity:
     warnings.filterwarnings('ignore')
     from sklearn.metrics import accuracy_score,roc_curve,classification_report,confusion_matrix,precision_recall_curve,auc
     ```
-    :::
+
 
 3.  In this step, we will read a data file. It has two columns:
     **comment\_text** and **toxic**. The **comment\_text** column
@@ -890,16 +871,15 @@ comments. Follow these steps to implement this activity:
     data = pd.read_csv('data_ch3/train_comment_small.csv')
     data.head()
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 3.63: Text data and labels stored as a DataFrame
-    ](./images/C13142_03_63.jpg)
-    :::
+    ![](./images/C13142_03_63.jpg)
 
-    ##### Figure 3.63: Text data and labels stored as a DataFrame
+
+
 
 4.  We\'ll now create a generic function for all classifiers, called
     `clf_model`. It takes four inputs: type of model, features
@@ -916,7 +896,7 @@ comments. Follow these steps to implement this activity:
         predicted_probab = model.predict_proba(X_valid)[:,1]
         return [predicted_labels,predicted_probab, model]
     ```
-    :::
+
 
 5.  Furthermore, another function is defined, called
     `model_evaluation`. It takes three inputs: actual values,
@@ -940,7 +920,7 @@ comments. Follow these steps to implement this activity:
         ax.legend(loc='best')
         plt.show()
     ```
-    :::
+
 
 6.  In this step, we\'ll use a lambda function to extract tokens from
     each text in this DataFrame (called data), check whether any of
@@ -959,7 +939,7 @@ comments. Follow these steps to implement this activity:
     lambda x : ' '.join([lemmatizer.lemmatize(word.lower()) \
         for word in word_tokenize(re.sub(r'([^\s\w]|_)+', ' ', str(x))) if word.lower() not in stop_words]))
     ```
-    :::
+
 
 7.  Now, we\'ll create a tf-idf matrix representation of these cleaned
     texts. Add the following code to do this:
@@ -972,16 +952,15 @@ comments. Follow these steps to implement this activity:
     tfidf_df.columns = sorted(tfidf_model.vocabulary_)
     tfidf_df.head()
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 3.64: TF-IDF representation of the DataFrame
-    ](./images/C13142_03_64.jpg)
-    :::
+    ![](./images/C13142_03_64.jpg)
 
-    ##### Figure 3.64: TF-IDF representation of the DataFrame
+
+
 
 8.  Use sklearn\'s `train_test_split` function to divide the
     dataset into training and validation sets. Add the following code to
@@ -991,7 +970,7 @@ comments. Follow these steps to implement this activity:
     ```
     X_train, X_valid, y_train, y_valid = train_test_split(tfidf_df, data['toxic'], test_size=0.2, random_state=42,stratify = data['toxic'])
     ```
-    :::
+
 
 9.  Here, we\'ll train a logistic regression model using sklearn\'s
     `LogisticRegression()` function and evaluate it for the
@@ -1005,16 +984,15 @@ comments. Follow these steps to implement this activity:
     results = clf_model(logreg, X_train, y_train, X_valid)
     model_evaluation(y_valid, results[0], results[1])
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 3.65: Performance of the logistic regression model
-    ](./images/C13142_03_65.jpg)
-    :::
+    ![](./images/C13142_03_65.jpg)
 
-    ##### Figure 3.65: Performance of the logistic regression model
+
+
 
 10. We\'ll train a random forest model using sklearn\'s
     `RandomForestClassifier()` function and evaluate it for
@@ -1029,16 +1007,15 @@ comments. Follow these steps to implement this activity:
     model_evaluation(y_valid, results[0], results[1])
     model_rfc = results[2]
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 3.66: Performance of the random forest model
-    ](./images/C13142_03_66.jpg)
-    :::
+    ![](./images/C13142_03_66.jpg)
 
-    ##### Figure 3.66: Performance of the random forest model
+
+
 
 11. Moreover, we extract important features, which are the tokens or
     words that play a more vital role in determining whether a comment
@@ -1050,16 +1027,15 @@ comments. Follow these steps to implement this activity:
     word_importances = pd.DataFrame({'word':X_train.columns,'importance':model_rfc.feature_importances_})
     word_importances.sort_values('importance', ascending = False).head(4)
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 3.67: Words and their importance
-    ](./images/C13142_03_67.jpg)
-    :::
+    ![](./images/C13142_03_67.jpg)
 
-    ##### Figure 3.67: Words and their importance
+
+
 
 12. We train an XGBoost model using the `XGBClassifier()`
     function and evaluate it for the validation set. Add the following
@@ -1074,16 +1050,15 @@ comments. Follow these steps to implement this activity:
     model_evaluation(y_valid, results[0], results[1])
     model_xgb = results[2]
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 3.68: Performance of the XGBoost model
-    ](./images/C13142_03_68.jpg)
-    :::
+    ![](./images/C13142_03_68.jpg)
 
-    ##### Figure 3.68: Performance of the XGBoost model
+
+
 
 13. Moreover, we extract the importance of features, that is, tokens or
     words that play a more vital role in determining whether a comment
@@ -1095,16 +1070,16 @@ comments. Follow these steps to implement this activity:
     word_importances = pd.DataFrame({'word':X_train.columns,'importance':model_xgb.feature_importances_})
     word_importances.sort_values('importance', ascending = False).head(4)
     ```
-    :::
+
 
     The preceding code generates the following output:
 
 
 
-![Figure 3.69: Words and their importance ](./images/C13142_03_69.jpg)
+![](./images/C13142_03_69.jpg)
 
 
-##### Figure 3.69: Words and their importance
+
 
 
 4. Collecting Text Data from the Web
@@ -1135,7 +1110,7 @@ these steps to implement this activity:
     r = requests.get('https://en.wikipedia.org/wiki/Rabindranath_Tagore')
     soup = BeautifulSoup(r.text, 'html.parser')
     ```
-    :::
+
 
 3.  To extract the list of headings, look for the `h3` tag.
     Here, we only need the first six headings. We will look for a
@@ -1150,15 +1125,15 @@ these steps to implement this activity:
         if tx is not None:
             print(tx['id'])
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.41: List of h3 tag headings ](./images/C13142_04_41.jpg)
-    :::
+    ![](./images/C13142_04_41.jpg)
 
-    ##### Figure 4.41: List of h3 tag headings
+
+
 
 4.  To extract information regarding works by Tagore, look for the
     `table` tag. Traverse through the rows and columns of
@@ -1174,15 +1149,15 @@ these steps to implement this activity:
             columns = columns[1:]
         print(BeautifulSoup(str(columns), 'html.parser').text.strip())
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.42: List of Tagore\'s work ](./images/C13142_04_42.jpg)
-    :::
+    ![](./images/C13142_04_42.jpg)
 
-    ##### Figure 4.42: List of Tagore\'s work
+
+
 
 5.  To extract the list of universities named after Tagore, look for the
     `ol` tag. Add the following code to implement this:
@@ -1192,17 +1167,16 @@ these steps to implement this activity:
     ```
     [BeautifulSoup(str(i),'html.parser').text.strip() for i in soup.find('ol') if i!='\n']
     ```
-    :::
+
 
     The preceding code generates the following output:
 
 
 
-![Figure 4.43: List of universities named after Rabindranath Tagore
-](./images/C13142_04_43.jpg)
+![](./images/C13142_04_43.jpg)
 
 
-##### Figure 4.43: List of universities named after Rabindranath Tagore
+
 
 
 
@@ -1226,15 +1200,15 @@ things. Follow these steps to implement this activity:
     r = requests.get('https://www.packtpub.com/books/info/packt/faq')
     r.status_code
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.44: HTTP status code ](./images/C13142_04_44.jpg)
-    :::
+    ![](./images/C13142_04_44.jpg)
 
-    ##### Figure 4.44: HTTP status code
+
+
 
     To check the text data of the fetched content, type the following
     code:
@@ -1244,15 +1218,15 @@ things. Follow these steps to implement this activity:
     ```
     r.text
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.45: Text content ](./images/C13142_04_45.jpg)
-    :::
+    ![](./images/C13142_04_45.jpg)
 
-    ##### Figure 4.45: Text content
+
+
 
     Here, **403** means forbidden. Thus, we will be using
     `urllib3`.
@@ -1268,16 +1242,15 @@ things. Follow these steps to implement this activity:
     rr.status
     rr.data[:1000]
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.46: Content of the fetched file
-    ](./images/C13142_04_46.jpg)
-    :::
+    ![](./images/C13142_04_46.jpg)
 
-    ##### Figure 4.46: Content of the fetched file
+
+
 
 3.  A list of questions can be obtained by looking for a `div`
     tag that has a `class = faq-item-question-text float-left`
@@ -1290,16 +1263,15 @@ things. Follow these steps to implement this activity:
     questions = [question.text.strip() for question in soup.find_all('div',attrs={"class":"faq-item-question-text float-left"})]
     questions
     ```
-    :::
+
 
     The above code generates the following output:
 
     
-    ![Figure 4.47: List of questions on the FAQ page
-    ](./images/C13142_04_47.jpg)
-    :::
+    ![](./images/C13142_04_47.jpg)
 
-    ##### Figure 4.47: List of questions on the FAQ page
+
+
 
     A list of answers can be obtained by looking for a `div`
     tag that has a `class = faq-item-answer `attribute:
@@ -1310,16 +1282,15 @@ things. Follow these steps to implement this activity:
     answers = [answer.text.strip() for answer in soup.find_all('div',attrs={"class":"faq-item-answer"})]
     answers
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.48: List of answers on the FAQ page
-    ](./images/C13142_04_48.jpg)
-    :::
+    ![](./images/C13142_04_48.jpg)
 
-    ##### Figure 4.48: List of answers on the FAQ page
+
+
 
 4.  Next, we\'ll create a DataFrame consisting of these questions and
     answers:
@@ -1330,16 +1301,15 @@ things. Follow these steps to implement this activity:
     import pandas as pd
     pd.DataFrame({'questions':questions, 'answers':answers}).head()
     ```
-    :::
+
 
     The above code generates the following output:
 
     
-    ![Figure 4.49: DataFrame of the question and answers
-    ](./images/C13142_04_49.jpg)
-    :::
+    ![](./images/C13142_04_49.jpg)
 
-    ##### Figure 4.49: DataFrame of the question and answers
+
+
 
 5.  To extract email addresses, we make use of a regular expression.
     Insert a new cell and add the following code to implement this:
@@ -1353,15 +1323,15 @@ things. Follow these steps to implement this activity:
     import re
     set(re.findall(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}",soup2.text))
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.50: Extracted email address ](./images/C13142_04_50.jpg)
-    :::
+    ![](./images/C13142_04_50.jpg)
 
-    ##### Figure 4.50: Extracted email address
+
+
 
 6.  To extract phone numbers using a regular expression, insert a new
     cell and add the following code:
@@ -1371,16 +1341,16 @@ things. Follow these steps to implement this activity:
     ```
     re.findall(r"\+\d{2}\s{1}\(0\)\s\d{3}\s\d{3}\s\d{3}",soup2.text)
     ```
-    :::
+
 
     The preceding code generates the following output:
 
 
 
-![Figure 4.51: Extracted phone numbers ](./images/C13142_04_51.jpg)
+![](./images/C13142_04_51.jpg)
 
 
-##### Figure 4.51: Extracted phone numbers
+
 
 
 
@@ -1406,15 +1376,15 @@ Activity 8: Dealing with Online JSON Files
     rr = http.request('GET', 'https://jsonplaceholder.typicode.com/comments')
     rr.status
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.52: HTTP status code ](./images/C13142_04_52.jpg)
-    :::
+    ![](./images/C13142_04_52.jpg)
 
-    ##### Figure 4.52: HTTP status code
+
+
 
     Here, the HTTP code **200**, indicates that the request was
     successful.
@@ -1430,16 +1400,15 @@ Activity 8: Dealing with Online JSON Files
     df = pd.DataFrame(data).head(15)
     df.head()
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.53: The DataFrame of the fetched file
-    ](./images/C13142_04_53.jpg)
-    :::
+    ![](./images/C13142_04_53.jpg)
 
-    ##### Figure 4.53: The DataFrame of the fetched file
+
+
 
 4.  Since we can use the language translation function of
     `TextBlob` a limited number of times, we will restrict
@@ -1452,16 +1421,15 @@ Activity 8: Dealing with Online JSON Files
     df['body_english'] = df['body'].apply(lambda x: str(TextBlob('u'+str(x)).translate(to='en')))
     df[['body', 'body_english']].head()
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.54: DataFrame showing the new body\_english column
-    ](./images/C13142_04_54.jpg)
-    :::
+    ![](./images/C13142_04_54.jpg)
 
-    ##### Figure 4.54: DataFrame showing the new body\_english column
+
+
 
 5.  Now, we will use `TextBlob` to find out the sentiment
     score of each of these comments:
@@ -1472,16 +1440,16 @@ Activity 8: Dealing with Online JSON Files
     df['sentiment_score'] = df['body_english'].apply(lambda x: str(TextBlob('u'+str(x)).sentiment.polarity))
     df[['body_english', 'sentiment_score']]
     ```
-    :::
+
 
     The preceding code generates the following output:
 
 
 
-![Figure 4.55: Sentiment scores of tweets ](./images/C13142_04_55.jpg)
+![](./images/C13142_04_55.jpg)
 
 
-##### Figure 4.55: Sentiment scores of tweets
+
 
 
 
@@ -1527,7 +1495,7 @@ to implement this activity:
     auth.set_access_token(access_token, access_token_secret)
     api = tweepy.API(auth)
     ```
-    :::
+
 
 5.  Call the Twitter API with the `#WorldWaterDay` search
     query. Insert a new cell and add the following code to implement
@@ -1545,16 +1513,16 @@ to implement this activity:
             break
     tweet_list[0]
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
     ![Figure 4.56: The Twitter API called with the \#WorldWaterDay
     search query ](./images/C13142_04_56.jpg)
-    :::
 
-    ##### Figure 4.56: The Twitter API called with the \#WorldWaterDay search query
+
+
 
 6.  Convert the Twitter `status` objects to `json`
     objects. Insert a new cell and add the following code to implement
@@ -1567,16 +1535,15 @@ to implement this activity:
     json_str = json.dumps(status._json)
     pprint(json.loads(json_str))
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.57: Twitter status objects converted to JSON objects
-    ](./images/C13142_04_57.jpg)
-    :::
+    ![](./images/C13142_04_57.jpg)
 
-    ##### Figure 4.57: Twitter status objects converted to JSON objects
+
+
 
 7.  To check the text of the fetched JSON file, add the following code:
 
@@ -1585,16 +1552,15 @@ to implement this activity:
     ```
     json.loads(json_str)['text']
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.58: Text content of the JSON file
-    ](./images/C13142_04_58.jpg)
-    :::
+    ![](./images/C13142_04_58.jpg)
 
-    ##### Figure 4.58: Text content of the JSON file
+
+
 
 8.  Now we\'ll create a DataFrame consisting of the text of tweets. Add
     a new cell and write the following code to do this:
@@ -1611,16 +1577,15 @@ to implement this activity:
     tweet_text_df = pd.DataFrame({'tweet_text' : unique_tweet_text})
     tweet_text_df.head()
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.59: DataFrame with the text of tweets
-    ](./images/C13142_04_59.jpg)
-    :::
+    ![](./images/C13142_04_59.jpg)
 
-    ##### Figure 4.59: DataFrame with the text of tweets
+
+
 
 9.  To detect the language of all the tweets, we make use of the
     TextBlob library. Add the following code to do this:
@@ -1632,16 +1597,15 @@ to implement this activity:
                                                                            str(TextBlob('u'+str(x)).detect_language()))
     tweet_text_df.head(20)
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.60: Language of tweets detected
-    ](./images/C13142_04_60.jpg)
-    :::
+    ![](./images/C13142_04_60.jpg)
 
-    ##### Figure 4.60: Language of tweets detected
+
+
 
 10. To have a look at the non-English tweets, we add the following code:
 
@@ -1650,16 +1614,15 @@ to implement this activity:
     ```
     tweet_text_df[tweet_text_df['language_detected']!='en']
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.61: Filtered non-English tweets
-    ](./images/C13142_04_61.jpg)
-    :::
+    ![](./images/C13142_04_61.jpg)
 
-    ##### Figure 4.61: Filtered non-English tweets
+
+
 
 11. To check the shape of the DataFrame consisting of tweets in the
     English language, add the following code:
@@ -1670,15 +1633,15 @@ to implement this activity:
     tweet_text_df_eng = tweet_text_df[tweet_text_df['language_detected']=='en']
     tweet_text_df_eng.shape
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.62: Shape of the DataFrame ](./images/C13142_04_62.jpg)
-    :::
+    ![](./images/C13142_04_62.jpg)
 
-    ##### Figure 4.62: Shape of the DataFrame
+
+
 
 12. Now we\'ll extract the sentiment scores of the English tweets using
     the TextBlob library. Add the following code to do this:
@@ -1690,16 +1653,15 @@ to implement this activity:
     pd.set_option('display.max_colwidth', -1)
     tweet_text_df_eng[['tweet_text', 'sentiment_score']].head(20)
     ```
-    :::
+
 
     The preceding code generates the following output:
 
     
-    ![Figure 4.63: Sentiment scores of English Tweets
-    ](./images/C13142_04_63.jpg)
-    :::
+    ![](./images/C13142_04_63.jpg)
 
-    ##### Figure 4.63: Sentiment scores of English Tweets
+
+
 
 13. Once we have calculated the sentiment score of each tweet, we create
     a word cloud. Insert a new cell and add the following code to
@@ -1721,16 +1683,16 @@ to implement this activity:
     plt.axis("off")
     plt.show()
     ```
-    :::
+
 
     The preceding code generates the following output:
 
 
 
-![Figure 4.64: Word cloud of the tweets ](./images/C13142_04_64.jpg)
+![](./images/C13142_04_64.jpg)
 
 
-##### Figure 4.64: Word cloud of the tweets
+
 
 
 5. Topic Modeling
@@ -1756,7 +1718,7 @@ Follow these steps to implement this activity:
     import pandas as pd
     pd.set_option('display.max_colwidth', 800)
     ```
-    :::
+
 3.  To load the Jeopardy CSV file into a pandas DataFrame, insert a new
     cell and add the following code:
 
@@ -1765,7 +1727,7 @@ Follow these steps to implement this activity:
     JEOPARDY_CSV =  'data/jeopardy/Jeopardy.csv'
     questions = pd.read_csv(JEOPARDY_CSV)
     ```
-    :::
+
 4.  The data in the DataFrame is not clean. In order to clean it, we
     remove records that have missing values in the Question column. Add
     the following code to do this:
@@ -1774,7 +1736,7 @@ Follow these steps to implement this activity:
     ```
     questions = questions.dropna(subset=['Question'])
     ```
-    :::
+
 5.  Now import the gensim preprocessing utility and use it to preprocess
     the questions further. Add the following code to do this:
 
@@ -1783,7 +1745,7 @@ Follow these steps to implement this activity:
     from gensim.parsing.preprocessing import preprocess_string
     ques_documents = questions.Question.apply(preprocess_string).tolist()
     ```
-    :::
+
 6.  Now we\'ll create a gensim corpus and a dictionary, followed by an
     LdaModel instance from the corpus specifying the number of topics.
     Add the following code to do this:
@@ -1797,7 +1759,7 @@ Follow these steps to implement this activity:
     NUM_TOPICS = 8
     ldamodel = LdaModel(corpus, num_topics = NUM_TOPICS, id2word=dictionary, passes=15)
     ```
-    :::
+
 7.  Now we\'ll print the resulting topics. Add the following code to do
     this:
 
@@ -1833,7 +1795,7 @@ summarizer. Follow these steps to implement this activity:
     from gensim.summarization import summarize
     import requests
     ```
-    :::
+
 
 3.  The following code uses the `requests` library to get the
     Why Click page. After getting the page, we change the encoding to
@@ -1850,7 +1812,7 @@ summarizer. Follow these steps to implement this activity:
     soup = BeautifulSoup(r.text)
     why_click = soup.find(id="why-click").text.replace('\n', ' ')
     ```
-    :::
+
 
 4.  Here, we create a utility function to display the sentences in a
     given piece of text. Note that we could simply output the text to
@@ -1867,7 +1829,7 @@ summarizer. Follow these steps to implement this activity:
     def show_sentences(text):
         return pd.DataFrame({'Sentence': sent_tokenize(text)})
     ```
-    :::
+
 
 5.  We have defined a function that turns text into a DataFrame
     containing the sentences in the text. This gives us the option to
@@ -1879,16 +1841,16 @@ summarizer. Follow these steps to implement this activity:
     ```
     why_click
     ```
-    :::
+
 
     The code generates the following output:
 
     
     ![Figure 6.16: This figure shows the original Why Click article, as
     shown in the Jupyter notebook ](./images/C13142_06_16.jpg)
-    :::
 
-    ##### Figure 6.16: This figure shows the original Why Click article, as shown in the Jupyter notebook
+
+
 
     Note that we have lost the formatting of the original article since
     we extracted the text from HTML.
@@ -1903,16 +1865,16 @@ summarizer. Follow these steps to implement this activity:
     ```
     show_sentences(why_click)
     ```
-    :::
+
 
     The code generates the following output:
 
     
     ![Figure 6.17: This figure shows the sentences from the Why Click
     article ](./images/C13142_06_17.jpg)
-    :::
 
-    ##### Figure 6.17: This figure shows the sentences from the Why Click article
+
+
 
 7.  Now we create a `summary` using the
     `summarize()` function, and then look at the sentences.
@@ -1924,16 +1886,15 @@ summarizer. Follow these steps to implement this activity:
     summary = summarize(why_click)
     summary
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 6.18: The summary of the Why Click article
-    ](./images/C13142_06_18.jpg)
-    :::
+    ![](./images/C13142_06_18.jpg)
 
-    ##### Figure 6.18: The summary of the Why Click article
+
+
 
 8.  The `summarize()` function can also break the text into
     sentences if we pass the optional `split` parameter. The
@@ -1945,16 +1906,13 @@ summarizer. Follow these steps to implement this activity:
     summary = summarize(why_click, split=True)
     summary
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 6.19: This figure shows the summary of the Why Click page
-    when using summarize with split=True ](./images/C13142_06_19.jpg)
-    :::
+    ![](./images/C13142_06_19.jpg)
 
-    ##### Figure 6.19: This figure shows the summary of the Why Click page when using summarize with split=True
 
 9.  The `summarize()` function has a parameter called
     `ratio`, which you use to specify the proportion of the
@@ -1967,16 +1925,13 @@ summarizer. Follow these steps to implement this activity:
     summary = summarize(why_click, ratio=0.1)
     show_sentences(summary)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 6.20: The summary of the Why Click page when using
-    summarize with ratio=0.1 ](./images/C13142_06_20.jpg)
-    :::
+    ![](./images/C13142_06_20.jpg)
 
-    ##### Figure 6.20: The summary of the Why Click page when using summarize with ratio=0.1
 
 10. You can also pass the `word_count` parameter to limit the
     number of words returned:
@@ -1987,7 +1942,7 @@ summarizer. Follow these steps to implement this activity:
     summary = summarize(why_click, word_count=200)
     summary
     ```
-    :::
+
 
     The code generates the following output:
 
@@ -1997,7 +1952,7 @@ summarizer. Follow these steps to implement this activity:
 using summarize with word\_count=200 ](./images/C13142_06_21.jpg)
 
 
-##### Figure 6.21: This figure shows the summary of the Why Click page when using summarize with word\_count=200
+
 
 
 7. Vector Representation
@@ -2028,7 +1983,7 @@ one provided by the user. Follow these steps to complete this activity:
     import pandas as pd
     from gensim.parsing.preprocessing import preprocess_string, remove_stopwords 
     ```
-    :::
+
 
 3.  Now we load the `movie_lines1` file. After that, we need
     to iterate over each movie line in the file and split the columns.
@@ -2048,7 +2003,7 @@ one provided by the user. Follow these steps to complete this activity:
                                   for d in movie_lines])
     lines_df = lines_df.set_index('LineNumber')
     ```
-    :::
+
 
 4.  We have a trained document model named
     `MovieLinesModel.d2v`. Now we can simply load and use it.
@@ -2058,7 +2013,7 @@ one provided by the user. Follow these steps to complete this activity:
     ```
     docVecModel = Doc2Vec.load('../data/MovieLinesModel.d2v')
     ```
-    :::
+
 
 5.  Now, since we have loaded the document model, we create two
     functions, namely `to_vector()` and
@@ -2083,7 +2038,7 @@ one provided by the user. Follow these steps to complete this activity:
         similar_lines = [lines_df.ix[line[0]].Line for line in similar_vectors]
         return similar_lines
     ```
-    :::
+
 
 6.  Now that we have created our functions, it is time to test them.
     Insert a new cell and add the following code to implement this:
@@ -2093,7 +2048,7 @@ one provided by the user. Follow these steps to complete this activity:
     ```
     similar_movie_lines("Sure, that's easy.  You gotta insult somebody.")
     ```
-    :::
+
 
     We have learned how to find similar movie lines with the help of
     document vectors.
@@ -2124,7 +2079,7 @@ these steps to implement this activity:
     from textblob import TextBlob
     import re
     ```
-    :::
+
 
 3.  Since we are displaying the text in the notebook, we want to
     increase the display width for our DataFrame.
@@ -2134,7 +2089,7 @@ these steps to implement this activity:
     ```
     pd.set_option('display.max_colwidth', 240)
     ```
-    :::
+
 
 4.  Now we load the `Tweets.csv` dataset. From this dataset,
     we are only fetching the \"`text`\" column. Thus, we need
@@ -2151,7 +2106,7 @@ these steps to implement this activity:
     tweets = pd.read_csv(TWEET_DATA_FILE, usecols=['text'])
     tweets.columns = ['Tweet']
     ```
-    :::
+
 
     ### Note
 
@@ -2166,16 +2121,15 @@ these steps to implement this activity:
     ```
     tweets.head(10)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 8.16: Results of first 10 tweets
-    ](./images/C13142_08_16.jpg)
-    :::
+    ![](./images/C13142_08_16.jpg)
 
-    ##### Figure 8.16: Results of first 10 tweets
+
+
 
 6.  If we look at the preceding figure, we can see that the tweets
     contain Twitter handles, which start with the `@` symbol.
@@ -2189,7 +2143,7 @@ these steps to implement this activity:
     ```
     tweets['At'] = tweets.Tweet.str.extract(r'^(@\S+)')
     ```
-    :::
+
 
     This code declares a new column called `At` and sets the
     value to what the `extract` function returns. The
@@ -2203,17 +2157,16 @@ these steps to implement this activity:
     ```
     tweets.head(10)
     ```
-    :::
+
 
 The expected output for first ten tweets should be as follows:
 
 
 
-![Figure 8.17: First 10 tweets along with Twitter handles
-](./images/C13142_08_17.jpg)
+![](./images/C13142_08_17.jpg)
 
 
-##### Figure 8.17: First 10 tweets along with Twitter handles
+
 
 1.  Now, we want to remove the Twitter handles since they are irrelevant
     for sentiment analysis. First, we create a function named
@@ -2227,7 +2180,7 @@ The expected output for first ten tweets should be as follows:
     def remove_handles(tweet):
         return re.sub(r'@\S+', '', tweet)
     ```
-    :::
+
 
 2.  To remove the handles, insert a new cell and add the following code:
 
@@ -2237,17 +2190,16 @@ The expected output for first ten tweets should be as follows:
     tweets.text = tweets.text.apply(remove_handles)
     tweets.head(10)
     ```
-    :::
+
 
     The expected output for first ten tweets after removing the Twitter
     handles should be as follows:
 
     
-    ![Figure 8.18 First 10 tweets after removing the Twitter handles
-    ](./images/C13142_08_18.jpg)
-    :::
+    ![](./images/C13142_08_18.jpg)
 
-    ##### Figure 8.18 First 10 tweets after removing the Twitter handles
+
+
 
     From the preceding figure, we can see that the Twitter handles have
     been separated from the tweets.
@@ -2270,7 +2222,7 @@ The expected output for first ten tweets should be as follows:
                        for v in textblob_sentiment.values]
         return pd.DataFrame(sentiment_values)
     ```
-    :::
+
 
     This function takes a DataFrame and applies the `TextBlob`
     constructor to each value of `text_column`. Then it
@@ -2287,7 +2239,7 @@ The expected output for first ten tweets should be as follows:
     ```
     sentiment_frame = get_sentiment(tweets, 'text')
     ```
-    :::
+
 
     To view the initial four values of the new DataFrame, type the
     following code:
@@ -2297,16 +2249,15 @@ The expected output for first ten tweets should be as follows:
     ```
     sentence_frame.head(4)
     ```
-    :::
+
 
     The code generates the following output:
 
     
-    ![Figure 8.19 First four rows of the sentiment DataFrame
-    ](./images/C13142_08_19.jpg)
-    :::
+    ![](./images/C13142_08_19.jpg)
 
-    ##### Figure 8.19 First four rows of the sentiment DataFrame
+
+
 
 5.  To join the original `tweet` DataFrame to the
     `sentiment_frame` DataFrame, we make use of the
@@ -2318,7 +2269,7 @@ The expected output for first ten tweets should be as follows:
     ```
     tweets = pd.concat([tweets, sentiment_frame], axis=1)
     ```
-    :::
+
 
     To view the initial 10 rows of the new DataFrame, we add the
     following code:
@@ -2328,17 +2279,16 @@ The expected output for first ten tweets should be as follows:
     ```
     tweets.head(10)
     ```
-    :::
+
 
     The expected output with sentiment scores added should be as
     follows:
 
     
-    ![Figure 8.20 Tweets DataFrame with sentiment scores added
-    ](./images/C13142_08_20.jpg)
-    :::
+    ![](./images/C13142_08_20.jpg)
 
-    ##### Figure 8.20 Tweets DataFrame with sentiment scores added
+
+
 
     From the preceding figure, we can see that for each **tweet**,
     **polarity**, and **subjectivity** scores have been calculated.
@@ -2358,7 +2308,7 @@ The expected output for first ten tweets should be as follows:
     negative_tweets = tweets[tweets.Polarity <= - 0.5]
     neutral_tweets = tweets[ (tweets.Polarity > -0.1) & (tweets.Polarity < 0.1) ]
     ```
-    :::
+
 
     To view positive, negative, and neutral tweets, we add the following
     code:
@@ -2370,6 +2320,6 @@ The expected output for first ten tweets should be as follows:
     negative_tweets.head(15)
     neutral_tweets
     ```
-    :::
+
 
     This displays the result of positive, negative, and neutral tweets.
