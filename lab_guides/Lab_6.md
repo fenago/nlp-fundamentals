@@ -3,13 +3,12 @@
 =========================================
 
 
-:::
 
 
 Learning Objectives
 -------------------
 
-By the end of this chapter, you will be able to:
+By the end of this lab, you will be able to:
 
 -   Describe automated text summarization and its benefits
 -   Describe the TextRank algorithm
@@ -17,7 +16,7 @@ By the end of this chapter, you will be able to:
 -   Implement text summarization using word frequency
 -   Generate text using Markov chains
 
-In this chapter, you will learn about the various ways in which text can
+In this lab, you will learn about the various ways in which text can
 be summarized and generated.
 
 
@@ -476,7 +475,7 @@ this exercise:
 
     
     ![Figure 6.4: This figure shows the new columns we added --
-    SentencesInArticle and WordInSentences](5_files/C13142_06_04.jpg)
+    SentencesInArticle and WordInSentences](./images/C13142_06_04.jpg)
     :::
 
     ##### Figure 6.4: This figure shows the new columns we added -- SentencesInArticle and WordInSentences
@@ -852,7 +851,7 @@ exercise:
 
     
     ![Figure 6.8: This figure shows the original vortex
-    article](7_files/C13142_06_08.jpg)
+    article](./images/C13142_06_08.jpg)
     :::
 
     ##### Figure 6.8: This figure shows the original vortex article
@@ -875,7 +874,7 @@ exercise:
 
     
     ![Figure 6.9: There are 12 sentences in the
-    article](7_files/C13142_06_09.jpg)
+    article](./images/C13142_06_09.jpg)
     :::
 
     ##### Figure 6.9: There are 12 sentences in the article
@@ -894,7 +893,7 @@ exercise:
 
     
     ![Figure 6.10: A summary of the vortex
-    article](7_files/C13142_06_10.jpg)
+    article](./images/C13142_06_10.jpg)
     :::
 
     ##### Figure 6.10: A summary of the vortex article
@@ -915,7 +914,7 @@ exercise:
 
 
 ![Figure 6.11: Summary of the vortex article, limited to only one
-sentence](7_files/C13142_06_11.jpg)
+sentence](./images/C13142_06_11.jpg)
 
 
 ##### Figure 6.11: Summary of the vortex article, limited to only one sentence
@@ -929,11 +928,11 @@ Summary
 =======
 
 
-In this chapter, you have learned about text summarization and text
+In this lab, you have learned about text summarization and text
 generation. We also looked at various ways in which text summarization
 can be performed, such as the use of the TextRank algorithm, the Gensim
 library, and word frequency models. One approach we looked at during
-this chapter was the use of Markov chains to perform text generation. In
-the next chapter, we will learn about how text can be represented as
+this lab was the use of Markov chains to perform text generation. In
+the next lab, we will learn about how text can be represented as
 vectors. We will also discuss various vector representations, such as
 Word2Vec and Doc2Vec, in detail.

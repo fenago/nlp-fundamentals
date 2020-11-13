@@ -3,13 +3,12 @@
 ====================================
 
 
-:::
 
 
 Learning Objectives
 -------------------
 
-By the end of this chapter, you will be able to:
+By the end of this lab, you will be able to:
 
 -   Extract and process data from web pages
 -   Describe different kinds of semi-structured data, such as JSON and
@@ -17,7 +16,7 @@ By the end of this chapter, you will be able to:
 -   Extract real-time data using Application Programming Interfaces
 -   Extract data from various file formats
 
-In this chapter, you will learn how to collect data from different file
+In this lab, you will learn how to collect data from different file
 formats.
 
 
@@ -25,9 +24,9 @@ formats.
 Introduction
 ============
 
-In the last chapter, we learned about developing a simple classifier
+In the last lab, we learned about developing a simple classifier
 using feature extraction methods. We also covered different algorithms
-that fall under supervised and unsupervised learning. In this chapter,
+that fall under supervised and unsupervised learning. In this lab,
 you will learn about collecting data by scraping web pages and then
 processing it. You will also learn how to handle various kinds of
 semi-structured data, such as JSON and XML. We will cover different
@@ -52,7 +51,7 @@ within an HTML tag:
 
 
 
-![Figure 4.1: Tags and attributes of HTML ](3_files/C13142_04_01.jpg)
+![Figure 4.1: Tags and attributes of HTML ](./images/C13142_04_01.jpg)
 
 
 ##### Figure 4.1: Tags and attributes of HTML
@@ -105,7 +104,7 @@ Follow these steps to implement this exercise:
 
     
     ![Figure 4.2: Text content of an HTML file
-    ](3_files/C13142_04_02.jpg)
+    ](./images/C13142_04_02.jpg)
     :::
 
     ##### Figure 4.2: Text content of an HTML file
@@ -124,7 +123,7 @@ Follow these steps to implement this exercise:
 
     
     ![Figure 4.3: Contents of one address tag
-    ](3_files/C13142_04_03.jpg)
+    ](./images/C13142_04_03.jpg)
     :::
 
     ##### Figure 4.3: Contents of one address tag
@@ -143,7 +142,7 @@ Follow these steps to implement this exercise:
 
     
     ![Figure 4.4: Contents of all the address tags
-    ](3_files/C13142_04_04.jpg)
+    ](./images/C13142_04_04.jpg)
     :::
 
     ##### Figure 4.4: Contents of all the address tags
@@ -161,7 +160,7 @@ Follow these steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 4.5: Contents of the q tag ](3_files/C13142_04_05.jpg)
+    ![Figure 4.5: Contents of the q tag ](./images/C13142_04_05.jpg)
     :::
 
     ##### Figure 4.5: Contents of the q tag
@@ -179,7 +178,7 @@ Follow these steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 4.6: Contents of all the b tags ](3_files/C13142_04_06.jpg)
+    ![Figure 4.6: Contents of all the b tags ](./images/C13142_04_06.jpg)
     :::
 
     ##### Figure 4.6: Contents of all the b tags
@@ -197,7 +196,7 @@ Follow these steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 4.7: Contents of the table tag ](3_files/C13142_04_07.jpg)
+    ![Figure 4.7: Contents of the table tag ](./images/C13142_04_07.jpg)
     :::
 
     ##### Figure 4.7: Contents of the table tag
@@ -217,7 +216,7 @@ Follow these steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 4.8: Table contents ](3_files/C13142_04_08.jpg)
+    ![Figure 4.8: Table contents ](./images/C13142_04_08.jpg)
     :::
 
     ##### Figure 4.8: Table contents
@@ -238,7 +237,7 @@ Follow these steps to implement this exercise:
 
 
 ![Figure 4.9: Value of the third row of the second column
-](3_files/C13142_04_09.jpg)
+](./images/C13142_04_09.jpg)
 
 
 ##### Figure 4.9: Value of the third row of the second column
@@ -281,7 +280,7 @@ implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 4.10: HTTP status code ](4_files/C13142_04_10.jpg)
+    ![Figure 4.10: HTTP status code ](./images/C13142_04_10.jpg)
     :::
 
     ##### Figure 4.10: HTTP status code
@@ -303,7 +302,7 @@ implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 4.11: Text contents of the file ](4_files/C13142_04_11.jpg)
+    ![Figure 4.11: Text contents of the file ](./images/C13142_04_11.jpg)
     :::
 
     ##### Figure 4.11: Text contents of the file
@@ -321,7 +320,7 @@ implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 4.12: Total lines ](4_files/C13142_04_12.jpg)
+    ![Figure 4.12: Total lines ](./images/C13142_04_12.jpg)
     :::
 
     ##### Figure 4.12: Total lines
@@ -344,7 +343,7 @@ implement this exercise:
 
     
     ![Figure 4.13: Content of the book, available online
-    ](4_files/C13142_04_13.jpg)
+    ](./images/C13142_04_13.jpg)
     :::
 
     ##### Figure 4.13: Content of the book, available online
@@ -363,7 +362,7 @@ implement this exercise:
 
 
 
-![Figure 4.14: Total lines ](4_files/C13142_04_14.jpg)
+![Figure 4.14: Total lines ](./images/C13142_04_14.jpg)
 
 
 ##### Figure 4.14: Total lines
@@ -396,7 +395,7 @@ to implement this exercise:
 
     The preceding code generates the following output:
 
-    ##### ![Figure 4.15: Text content of the HTML file ](4_files/C13142_04_15.png)
+    ##### ![Figure 4.15: Text content of the HTML file ](./images/C13142_04_15.png)
 
     ##### Figure 4.15: Text content of the HTML file
 
@@ -414,7 +413,7 @@ to implement this exercise:
 
     
     ![Figure 4.16: The number of images in the HTML file
-    ](4_files/C13142_04_16.jpg)
+    ](./images/C13142_04_16.jpg)
     :::
 
     ##### Figure 4.16: The number of images in the HTML file
@@ -433,7 +432,7 @@ to implement this exercise:
 
     
     ![Figure 4.17: List of libraries imported
-    ](4_files/C13142_04_17.jpg)
+    ](./images/C13142_04_17.jpg)
     :::
 
     ##### Figure 4.17: List of libraries imported
@@ -456,7 +455,7 @@ to implement this exercise:
 
 
 
-![Figure 4.18: Models and their performance ](4_files/C13142_04_18.jpg)
+![Figure 4.18: Models and their performance ](./images/C13142_04_18.jpg)
 
 
 ##### Figure 4.18: Models and their performance
@@ -535,7 +534,7 @@ Dealing with Semi-Structured Data
 =================================
 
 
-We learned about various types of data in *Chapter 2, Feature Extraction
+We learned about various types of data in *Lab 2, Feature Extraction
 from Texts*. Let\'s quickly recapitulate what semi-structured data
 refers to. A dataset is said to be semi-structured if it is not in a
 row-column format but can be converted into a structured format that has
@@ -1236,7 +1235,7 @@ Summary
 =======
 
 
-In this chapter, you have learned ways to collect data by scraping web
+In this lab, you have learned ways to collect data by scraping web
 pages. Moreover, you were introduced to various types of semi-structured
 data formats, namely JSON and XML. Different ways of retrieving data in
 real time from a website such as Twitter have been explained with
@@ -1244,6 +1243,6 @@ examples. Finally, you were introduced to various methods to deal with
 different kinds of local files, such as PDF, Word documents, text files,
 and Excel files.
 
-In the next chapter, you will learn about topic modeling, which is an
+In the next lab, you will learn about topic modeling, which is an
 unsupervised natural language processing technique. It helps in grouping
 the documents according to the topic detected in them.

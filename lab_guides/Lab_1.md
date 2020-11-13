@@ -3,13 +3,12 @@
 ==============================================
 
 
-:::
 
 
 Learning Objectives
 -------------------
 
-By the end of this chapter, you will be able to:
+By the end of this lab, you will be able to:
 
 -   Describe what natural language processing (NLP) is all about
 -   Describe the history of NLP
@@ -17,7 +16,7 @@ By the end of this chapter, you will be able to:
 -   Implement various preprocessing tasks
 -   Describe the various phases of an NLP project
 
-In this chapter, you will learn about the basics of natural language
+In this lab, you will learn about the basics of natural language
 processing and various preprocessing steps that are required to clean
 and analyze the data.
 
@@ -76,7 +75,7 @@ the following format:
 
 
 
-![Figure 1.1: Format of call data](4_files/C13142_01_01.jpg)
+![Figure 1.1: Format of call data](./images/C13142_01_01.jpg)
 
 
 ##### Figure 1.1: Format of call data
@@ -97,7 +96,7 @@ The following figure shows records of call data stored in a text file:
 
 
 
-![Figure 1.2: Call records in a text file](4_files/C13142_01_02.jpg)
+![Figure 1.2: Call records in a text file](./images/C13142_01_02.jpg)
 
 
 ##### Figure 1.2: Call records in a text file
@@ -238,7 +237,7 @@ text data. Follow these steps to implement this exercise:
 
     
     ![Figure 1.3: List of words at even
-    positions](4_files/C13142_01_03.jpg)
+    positions](./images/C13142_01_03.jpg)
     :::
 
     ##### Figure 1.3: List of words at even positions
@@ -266,7 +265,7 @@ text data. Follow these steps to implement this exercise:
     The code generates the following output:
 
     
-    ![Figure 1.4: Text in reverse order](4_files/C13142_01_04.jpg)
+    ![Figure 1.4: Text in reverse order](./images/C13142_01_04.jpg)
     :::
 
     ##### Figure 1.4: Text in reverse order
@@ -286,7 +285,7 @@ text data. Follow these steps to implement this exercise:
 
 
 ![Figure 1.5: Printing the text in reverse order while preserving word
-sequence](4_files/C13142_01_05.jpg)
+sequence](./images/C13142_01_05.jpg)
 
 
 ##### Figure 1.5: Printing the text in reverse order while preserving word sequence
@@ -388,7 +387,7 @@ exercise:
     The code generates the following output:
 
     
-    ![Figure 1.6: List of tokens](5_files/C13142_01_06.jpg)
+    ![Figure 1.6: List of tokens](./images/C13142_01_06.jpg)
     :::
 
 ##### Figure 1.6: List of tokens
@@ -471,7 +470,7 @@ steps to implement this exercise:
     The code generates the following output:
 
     
-    ![Figure 1.7: List of tokens](5_files/C13142_01_07.jpg)
+    ![Figure 1.7: List of tokens](./images/C13142_01_07.jpg)
     :::
 
     ##### Figure 1.7: List of tokens
@@ -490,7 +489,7 @@ steps to implement this exercise:
     The code generates the following output:
 
     
-    ![Figure 1.8: PoS tag of words](5_files/C13142_01_08.jpg)
+    ![Figure 1.8: PoS tag of words](./images/C13142_01_08.jpg)
     :::
 
     ##### Figure 1.8: PoS tag of words
@@ -572,7 +571,7 @@ exercise:
 
     
     ![Figure 1.9: List of stopwords provided by the English
-    language](5_files/C13142_01_09.jpg)
+    language](./images/C13142_01_09.jpg)
     :::
 
     ##### Figure 1.9: List of stopwords provided by the English language
@@ -603,7 +602,7 @@ exercise:
 
     
     ![Figure 1.10: List of tokens in the sentence\_words
-    variable](5_files/C13142_01_10.jpg)
+    variable](./images/C13142_01_10.jpg)
     :::
 
     ##### Figure 1.10: List of tokens in the sentence\_words variable
@@ -634,7 +633,7 @@ exercise:
 
 
 
-![Figure 1.11: Text without stopwords](5_files/C13142_01_11.jpg)
+![Figure 1.11: Text without stopwords](./images/C13142_01_11.jpg)
 
 
 ##### Figure 1.11: Text without stopwords
@@ -715,7 +714,7 @@ Follow these steps to implement this exercise:
 
 
 
-![Figure 1.12: Normalized text](5_files/C13142_01_12.jpg)
+![Figure 1.12: Normalized text](./images/C13142_01_12.jpg)
 
 
 ##### Figure 1.12: Normalized text
@@ -772,7 +771,7 @@ Python. Follow these steps in order to implement this exercise:
     The code generates the following output:
 
     
-    ![Figure 1.13: Corrected word](5_files/C13142_01_13.jpg)
+    ![Figure 1.13: Corrected word](./images/C13142_01_13.jpg)
     :::
 
     ##### Figure 1.13: Corrected word
@@ -801,7 +800,7 @@ Python. Follow these steps in order to implement this exercise:
     The code generates the following output:
 
     
-    ![Figure 1.14: Tokens in sentences](5_files/C13142_01_14.jpg)
+    ![Figure 1.14: Tokens in sentences](./images/C13142_01_14.jpg)
     :::
 
     ##### Figure 1.14: Tokens in sentences
@@ -829,7 +828,7 @@ Python. Follow these steps in order to implement this exercise:
     The code generates the following output:
 
     
-    ![Figure 1.15: Corrected sentence ](5_files/C13142_01_15.jpg)
+    ![Figure 1.15: Corrected sentence ](./images/C13142_01_15.jpg)
     :::
 
     ##### Figure 1.15: Corrected sentence
@@ -861,7 +860,7 @@ transformed into their base forms:
 
 
 
-![Figure 1.16: Stemming of the word product](5_files/C13142_01_16.jpg)
+![Figure 1.16: Stemming of the word product](./images/C13142_01_16.jpg)
 
 
 ##### Figure 1.16: Stemming of the word product
@@ -906,7 +905,7 @@ to implement this exercise:
 
     
     ![Figure 1.17: Stemmed word for production
-    ](5_files/C13142_01_17.jpg)
+    ](./images/C13142_01_17.jpg)
     :::
 
     ##### Figure 1.17: Stemmed word for production
@@ -922,7 +921,7 @@ to implement this exercise:
     generated:
 
     
-    ![Figure 1.18: Stemmed word for coming ](5_files/C13142_01_18.jpg)
+    ![Figure 1.18: Stemmed word for coming ](./images/C13142_01_18.jpg)
     :::
 
     ##### Figure 1.18: Stemmed word for coming
@@ -938,7 +937,7 @@ to implement this exercise:
     generated:
 
     
-    ![Figure 1.19: Stemmed word for firing ](5_files/C13142_01_19.jpg)
+    ![Figure 1.19: Stemmed word for firing ](./images/C13142_01_19.jpg)
     :::
 
     ##### Figure 1.19: Stemmed word for firing
@@ -954,7 +953,7 @@ to implement this exercise:
     generated:
 
     
-    ![Figure 1.20: Stemmed word for battling ](5_files/C13142_01_20.jpg)
+    ![Figure 1.20: Stemmed word for battling ](./images/C13142_01_20.jpg)
     :::
 
     ##### Figure 1.20: Stemmed word for battling
@@ -1026,7 +1025,7 @@ form of a given word. Follow these steps to implement this exercise:
 
 
 
-![Figure 1.21: Lemmatized word](5_files/C13142_01_21.jpg)
+![Figure 1.21: Lemmatized word](./images/C13142_01_21.jpg)
 
 
 ##### Figure 1.21: Lemmatized word
@@ -1040,7 +1039,7 @@ generated:
 
 
 
-![Figure 1.22: Lemmatized word](5_files/C13142_01_22.jpg)
+![Figure 1.22: Lemmatized word](./images/C13142_01_22.jpg)
 
 
 ##### Figure 1.22: Lemmatized word
@@ -1053,7 +1052,7 @@ With the input \"`coming`\", the following output is generated:
 
 
 
-![Figure 1.23: Lemmatized word](5_files/C13142_01_23.jpg)
+![Figure 1.23: Lemmatized word](./images/C13142_01_23.jpg)
 
 
 ##### Figure 1.23: Lemmatized word
@@ -1067,7 +1066,7 @@ generated:
 
 
 
-![Figure 1.24: Lemmatized word](5_files/C13142_01_24.jpg)
+![Figure 1.24: Lemmatized word](./images/C13142_01_24.jpg)
 
 
 ##### Figure 1.24: Lemmatized word
@@ -1136,7 +1135,7 @@ Follow these steps to implement this exercise:
 
 
 
-![Figure 1.25: Named entity](5_files/C13142_01_25.jpg)
+![Figure 1.25: Named entity](./images/C13142_01_25.jpg)
 
 
 ##### Figure 1.25: Named entity
@@ -1166,7 +1165,7 @@ sentences:
 
 
 
-![Figure 1.26: Word sense disambiguition](5_files/C13142_01_26.jpg)
+![Figure 1.26: Word sense disambiguition](./images/C13142_01_26.jpg)
 
 
 ##### Figure 1.26: Word sense disambiguition
@@ -1223,7 +1222,7 @@ different sentences. Follow these steps to implement this exercise:
 
 
 ![Figure 1.27: Sense carried by the word "bank" in
-sentence1](5_files/C13142_01_27.jpg)
+sentence1](./images/C13142_01_27.jpg)
 
 
 ##### Figure 1.27: Sense carried by the word \"bank\" in sentence1
@@ -1241,7 +1240,7 @@ The code generates the following output:
 
 
 ![Figure 1.28: Sense carried by the word "bank" in
-sentence2](5_files/C13142_01_28.jpg)
+sentence2](./images/C13142_01_28.jpg)
 
 
 ##### Figure 1.28: Sense carried by the word \"bank\" in sentence2
@@ -1302,7 +1301,7 @@ these steps to implement this exercise:
 
 
 
-![Figure 1.29: List of sentences ](5_files/C13142_01_29.jpg)
+![Figure 1.29: List of sentences ](./images/C13142_01_29.jpg)
 
 
 ##### Figure 1.29: List of sentences
@@ -1373,7 +1372,7 @@ phases, which are outlined in the following figure:
 
 
 
-![Figure 1.30: Phases of an NLP project](6_files/C13142_01_30.jpg)
+![Figure 1.30: Phases of an NLP project](./images/C13142_01_30.jpg)
 
 
 ##### Figure 1.30: Phases of an NLP project
@@ -1400,7 +1399,7 @@ Data Preprocessing
 
 Once the data is collected, we need to clean it. For the process of
 cleaning, we make use of the different pre-processing steps that we have
-used in this chapter. It is necessary to clean the collected data, as
+used in this lab. It is necessary to clean the collected data, as
 dirty data tends to reduce effectiveness and accuracy. In our case, we
 will remove the unnecessary URLs, words, and more from the collected
 tweets.
@@ -1458,10 +1457,10 @@ Summary
 =======
 
 
-In this chapter, we learned how NLP is different from text analytics. We
+In this lab, we learned how NLP is different from text analytics. We
 also covered the various pre-processing steps that are included in NLP.
 We looked at the different phases an NLP project has to pass through. In
-the next chapter, you will learn about the different methods required
+the next lab, you will learn about the different methods required
 for extracting features from unstructured texts, such as TF-IDF and bag
 of words. You will also learn about NLP tasks such as tokenization,
 lemmatization, and stemming in more detail. Furthermore, text

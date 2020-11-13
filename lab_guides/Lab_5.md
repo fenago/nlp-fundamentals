@@ -3,13 +3,12 @@
 =================
 
 
-:::
 
 
 Learning Objectives
 -------------------
 
-By the end of this chapter, you will be able to:
+By the end of this lab, you will be able to:
 
 -   Describe topic modelling and its various use cases
 -   Describe topic modeling algorithms
@@ -17,7 +16,7 @@ By the end of this chapter, you will be able to:
 -   Describe topic fingerprinting
 -   Implement topic modeling using LSA and LDA
 
-In this chapter, you will learn about different topic modeling
+In this lab, you will learn about different topic modeling
 algorithms and how we can use them to perform topic modeling on any
 dataset.
 
@@ -26,8 +25,8 @@ Introduction
 ============
 
 
-In the previous chapter, we learned about different ways to collect data
-from local files and online resources. In this chapter, we will focus on
+In the previous lab, we learned about different ways to collect data
+from local files and online resources. In this lab, we will focus on
 **topic modeling**, which is a popular concept within natural language
 processing. Topic modeling is a simple way to capture meaning from a
 collection of documents. Note that, in this case, documents are any
@@ -43,7 +42,7 @@ which detect topics on their own. Topic modeling algorithms operate by
 doing statistical analysis of words or tokens in documents, and then
 they use those statistics to automatically assign documents to topics.
 
-In this chapter, we will look at a few popular topic modeling
+In this lab, we will look at a few popular topic modeling
 algorithms, such as **Latent Semantic Analysis** (**LSA**) and **Latent
 Dirichlet Allocation** (**LDA**), and learn how to implement them.
 
@@ -162,9 +161,9 @@ high-dimensional data. A **dimension** is an axis on which your data
 varies. Documents are highly dimensional in nature, because they contain
 many different words. Each word can be considered a feature on which the
 document would vary from another document. For example, if you look at
-the document for this chapter, you can see that it is inherently
+the document for this lab, you can see that it is inherently
 complex, once you start focusing on each individual word and what that
-word could possibly mean. If you instead tried to summarize this chapter
+word could possibly mean. If you instead tried to summarize this lab
 by the topics that it focuses on, you would see that there are fewer
 topics than words. By working with topics, you reduce the number of
 dimensions with which to work. So, topic modeling is one way to perform
@@ -229,7 +228,7 @@ Topic modeling algorithms operate on the following assumptions:
 
 Topics are not observed but are assumed to be hidden generators of
 words. After these assumptions, different algorithms diverge in how they
-go about discovering topics. In this chapter, we will cover two topic
+go about discovering topics. In this lab, we will cover two topic
 modeling algorithms, namely **LSA** and **LDA**. Both models will be
 discussed in detail in the coming sections.
 
@@ -629,7 +628,7 @@ that are each made up of various parts, and to which similarity sorting
 can be done using the statistical patterns of those parts. LDA can be
 performed on any collection of things that are made up of parts, such as
 employees and their skills, sports teams and their individual members,
-and documents and their words. Since this chapter is about natural
+and documents and their words. Since this lab is about natural
 language processing, we are primarily interested in documents and words.
 
 In topic modeling, groups are unobserved. However, what we can observe
@@ -1343,8 +1342,8 @@ Summary
 =======
 
 
-In this chapter, we discussed topic modeling in detail. We learned about
+In this lab, we discussed topic modeling in detail. We learned about
 two different algorithms, LSA and LDA, and how they can be used for
 topic modeling on any given dataset. We also learned about topic
-fingerprinting to check for similarity. In the next chapter, we will dig
+fingerprinting to check for similarity. In the next lab, we will dig
 deep into concepts such as text summarization and text generation.

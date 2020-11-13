@@ -3,13 +3,12 @@
 ========================
 
 
-:::
 
 
 Learning Objectives
 -------------------
 
-By the end of this chapter, you will be able to:
+By the end of this lab, you will be able to:
 
 -   Describe the need for vector representation in Natural Language
     Processing (NLP)
@@ -18,7 +17,7 @@ By the end of this chapter, you will be able to:
 -   Implement vector arithmetic
 -   Describe document vectors
 
-In this chapter, you will be learning about various encoding techniques
+In this lab, you will be learning about various encoding techniques
 using which a text can be represented as vector.
 
 
@@ -39,7 +38,7 @@ integer. But it can also include using an array of numbers for each
 word. Each of these representations help machine learning programs to
 function effectively.
 
-This chapter begins by discussing vectors, how text can be represented
+This lab begins by discussing vectors, how text can be represented
 as vectors, and how vectors can be composed to represent complex speech.
 We will walk through the various representations in both directions --
 learning how to encode text as vectors as well as how to retrieve text
@@ -96,7 +95,7 @@ in computing. ASCII and Unicode are the most notably used techniques,
 but these are used only for general computing and not necessarily for
 NLP.
 
-Throughout this chapter, we will be using the **NumPy** library. NumPy
+Throughout this lab, we will be using the **NumPy** library. NumPy
 uses the array, which is a structure that can represent scalars,
 vectors, and matrices. We will use the term **array** interchangeably
 with vectors and matrices. There are different types of NumPy arrays,
@@ -117,7 +116,7 @@ Summary
 =======
 
 
-In this chapter, we learned about the motivations behind converting
+In this lab, we learned about the motivations behind converting
 human language in the form of text and speech into mathematical
 structures such as scalars, vectors, matrices, and tensors. This helps
 machine learning algorithms to execute mathematical functions on them,
@@ -126,7 +125,7 @@ meaning of the text. We also saw the different types of vector
 representation techniques, such as simple integer encoding,
 character-level encoding, one-hot encoding, and word encoding.
 
-In the next chapter, we will look at the area of sentiment analysis,
+In the next lab, we will look at the area of sentiment analysis,
 which is the automated understanding of tone or sentiment in text
 sources. Sentiment analysis uses some of the vector representation
-techniques that we saw in this chapter.
+techniques that we saw in this lab.

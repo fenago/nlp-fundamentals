@@ -3,13 +3,12 @@
 ===================================
 
 
-:::
 
 
 Learning Objectives
 -------------------
 
-By the end of this chapter, you will be able to:
+By the end of this lab, you will be able to:
 
 -   Categorize data based on content and structure
 -   Describe pre-processing steps in detail and implement them to clean
@@ -19,7 +18,7 @@ By the end of this chapter, you will be able to:
 -   Visualize text using word clouds and other
     visualization techniques
 
-In this chapter, you will learn about basic feature extraction methods
+In this lab, you will learn about basic feature extraction methods
 in detail and also visualize text with the help of word clouds and other
 visualization techniques.
 
@@ -28,9 +27,9 @@ Introduction
 ============
 
 
-In the previous chapter, we learned about the concepts of Natural
+In the previous lab, we learned about the concepts of Natural
 Language Processing (NLP) and text analytics. We also looked at various
-pre-processing steps in brief. In this chapter, we will learn how to
+pre-processing steps in brief. In this lab, we will learn how to
 deal with text data whose formats are mostly unstructured. Unstructured
 data cannot be represented in a tabular format. Therefore, it is
 essential to convert it into numeric features because most machine
@@ -170,10 +169,10 @@ one by one in the upcoming sections.
 Tokenization
 ------------
 
-Tokenization and word tokenizers were briefly described in *Chapter 1,
+Tokenization and word tokenizers were briefly described in *Lab 1,
 Introduction to Natural Language Processing*. Tokenization is the
 process of splitting sentences into their constituents; that is, words.
-In this chapter, we will see how tokenization is done using various
+In this lab, we will see how tokenization is done using various
 packages.
 
 The cleaning of text data is essential before tokenization. **Regular
@@ -1186,7 +1185,7 @@ these steps to implement this exercise:
     ### Note
 
     Sentiment scores such as subjectivity and polarity will be explained
-    in detail in *Chapter 8, Sentiment Analysis*.
+    in detail in *Lab 8, Sentiment Analysis*.
 
 7.  Use the apply function to iterate through each row of the column
     text, convert them to TextBlob objects, and detect their languages:
@@ -2044,7 +2043,7 @@ Summary
 =======
 
 
-In this chapter, you have learned about various types of data and ways
+In this lab, you have learned about various types of data and ways
 to deal with unstructured text data. Text data is usually untidy and
 needs to be cleaned and pre-processed. Pre-processing steps mainly
 consist of tokenization, stemming, lemmatization, and stop-word removal.
@@ -2052,10 +2051,10 @@ After pre-processing, features are extracted from texts using various
 methods, such as BoW and TF-IDF. This step converts unstructured text
 data into structured numeric data. New features are created from
 existing features using a technique called feature engineering. In the
-last part of the chapter, we explored various ways of visualizing text
+last part of the lab, we explored various ways of visualizing text
 data, such as word clouds.
 
-In the next chapter, you will learn how to develop machine learning
+In the next lab, you will learn how to develop machine learning
 models to classify texts using the features you have learned to extract
-in this chapter. Moreover, different sampling techniques and model
+in this lab. Moreover, different sampling techniques and model
 evaluation parameters will be introduced.

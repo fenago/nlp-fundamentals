@@ -3,7 +3,6 @@ Appendix
 ========
 
 
-:::
 
 
 About
@@ -82,7 +81,7 @@ activity, follow these steps:
     The code generates the following output:
 
     
-    ![Figure 1.31: Tokenized words ](2_files/C13142_01_31.jpg)
+    ![Figure 1.31: Tokenized words ](./images/C13142_01_31.jpg)
     :::
 
     ##### Figure 1.31: Tokenized words
@@ -119,7 +118,7 @@ activity, follow these steps:
 
     
     ![Figure 1.32: Words that have been
-    corrected](2_files/C13142_01_32.jpg)
+    corrected](./images/C13142_01_32.jpg)
     :::
 
     ##### Figure 1.32: Words that have been corrected
@@ -137,7 +136,7 @@ activity, follow these steps:
     The code generates the following output:
 
     
-    ![Figure 1.33: Corrected text corpus](2_files/C13142_01_33.jpg)
+    ![Figure 1.33: Corrected text corpus](./images/C13142_01_33.jpg)
     :::
 
     ##### Figure 1.33: Corrected text corpus
@@ -155,7 +154,7 @@ activity, follow these steps:
     The code generates the following output:
 
     
-    ![Figure 1.34: List of corrected words ](2_files/C13142_01_34.jpg)
+    ![Figure 1.34: List of corrected words ](./images/C13142_01_34.jpg)
     :::
 
     ##### Figure 1.34: List of corrected words
@@ -174,7 +173,7 @@ activity, follow these steps:
 
     
     ![Figure 1.35: List of corrected words tagged with appropriate PoS
-    ](2_files/C13142_01_35.jpg)
+    ](./images/C13142_01_35.jpg)
     :::
 
     ##### Figure 1.35: List of corrected words tagged with appropriate PoS
@@ -198,7 +197,7 @@ activity, follow these steps:
 
     
     ![Figure 1.36: List excluding the stop words
-    ](2_files/C13142_01_36.jpg)
+    ](./images/C13142_01_36.jpg)
     :::
 
     ##### Figure 1.36: List excluding the stop words
@@ -223,7 +222,7 @@ activity, follow these steps:
     This code generates the following output:
 
     
-    ![Figure 1.37: List of stemmed words ](2_files/C13142_01_37.jpg)
+    ![Figure 1.37: List of stemmed words ](./images/C13142_01_37.jpg)
     :::
 
     ##### Figure 1.37: List of stemmed words
@@ -251,7 +250,7 @@ activity, follow these steps:
     This code generates the following output:
 
     
-    ![Figure 1.38: List of lemmatized words ](2_files/C13142_01_38.jpg)
+    ![Figure 1.38: List of lemmatized words ](./images/C13142_01_38.jpg)
     :::
 
     ##### Figure 1.38: List of lemmatized words
@@ -276,7 +275,7 @@ activity, follow these steps:
 
 
 
-![Figure 1.39: List of sentences ](2_files/C13142_01_39.jpg)
+![Figure 1.39: List of sentences ](./images/C13142_01_39.jpg)
 
 
 ##### Figure 1.39: List of sentences
@@ -331,7 +330,7 @@ to implement this activity:
     The code generates the following output:
 
     
-    ![Figure 2.54: List of PoS ](3_files/C13142_02_54.jpg)
+    ![Figure 2.54: List of PoS ](./images/C13142_02_54.jpg)
     :::
 
     ##### Figure 2.54: List of PoS
@@ -361,7 +360,7 @@ to implement this activity:
 
     
     ![Figure 2.55: Number of occurrences of each PoS in the sentence
-    ](3_files/C13142_02_55.jpg)
+    ](./images/C13142_02_55.jpg)
     :::
 
     ##### Figure 2.55: Number of occurrences of each PoS in the sentence
@@ -381,7 +380,7 @@ to implement this activity:
 
     
     ![Figure 2.56: Number of punctuation marks present in each sentence
-    ](3_files/C13142_02_56.jpg)
+    ](./images/C13142_02_56.jpg)
     :::
 
     ##### Figure 2.56: Number of punctuation marks present in each sentence
@@ -402,7 +401,7 @@ to implement this activity:
 
     
     ![Figure 2.57: Number of capitalized words in each sentence
-    ](3_files/C13142_02_57.jpg)
+    ](./images/C13142_02_57.jpg)
     :::
 
     ##### Figure 2.57: Number of capitalized words in each sentence
@@ -423,7 +422,7 @@ to implement this activity:
 
     
     ![Figure 2.58: Number of small lettered words in each sentence
-    ](3_files/C13142_02_58.jpg)
+    ](./images/C13142_02_58.jpg)
     :::
 
     ##### Figure 2.58: Number of small lettered words in each sentence
@@ -443,7 +442,7 @@ to implement this activity:
 
     
     ![Figure 2.59: Number of letters present in each sentence
-    ](3_files/C13142_02_59.jpg)
+    ](./images/C13142_02_59.jpg)
     :::
 
     ##### Figure 2.59: Number of letters present in each sentence
@@ -463,7 +462,7 @@ to implement this activity:
 
     
     ![Figure 2.60: Number of digits present in each sentence
-    ](3_files/C13142_02_60.jpg)
+    ](./images/C13142_02_60.jpg)
     :::
 
     ##### Figure 2.60: Number of digits present in each sentence
@@ -483,7 +482,7 @@ to implement this activity:
 
     
     ![Figure 2.61: Number of words present in each sentence
-    ](3_files/C13142_02_61.jpg)
+    ](./images/C13142_02_61.jpg)
     :::
 
     ##### Figure 2.61: Number of words present in each sentence
@@ -503,7 +502,7 @@ to implement this activity:
 
     
     ![Figure 2.62: Number of whitespaces present in each sentence
-    ](3_files/C13142_02_62.jpg)
+    ](./images/C13142_02_62.jpg)
     :::
 
     ##### Figure 2.62: Number of whitespaces present in each sentence
@@ -523,7 +522,7 @@ to implement this activity:
 
 
 ![Figure 2.63: DataFrame consisting of features we have created
-](3_files/C13142_02_63.jpg)
+](./images/C13142_02_63.jpg)
 
 
 ##### Figure 2.63: DataFrame consisting of features we have created
@@ -577,7 +576,7 @@ implement this activity:
 
     
     ![Figure 2.64: Storing the corpus in a DataFrame
-    ](3_files/C13142_02_64.jpg)
+    ](./images/C13142_02_64.jpg)
     :::
 
     ##### Figure 2.64: Storing the corpus in a DataFrame
@@ -612,7 +611,7 @@ implement this activity:
 
     
     ![Figure 2.65: BoW representation of the 20 most frequent terms
-    ](3_files/C13142_02_65.jpg)
+    ](./images/C13142_02_65.jpg)
     :::
 
     ##### Figure 2.65: BoW representation of the 20 most frequent terms
@@ -634,7 +633,7 @@ implement this activity:
 
     
     ![Figure 2.66: TF-IDF representation of the 20 most frequent terms
-    ](3_files/C13142_02_66.jpg)
+    ](./images/C13142_02_66.jpg)
     :::
 
     ##### Figure 2.66: TF-IDF representation of the 20 most frequent terms
@@ -655,7 +654,7 @@ implement this activity:
 
     
     ![Figure 2.67: Most informative term as per the BoW model
-    ](3_files/C13142_02_67.jpg)
+    ](./images/C13142_02_67.jpg)
     :::
 
     ##### Figure 2.67: Most informative term as per the BoW model
@@ -675,7 +674,7 @@ implement this activity:
 
     
     ![Figure 2.68: Most informative term as per the TF-IDF model
-    ](3_files/C13142_02_68.jpg)
+    ](./images/C13142_02_68.jpg)
     :::
 
     ##### Figure 2.68: Most informative term as per the TF-IDF model
@@ -694,7 +693,7 @@ implement this activity:
 
     
     ![Figure 2.69: Number of times the word \"line\" occurred in the
-    corpus ](3_files/C13142_02_69.jpg)
+    corpus ](./images/C13142_02_69.jpg)
     :::
 
     ##### Figure 2.69: Number of times the word \"line\" occurred in the corpus
@@ -714,7 +713,7 @@ implement this activity:
 
 
 ![Figure 2.70: Number of times the word \"edu\" occurred in the corpus
-](3_files/C13142_02_70.jpg)
+](./images/C13142_02_70.jpg)
 
 
 ##### Figure 2.70: Number of times the word \"edu\" occurred in the corpus
@@ -764,7 +763,7 @@ Activity 4: Text Visualization
     The code generates the following output:
 
     
-    ![Figure 2.71: Text corpus ](3_files/C13142_02_71.jpg)
+    ![Figure 2.71: Text corpus ](./images/C13142_02_71.jpg)
     :::
 
     ##### Figure 2.71: Text corpus
@@ -797,7 +796,7 @@ Activity 4: Text Visualization
 
     
     ![Figure 2.72: The 50 most frequent words
-    ](3_files/C13142_02_72.jpg)
+    ](./images/C13142_02_72.jpg)
     :::
 
     ##### Figure 2.72: The 50 most frequent words
@@ -828,7 +827,7 @@ Activity 4: Text Visualization
 
 
 ![Figure 2.73: Word cloud representation of the 50 most frequent words
-](3_files/C13142_02_73.jpg)
+](./images/C13142_02_73.jpg)
 
 
 ##### Figure 2.73: Word cloud representation of the 50 most frequent words
@@ -897,7 +896,7 @@ comments. Follow these steps to implement this activity:
 
     
     ![Figure 3.63: Text data and labels stored as a DataFrame
-    ](4_files/C13142_03_63.jpg)
+    ](./images/C13142_03_63.jpg)
     :::
 
     ##### Figure 3.63: Text data and labels stored as a DataFrame
@@ -979,7 +978,7 @@ comments. Follow these steps to implement this activity:
 
     
     ![Figure 3.64: TF-IDF representation of the DataFrame
-    ](4_files/C13142_03_64.jpg)
+    ](./images/C13142_03_64.jpg)
     :::
 
     ##### Figure 3.64: TF-IDF representation of the DataFrame
@@ -1012,7 +1011,7 @@ comments. Follow these steps to implement this activity:
 
     
     ![Figure 3.65: Performance of the logistic regression model
-    ](4_files/C13142_03_65.jpg)
+    ](./images/C13142_03_65.jpg)
     :::
 
     ##### Figure 3.65: Performance of the logistic regression model
@@ -1036,7 +1035,7 @@ comments. Follow these steps to implement this activity:
 
     
     ![Figure 3.66: Performance of the random forest model
-    ](4_files/C13142_03_66.jpg)
+    ](./images/C13142_03_66.jpg)
     :::
 
     ##### Figure 3.66: Performance of the random forest model
@@ -1057,7 +1056,7 @@ comments. Follow these steps to implement this activity:
 
     
     ![Figure 3.67: Words and their importance
-    ](4_files/C13142_03_67.jpg)
+    ](./images/C13142_03_67.jpg)
     :::
 
     ##### Figure 3.67: Words and their importance
@@ -1081,7 +1080,7 @@ comments. Follow these steps to implement this activity:
 
     
     ![Figure 3.68: Performance of the XGBoost model
-    ](4_files/C13142_03_68.jpg)
+    ](./images/C13142_03_68.jpg)
     :::
 
     ##### Figure 3.68: Performance of the XGBoost model
@@ -1102,7 +1101,7 @@ comments. Follow these steps to implement this activity:
 
 
 
-![Figure 3.69: Words and their importance ](4_files/C13142_03_69.jpg)
+![Figure 3.69: Words and their importance ](./images/C13142_03_69.jpg)
 
 
 ##### Figure 3.69: Words and their importance
@@ -1156,7 +1155,7 @@ these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![Figure 4.41: List of h3 tag headings ](5_files/C13142_04_41.jpg)
+    ![Figure 4.41: List of h3 tag headings ](./images/C13142_04_41.jpg)
     :::
 
     ##### Figure 4.41: List of h3 tag headings
@@ -1180,7 +1179,7 @@ these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![Figure 4.42: List of Tagore\'s work ](5_files/C13142_04_42.jpg)
+    ![Figure 4.42: List of Tagore\'s work ](./images/C13142_04_42.jpg)
     :::
 
     ##### Figure 4.42: List of Tagore\'s work
@@ -1200,7 +1199,7 @@ these steps to implement this activity:
 
 
 ![Figure 4.43: List of universities named after Rabindranath Tagore
-](5_files/C13142_04_43.jpg)
+](./images/C13142_04_43.jpg)
 
 
 ##### Figure 4.43: List of universities named after Rabindranath Tagore
@@ -1232,7 +1231,7 @@ things. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![Figure 4.44: HTTP status code ](5_files/C13142_04_44.jpg)
+    ![Figure 4.44: HTTP status code ](./images/C13142_04_44.jpg)
     :::
 
     ##### Figure 4.44: HTTP status code
@@ -1250,7 +1249,7 @@ things. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![Figure 4.45: Text content ](5_files/C13142_04_45.jpg)
+    ![Figure 4.45: Text content ](./images/C13142_04_45.jpg)
     :::
 
     ##### Figure 4.45: Text content
@@ -1275,7 +1274,7 @@ things. Follow these steps to implement this activity:
 
     
     ![Figure 4.46: Content of the fetched file
-    ](5_files/C13142_04_46.jpg)
+    ](./images/C13142_04_46.jpg)
     :::
 
     ##### Figure 4.46: Content of the fetched file
@@ -1297,7 +1296,7 @@ things. Follow these steps to implement this activity:
 
     
     ![Figure 4.47: List of questions on the FAQ page
-    ](5_files/C13142_04_47.jpg)
+    ](./images/C13142_04_47.jpg)
     :::
 
     ##### Figure 4.47: List of questions on the FAQ page
@@ -1317,7 +1316,7 @@ things. Follow these steps to implement this activity:
 
     
     ![Figure 4.48: List of answers on the FAQ page
-    ](5_files/C13142_04_48.jpg)
+    ](./images/C13142_04_48.jpg)
     :::
 
     ##### Figure 4.48: List of answers on the FAQ page
@@ -1337,7 +1336,7 @@ things. Follow these steps to implement this activity:
 
     
     ![Figure 4.49: DataFrame of the question and answers
-    ](5_files/C13142_04_49.jpg)
+    ](./images/C13142_04_49.jpg)
     :::
 
     ##### Figure 4.49: DataFrame of the question and answers
@@ -1359,7 +1358,7 @@ things. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![Figure 4.50: Extracted email address ](5_files/C13142_04_50.jpg)
+    ![Figure 4.50: Extracted email address ](./images/C13142_04_50.jpg)
     :::
 
     ##### Figure 4.50: Extracted email address
@@ -1378,7 +1377,7 @@ things. Follow these steps to implement this activity:
 
 
 
-![Figure 4.51: Extracted phone numbers ](5_files/C13142_04_51.jpg)
+![Figure 4.51: Extracted phone numbers ](./images/C13142_04_51.jpg)
 
 
 ##### Figure 4.51: Extracted phone numbers
@@ -1412,7 +1411,7 @@ Activity 8: Dealing with Online JSON Files
     The preceding code generates the following output:
 
     
-    ![Figure 4.52: HTTP status code ](5_files/C13142_04_52.jpg)
+    ![Figure 4.52: HTTP status code ](./images/C13142_04_52.jpg)
     :::
 
     ##### Figure 4.52: HTTP status code
@@ -1437,7 +1436,7 @@ Activity 8: Dealing with Online JSON Files
 
     
     ![Figure 4.53: The DataFrame of the fetched file
-    ](5_files/C13142_04_53.jpg)
+    ](./images/C13142_04_53.jpg)
     :::
 
     ##### Figure 4.53: The DataFrame of the fetched file
@@ -1459,7 +1458,7 @@ Activity 8: Dealing with Online JSON Files
 
     
     ![Figure 4.54: DataFrame showing the new body\_english column
-    ](5_files/C13142_04_54.jpg)
+    ](./images/C13142_04_54.jpg)
     :::
 
     ##### Figure 4.54: DataFrame showing the new body\_english column
@@ -1479,7 +1478,7 @@ Activity 8: Dealing with Online JSON Files
 
 
 
-![Figure 4.55: Sentiment scores of tweets ](5_files/C13142_04_55.jpg)
+![Figure 4.55: Sentiment scores of tweets ](./images/C13142_04_55.jpg)
 
 
 ##### Figure 4.55: Sentiment scores of tweets
@@ -1552,7 +1551,7 @@ to implement this activity:
 
     
     ![Figure 4.56: The Twitter API called with the \#WorldWaterDay
-    search query ](5_files/C13142_04_56.jpg)
+    search query ](./images/C13142_04_56.jpg)
     :::
 
     ##### Figure 4.56: The Twitter API called with the \#WorldWaterDay search query
@@ -1574,7 +1573,7 @@ to implement this activity:
 
     
     ![Figure 4.57: Twitter status objects converted to JSON objects
-    ](5_files/C13142_04_57.jpg)
+    ](./images/C13142_04_57.jpg)
     :::
 
     ##### Figure 4.57: Twitter status objects converted to JSON objects
@@ -1592,7 +1591,7 @@ to implement this activity:
 
     
     ![Figure 4.58: Text content of the JSON file
-    ](5_files/C13142_04_58.jpg)
+    ](./images/C13142_04_58.jpg)
     :::
 
     ##### Figure 4.58: Text content of the JSON file
@@ -1618,7 +1617,7 @@ to implement this activity:
 
     
     ![Figure 4.59: DataFrame with the text of tweets
-    ](5_files/C13142_04_59.jpg)
+    ](./images/C13142_04_59.jpg)
     :::
 
     ##### Figure 4.59: DataFrame with the text of tweets
@@ -1639,7 +1638,7 @@ to implement this activity:
 
     
     ![Figure 4.60: Language of tweets detected
-    ](5_files/C13142_04_60.jpg)
+    ](./images/C13142_04_60.jpg)
     :::
 
     ##### Figure 4.60: Language of tweets detected
@@ -1657,7 +1656,7 @@ to implement this activity:
 
     
     ![Figure 4.61: Filtered non-English tweets
-    ](5_files/C13142_04_61.jpg)
+    ](./images/C13142_04_61.jpg)
     :::
 
     ##### Figure 4.61: Filtered non-English tweets
@@ -1676,7 +1675,7 @@ to implement this activity:
     The preceding code generates the following output:
 
     
-    ![Figure 4.62: Shape of the DataFrame ](5_files/C13142_04_62.jpg)
+    ![Figure 4.62: Shape of the DataFrame ](./images/C13142_04_62.jpg)
     :::
 
     ##### Figure 4.62: Shape of the DataFrame
@@ -1697,7 +1696,7 @@ to implement this activity:
 
     
     ![Figure 4.63: Sentiment scores of English Tweets
-    ](5_files/C13142_04_63.jpg)
+    ](./images/C13142_04_63.jpg)
     :::
 
     ##### Figure 4.63: Sentiment scores of English Tweets
@@ -1728,7 +1727,7 @@ to implement this activity:
 
 
 
-![Figure 4.64: Word cloud of the tweets ](5_files/C13142_04_64.jpg)
+![Figure 4.64: Word cloud of the tweets ](./images/C13142_04_64.jpg)
 
 
 ##### Figure 4.64: Word cloud of the tweets
@@ -1886,7 +1885,7 @@ summarizer. Follow these steps to implement this activity:
 
     
     ![Figure 6.16: This figure shows the original Why Click article, as
-    shown in the Jupyter notebook ](7_files/C13142_06_16.jpg)
+    shown in the Jupyter notebook ](./images/C13142_06_16.jpg)
     :::
 
     ##### Figure 6.16: This figure shows the original Why Click article, as shown in the Jupyter notebook
@@ -1910,7 +1909,7 @@ summarizer. Follow these steps to implement this activity:
 
     
     ![Figure 6.17: This figure shows the sentences from the Why Click
-    article ](7_files/C13142_06_17.jpg)
+    article ](./images/C13142_06_17.jpg)
     :::
 
     ##### Figure 6.17: This figure shows the sentences from the Why Click article
@@ -1931,7 +1930,7 @@ summarizer. Follow these steps to implement this activity:
 
     
     ![Figure 6.18: The summary of the Why Click article
-    ](7_files/C13142_06_18.jpg)
+    ](./images/C13142_06_18.jpg)
     :::
 
     ##### Figure 6.18: The summary of the Why Click article
@@ -1952,7 +1951,7 @@ summarizer. Follow these steps to implement this activity:
 
     
     ![Figure 6.19: This figure shows the summary of the Why Click page
-    when using summarize with split=True ](7_files/C13142_06_19.jpg)
+    when using summarize with split=True ](./images/C13142_06_19.jpg)
     :::
 
     ##### Figure 6.19: This figure shows the summary of the Why Click page when using summarize with split=True
@@ -1974,7 +1973,7 @@ summarizer. Follow these steps to implement this activity:
 
     
     ![Figure 6.20: The summary of the Why Click page when using
-    summarize with ratio=0.1 ](7_files/C13142_06_20.jpg)
+    summarize with ratio=0.1 ](./images/C13142_06_20.jpg)
     :::
 
     ##### Figure 6.20: The summary of the Why Click page when using summarize with ratio=0.1
@@ -1995,7 +1994,7 @@ summarizer. Follow these steps to implement this activity:
 
 
 ![Figure 6.21: This figure shows the summary of the Why Click page when
-using summarize with word\_count=200 ](7_files/C13142_06_21.jpg)
+using summarize with word\_count=200 ](./images/C13142_06_21.jpg)
 
 
 ##### Figure 6.21: This figure shows the summary of the Why Click page when using summarize with word\_count=200
@@ -2173,7 +2172,7 @@ these steps to implement this activity:
 
     
     ![Figure 8.16: Results of first 10 tweets
-    ](9_files/C13142_08_16.jpg)
+    ](./images/C13142_08_16.jpg)
     :::
 
     ##### Figure 8.16: Results of first 10 tweets
@@ -2211,7 +2210,7 @@ The expected output for first ten tweets should be as follows:
 
 
 ![Figure 8.17: First 10 tweets along with Twitter handles
-](9_files/C13142_08_17.jpg)
+](./images/C13142_08_17.jpg)
 
 
 ##### Figure 8.17: First 10 tweets along with Twitter handles
@@ -2245,7 +2244,7 @@ The expected output for first ten tweets should be as follows:
 
     
     ![Figure 8.18 First 10 tweets after removing the Twitter handles
-    ](9_files/C13142_08_18.jpg)
+    ](./images/C13142_08_18.jpg)
     :::
 
     ##### Figure 8.18 First 10 tweets after removing the Twitter handles
@@ -2304,7 +2303,7 @@ The expected output for first ten tweets should be as follows:
 
     
     ![Figure 8.19 First four rows of the sentiment DataFrame
-    ](9_files/C13142_08_19.jpg)
+    ](./images/C13142_08_19.jpg)
     :::
 
     ##### Figure 8.19 First four rows of the sentiment DataFrame
@@ -2336,7 +2335,7 @@ The expected output for first ten tweets should be as follows:
 
     
     ![Figure 8.20 Tweets DataFrame with sentiment scores added
-    ](9_files/C13142_08_20.jpg)
+    ](./images/C13142_08_20.jpg)
     :::
 
     ##### Figure 8.20 Tweets DataFrame with sentiment scores added

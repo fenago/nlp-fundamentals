@@ -3,13 +3,12 @@
 ===============================
 
 
-:::
 
 
 Learning Objectives
 -------------------
 
-By the end of this chapter, you will be able to:
+By the end of this lab, you will be able to:
 
 -   Describe the different types of machine learning algorithms
 -   Differentiate between unsupervised and supervised learning
@@ -22,7 +21,7 @@ By the end of this chapter, you will be able to:
 -   Build pipelines for streamlining NLP projects
 -   Save and load models
 
-In this chapter, you will learn about the various types of machine
+In this lab, you will learn about the various types of machine
 learning algorithms and develop classifiers with their help.
 
 
@@ -30,20 +29,20 @@ Introduction
 ============
 
 
-In the previous chapter, you learned about various extraction methods,
+In the previous lab, you learned about various extraction methods,
 such as tokenization, stemming, lemmatization, and stop-word removal,
 which are used to extract features from unstructured text. We also
 discussed Bag-of-Words and Term Frequency-Inverse Document Frequency
 (TF-IDF).
 
-In this chapter, you will learn how to use these extracted features to
+In this lab, you will learn how to use these extracted features to
 develop machine learning models. These models are capable of solving
 real-world problems such as detecting whether sentiments carried by
 texts are positive or negative, predicting whether emails are spam or
 not, and so on. We will also cover concepts such as supervised and
 unsupervised learning, classifications and regressions, the sampling and
 splitting of data, along with evaluating the performance of a model in
-depth. This chapter also discusses how to load and save these models for
+depth. This lab also discusses how to load and save these models for
 future use.
 
 
@@ -101,7 +100,7 @@ association:
     particular supermarket, customers who tend to buy milk and bread,
     generally tend to buy cheese. This information can then be used to
     design supermarket layouts. The detailed theoretical explanations of
-    these algorithms are beyond the scope of this chapter.
+    these algorithms are beyond the scope of this lab.
 
 Now that you understand what unsupervised learning is and its types, in
 the next section, you will learn about different types of clustering.
@@ -219,7 +218,7 @@ exercise:
 
     
     ![Figure 3.1: The first five news articles
-    ](3_files/C13142_03_01.jpg)
+    ](./images/C13142_03_01.jpg)
     :::
 
     ##### Figure 3.1: The first five news articles
@@ -238,7 +237,7 @@ exercise:
 
     
     ![Figure 3.2: Enclosed target corresponding to news data
-    ](3_files/C13142_03_02.jpg)
+    ](./images/C13142_03_02.jpg)
     :::
 
     ##### Figure 3.2: Enclosed target corresponding to news data
@@ -260,7 +259,7 @@ exercise:
 
     
     ![Figure 3.3: Target names corresponding to news data
-    ](3_files/C13142_03_03.jpg)
+    ](./images/C13142_03_03.jpg)
     :::
 
     ##### Figure 3.3: Target names corresponding to news data
@@ -280,7 +279,7 @@ exercise:
 
     
     ![Figure 3.4: Text corpus of news data corresponding to the
-    categories in a dataframe ](3_files/C13142_03_04.jpg)
+    categories in a dataframe ](./images/C13142_03_04.jpg)
     :::
 
     ##### Figure 3.4: Text corpus of news data corresponding to the categories in a dataframe
@@ -299,7 +298,7 @@ exercise:
 
     
     ![Figure 3.5: The number of news articles present in each category
-    ](3_files/C13142_03_05.jpg)
+    ](./images/C13142_03_05.jpg)
     :::
 
     ##### Figure 3.5: The number of news articles present in each category
@@ -338,7 +337,7 @@ exercise:
 
     
     ![Figure 3.6: TF-IDF representation as a DataFrame
-    ](3_files/C13142_03_06.jpg)
+    ](./images/C13142_03_06.jpg)
     :::
 
     ##### Figure 3.6: TF-IDF representation as a DataFrame
@@ -384,7 +383,7 @@ exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.7: Truncated dendrogram ](3_files/C13142_03_07.jpg)
+    ![Figure 3.7: Truncated dendrogram ](./images/C13142_03_07.jpg)
     :::
 
     ##### Figure 3.7: Truncated dendrogram
@@ -404,7 +403,7 @@ exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.8: Predicted cluster labels ](3_files/C13142_03_08.jpg)
+    ![Figure 3.8: Predicted cluster labels ](./images/C13142_03_08.jpg)
     :::
 
     ##### Figure 3.8: Predicted cluster labels
@@ -428,7 +427,7 @@ exercise:
 
 
 ![Figure 3.9: Crosstab between actual categories and clusters obtained
-](3_files/C13142_03_09.jpg)
+](./images/C13142_03_09.jpg)
 
 
 ##### Figure 3.9: Crosstab between actual categories and clusters obtained
@@ -569,7 +568,7 @@ Follow these steps to implement this exercise:
 
     
     ![Figure 3.10: TF-IDF representation as a DataFrame
-    ](3_files/C13142_03_10.jpg)
+    ](./images/C13142_03_10.jpg)
     :::
 
     ##### Figure 3.10: TF-IDF representation as a DataFrame
@@ -603,7 +602,7 @@ Follow these steps to implement this exercise:
 
     
     ![Figure 3.11: Crosstab between actual categories and obtained
-    clusters ](3_files/C13142_03_11.jpg)
+    clusters ](./images/C13142_03_11.jpg)
     :::
 
     ##### Figure 3.11: Crosstab between actual categories and obtained clusters
@@ -639,7 +638,7 @@ Follow these steps to implement this exercise:
 
 
 ![Figure 3.12: Optimal clusters represented in a graph using the elbow
-method ](3_files/C13142_03_12.jpg)
+method ](./images/C13142_03_12.jpg)
 
 
 ##### Figure 3.12: Optimal clusters represented in a graph using the elbow method
@@ -718,7 +717,7 @@ shown here:
 
 
 
-![](3_files/C13142_03_12a.jpg)
+![](./images/C13142_03_12a.jpg)
 
 
 In the preceding formula, A and B are events and P(B) is not equal to 0.
@@ -803,7 +802,7 @@ implement this exercise:
 
     
     ![Figure 3.13: Data stored in a DataFrame
-    ](3_files/C13142_03_13.jpg)
+    ](./images/C13142_03_13.jpg)
     :::
 
     ##### Figure 3.13: Data stored in a DataFrame
@@ -839,8 +838,7 @@ implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.14: Review texts before and after cleaning, with their
-    overall scores ](3_files/C13142_03_14.jpg)
+    ![Figure 3.14: Review texts before and after cleaning, with their](./images/C13142_03_14.jpg)
     :::
 
     ##### Figure 3.14: Review texts before and after cleaning, with their overall scores
@@ -862,7 +860,7 @@ implement this exercise:
 
     
     ![Figure 3.15: A TF-IDF representation as a DataFrame
-    ](3_files/C13142_03_15.jpg)
+    ](./images/C13142_03_15.jpg)
     :::
 
     ##### Figure 3.15: A TF-IDF representation as a DataFrame
@@ -884,7 +882,7 @@ implement this exercise:
 
     
     ![Figure 3.16: The number of occurrences of each target value
-    ](3_files/C13142_03_16.jpg)
+    ](./images/C13142_03_16.jpg)
     :::
 
     ##### Figure 3.16: The number of occurrences of each target value
@@ -909,7 +907,7 @@ implement this exercise:
 
     
     ![Figure 3.17: Output of logistic regression
-    ](3_files/C13142_03_17.jpg)
+    ](./images/C13142_03_17.jpg)
     :::
 
     ##### Figure 3.17: Output of logistic regression
@@ -931,7 +929,7 @@ implement this exercise:
 
     
     ![Figure 3.18: Crosstab between actual target values and predicted
-    labels ](3_files/C13142_03_18.jpg)
+    labels ](./images/C13142_03_18.jpg)
     :::
 
     ##### Figure 3.18: Crosstab between actual target values and predicted labels
@@ -956,7 +954,7 @@ implement this exercise:
 
     
     ![Figure 3.19: Predicted values using a Naive Bayes model
-    ](3_files/C13142_03_19.jpg)
+    ](./images/C13142_03_19.jpg)
     :::
 
     ##### Figure 3.19: Predicted values using a Naive Bayes model
@@ -978,7 +976,7 @@ implement this exercise:
 
     
     ![Figure 3.20: Crosstab between actual target values and predicted
-    labels ](3_files/C13142_03_20.jpg)
+    labels ](./images/C13142_03_20.jpg)
     :::
 
     ##### Figure 3.20: Crosstab between actual target values and predicted labels
@@ -1006,7 +1004,7 @@ implement this exercise:
 
 
 ![Figure 3.21: Crosstab between actual target values and predicted
-labels by KNN ](3_files/C13142_03_21.jpg)
+labels by KNN ](./images/C13142_03_21.jpg)
 
 
 ##### Figure 3.21: Crosstab between actual target values and predicted labels by KNN
@@ -1061,7 +1059,7 @@ The following formula represents the linear regression equation:
 
 
 
-![](3_files/C13142_03_21a.jpg)
+![](./images/C13142_03_21a.jpg)
 
 
 Here, y is termed a dependent variable (output); it is continuous. X is
@@ -1117,7 +1115,7 @@ implement this exercise:
 
     
     ![Figure 3.22: Reviews of musical instruments stored as a DataFrame
-    ](3_files/C13142_03_22.jpg)
+    ](./images/C13142_03_22.jpg)
     :::
 
     ##### Figure 3.22: Reviews of musical instruments stored as a DataFrame
@@ -1145,7 +1143,7 @@ implement this exercise:
 
     
     ![Figure 3.23: Review texts before and after cleaning along with
-    their overall scores ](3_files/C13142_03_23.jpg)
+    their overall scores ](./images/C13142_03_23.jpg)
     :::
 
     ##### Figure 3.23: Review texts before and after cleaning along with their overall scores
@@ -1168,7 +1166,7 @@ implement this exercise:
 
     
     ![Figure 3.24: TF-IDF representation as a DataFrame
-    ](3_files/C13142_03_24.jpg)
+    ](./images/C13142_03_24.jpg)
     :::
 
     ##### Figure 3.24: TF-IDF representation as a DataFrame
@@ -1191,7 +1189,7 @@ implement this exercise:
 
     
     ![Figure 3.25: Coefficients of the linear regression model
-    ](3_files/C13142_03_25.jpg)
+    ](./images/C13142_03_25.jpg)
     :::
 
     ##### Figure 3.25: Coefficients of the linear regression model
@@ -1210,7 +1208,7 @@ implement this exercise:
 
     
     ![Figure 3.26: Intercept of the linear regression model
-    ](3_files/C13142_03_26.jpg)
+    ](./images/C13142_03_26.jpg)
     :::
 
     ##### Figure 3.26: Intercept of the linear regression model
@@ -1227,7 +1225,7 @@ implement this exercise:
 
     
     ![Figure 3.27: Predictions of the linear regression model
-    ](3_files/C13142_03_27.jpg)
+    ](./images/C13142_03_27.jpg)
     :::
 
     ##### Figure 3.27: Predictions of the linear regression model
@@ -1250,7 +1248,7 @@ implement this exercise:
 
 
 ![Figure 3.28: Actual scores and predictions of the linear regression
-model ](3_files/C13142_03_28.jpg)
+model ](./images/C13142_03_28.jpg)
 
 
 ##### Figure 3.28: Actual scores and predictions of the linear regression model
@@ -1283,7 +1281,7 @@ department. The following figure depicts a decision tree:
 
 
 
-![Figure 3.29: Decision tree ](3_files/C13142_03_29.jpg)
+![Figure 3.29: Decision tree ](./images/C13142_03_29.jpg)
 
 
 ##### Figure 3.29: Decision tree
@@ -1403,7 +1401,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.30: Storing reviews as a DdataFrame
-    ](3_files/C13142_03_30.jpg)
+    ](./images/C13142_03_30.jpg)
     :::
 
     ##### Figure 3.30: Storing reviews as a DdataFrame
@@ -1439,7 +1437,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.31: Review text before and after cleaning, along with
-    overall scores ](3_files/C13142_03_31.jpg)
+    overall scores ](./images/C13142_03_31.jpg)
     :::
 
     ##### Figure 3.31: Review text before and after cleaning, along with overall scores
@@ -1462,7 +1460,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.32: TF-IDF representation as a DataFrame
-    ](3_files/C13142_03_32.jpg)
+    ](./images/C13142_03_32.jpg)
     :::
 
     ##### Figure 3.32: TF-IDF representation as a DataFrame
@@ -1483,7 +1481,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.33: Number of times each value of the target occurs
-    ](3_files/C13142_03_33.jpg)
+    ](./images/C13142_03_33.jpg)
     :::
 
     ##### Figure 3.33: Number of times each value of the target occurs
@@ -1517,7 +1515,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.34: Crosstab between actual target values and predicted
-    labels ](3_files/C13142_03_34.jpg)
+    labels ](./images/C13142_03_34.jpg)
     :::
 
     ##### Figure 3.34: Crosstab between actual target values and predicted labels
@@ -1547,7 +1545,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.35: Overall scores with predicted values
-    ](3_files/C13142_03_35.jpg)
+    ](./images/C13142_03_35.jpg)
     :::
 
     ##### Figure 3.35: Overall scores with predicted values
@@ -1588,7 +1586,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.36: Crosstab between actual target values and predicted
-    labels ](3_files/C13142_03_36.jpg)
+    labels ](./images/C13142_03_36.jpg)
     :::
 
     ##### Figure 3.36: Crosstab between actual target values and predicted labels
@@ -1617,7 +1615,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.37: Crosstab between actual target values and predicted
-    labels using GBM ](3_files/C13142_03_37.jpg)
+    labels using GBM ](./images/C13142_03_37.jpg)
     :::
 
     ##### Figure 3.37: Crosstab between actual target values and predicted labels using GBM
@@ -1647,7 +1645,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.38: Crosstab between actual target values and predicted
-    labels using XGBoost ](3_files/C13142_03_38.jpg)
+    labels using XGBoost ](./images/C13142_03_38.jpg)
     :::
 
     ##### Figure 3.38: Crosstab between actual target values and predicted labels using XGBoost
@@ -1689,7 +1687,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.39: Actual overall score and predicted values using a
-    random forest regressor ](3_files/C13142_03_39.jpg)
+    random forest regressor ](./images/C13142_03_39.jpg)
     :::
 
     ##### Figure 3.39: Actual overall score and predicted values using a random forest regressor
@@ -1715,7 +1713,7 @@ steps to implement this exercise:
 
     
     ![Figure 3.40: Actual overall score and predicted values using a
-    gradient boosting regressor ](3_files/C13142_03_40.jpg)
+    gradient boosting regressor ](./images/C13142_03_40.jpg)
     :::
 
     ##### Figure 3.40: Actual overall score and predicted values using a gradient boosting regressor
@@ -1742,7 +1740,7 @@ steps to implement this exercise:
 
 
 ![Figure 3.41: Actual overall score and predicted values using an
-XGBoost regressor ](3_files/C13142_03_41_new.jpg)
+XGBoost regressor ](./images/C13142_03_41_new.jpg)
 
 
 ##### Figure 3.41: Actual overall score and predicted values using an XGBoost regressor
@@ -1826,7 +1824,7 @@ multi-stage sampling. Follow these steps to implement this exercise:
 
     
     ![Figure 3.42: Online retail data as a DataFrame
-    ](3_files/C13142_03_42.jpg)
+    ](./images/C13142_03_42.jpg)
     :::
 
     ##### Figure 3.42: Online retail data as a DataFrame
@@ -1846,7 +1844,7 @@ multi-stage sampling. Follow these steps to implement this exercise:
 
     
     ![Figure 3.43: Random sample extracted from online retail data
-    ](3_files/C13142_03_43.jpg)
+    ](./images/C13142_03_43.jpg)
     :::
 
     ##### Figure 3.43: Random sample extracted from online retail data
@@ -1867,7 +1865,7 @@ multi-stage sampling. Follow these steps to implement this exercise:
 
     
     ![Figure 3.44: The shape of the entire data
-    ](3_files/C13142_03_44.jpg)
+    ](./images/C13142_03_44.jpg)
     :::
 
     ##### Figure 3.44: The shape of the entire data
@@ -1885,7 +1883,7 @@ multi-stage sampling. Follow these steps to implement this exercise:
 
     
     ![Figure 3.45: The shape of the sample extracted
-    ](3_files/C13142_03_45.jpg)
+    ](./images/C13142_03_45.jpg)
     :::
 
     ##### Figure 3.45: The shape of the sample extracted
@@ -1911,7 +1909,7 @@ multi-stage sampling. Follow these steps to implement this exercise:
 
 
 ![Figure 3.46: Multi-stage sample extracted from online retail data
-](3_files/C13142_03_46.jpg)
+](./images/C13142_03_46.jpg)
 
 
 ##### Figure 3.46: Multi-stage sample extracted from online retail data
@@ -1934,7 +1932,7 @@ Feature Extraction
 
 When dealing with text data, features denote its different attributes.
 Generally, they are numeric representations of the text. As discussed in
-*Chapter 2- Extraction Methods from Unstructured text*, TF-IDF
+*Lab 2- Extraction Methods from Unstructured text*, TF-IDF
 representations of texts are one of the most popular ways of extracting
 features from them.
 
@@ -2743,7 +2741,7 @@ from the disk. Follow these steps to implement this exercise:
 
     
     ![Figure 3.60: TF-IDF representation as a matrix
-    ](6_files/C13142_03_60.jpg)
+    ](./images/C13142_03_60.jpg)
     :::
 
     ##### Figure 3.60: TF-IDF representation as a matrix
@@ -2772,7 +2770,7 @@ from the disk. Follow these steps to implement this exercise:
 
     
     ![Figure 3.61: TF-IDF representation as a matrix
-    ](6_files/C13142_03_61.jpg)
+    ](./images/C13142_03_61.jpg)
     :::
 
     ##### Figure 3.61: TF-IDF representation as a matrix
@@ -2802,7 +2800,7 @@ from the disk. Follow these steps to implement this exercise:
 
 
 ![Figure 3.62: TF-IDF representation as matrix
-](6_files/C13142_03_62.jpg)
+](./images/C13142_03_62.jpg)
 
 
 ##### Figure 3.62: TF-IDF representation as matrix
@@ -2814,21 +2812,21 @@ Summary
 =======
 
 
-In this chapter, you learned about different types of machine learning
+In this lab, you learned about different types of machine learning
 techniques, such as supervised and unsupervised learning. Various kinds
 of supervised learning algorithms, such as K-Nearest Neighbor and a
 Naive Bayes classifier have been explored. Moreover, different kinds of
 sampling techniques for splitting a given dataset into training and
-validation sets have also been elucidated with examples. This chapter
+validation sets have also been elucidated with examples. This lab
 focused mainly on developing machine learning models using features
 extracted from text data.
 
-As you progressed through the chapter, you were introduced to various
+As you progressed through the lab, you were introduced to various
 metrics used for evaluating the performance of these models. Finally, we
 covered the process of saving a model on the hard disk and loading it
 back to the memory for future use.
 
-In the next chapter, you will learn several techniques with which data
+In the next lab, you will learn several techniques with which data
 can be collected from various sources.
 
 
