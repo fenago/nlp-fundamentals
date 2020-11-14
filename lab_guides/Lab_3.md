@@ -275,8 +275,7 @@ exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.4: Text corpus of news data corresponding to the
-    categories in a dataframe ](./images/C13142_03_04.jpg)
+    ![](./images/C13142_03_04.jpg)
 
 
 
@@ -594,8 +593,7 @@ Follow these steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.11: Crosstab between actual categories and obtained
-    clusters ](./images/C13142_03_11.jpg)
+    ![](./images/C13142_03_11.jpg)
 
 
 
@@ -917,8 +915,7 @@ implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.18: Crosstab between actual target values and predicted
-    labels ](./images/C13142_03_18.jpg)
+    ![](./images/C13142_03_18.jpg)
 
 
 
@@ -963,8 +960,7 @@ implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.20: Crosstab between actual target values and predicted
-    labels ](./images/C13142_03_20.jpg)
+    ![](./images/C13142_03_20.jpg)
 
 
 
@@ -1417,8 +1413,7 @@ steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.31: Review text before and after cleaning, along with
-    overall scores ](./images/C13142_03_31.jpg)
+   ![](./images/C13142_03_31.jpg)
 
 
 
@@ -1493,8 +1488,7 @@ steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.34: Crosstab between actual target values and predicted
-    labels ](./images/C13142_03_34.jpg)
+    ![](./images/C13142_03_34.jpg)
 
 
 
@@ -1563,8 +1557,7 @@ steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.36: Crosstab between actual target values and predicted
-    labels ](./images/C13142_03_36.jpg)
+    ![](./images/C13142_03_36.jpg)
 
 
 
@@ -1592,8 +1585,7 @@ steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.37: Crosstab between actual target values and predicted
-    labels using GBM ](./images/C13142_03_37.jpg)
+    ![](./images/C13142_03_37.jpg)
 
 
 
@@ -1622,8 +1614,7 @@ steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.38: Crosstab between actual target values and predicted
-    labels using XGBoost ](./images/C13142_03_38.jpg)
+    ![](./images/C13142_03_38.jpg)
 
 
 
@@ -1664,8 +1655,7 @@ steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.39: Actual overall score and predicted values using a
-    random forest regressor ](./images/C13142_03_39.jpg)
+    ![](./images/C13142_03_39.jpg)
 
 
 
@@ -1690,8 +1680,7 @@ steps to implement this exercise:
     The preceding code generates the following output:
 
     
-    ![Figure 3.40: Actual overall score and predicted values using a
-    gradient boosting regressor ](./images/C13142_03_40.jpg)
+    ![](./images/C13142_03_40.jpg)
 
 
 

@@ -117,8 +117,7 @@ activity, follow these steps:
     The code generates the following output:
 
     
-    ![Figure 1.32: Words that have been
-    corrected](./images/C13142_01_32.jpg)
+    ![](./images/C13142_01_32.jpg)
 
 
 
@@ -676,8 +675,7 @@ implement this activity:
     The code generates the following code:
 
     
-    ![Figure 2.69: Number of times the word \"line\" occurred in the
-    corpus ](./images/C13142_02_69.jpg)
+    ![](./images/C13142_02_69.jpg)
 
 
 
@@ -1518,8 +1516,7 @@ to implement this activity:
     The preceding code generates the following output:
 
     
-    ![Figure 4.56: The Twitter API called with the \#WorldWaterDay
-    search query ](./images/C13142_04_56.jpg)
+    ![](./images/C13142_04_56.jpg)
 
 
 
@@ -1846,8 +1843,7 @@ summarizer. Follow these steps to implement this activity:
     The code generates the following output:
 
     
-    ![Figure 6.16: This figure shows the original Why Click article, as
-    shown in the Jupyter notebook ](./images/C13142_06_16.jpg)
+    ![](./images/C13142_06_16.jpg)
 
 
 
@@ -1870,8 +1866,7 @@ summarizer. Follow these steps to implement this activity:
     The code generates the following output:
 
     
-    ![Figure 6.17: This figure shows the sentences from the Why Click
-    article ](./images/C13142_06_17.jpg)
+    ![](./images/C13142_06_17.jpg)
 
 
 
