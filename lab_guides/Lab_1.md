@@ -542,7 +542,7 @@ exercise:
 
 
     ```
-    stop_words = stopwords.words('English')
+    stop_words = stopwords.words('english')
     ```
 
 

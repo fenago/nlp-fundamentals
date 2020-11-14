@@ -182,7 +182,7 @@ activity, follow these steps:
 
 
     ```
-    stop_words = stopwords.words('English')
+    stop_words = stopwords.words('english')
     corrected_word_list_without_stopwords = []
     for wd in corrected_word_list:
         if wd not in stop_words:
