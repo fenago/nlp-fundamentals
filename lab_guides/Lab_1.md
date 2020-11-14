@@ -1314,7 +1314,8 @@ to get some meaning out of the text.
 ### Note
 
 The `file.txt` file can be found at this location:
-<https://bit.ly/2V3ROAa>.
+
+`/home/jovyan/work/nlp-fundamentals/Lesson1/data_ch1`
 
 Follow these steps to implement this activity:
 

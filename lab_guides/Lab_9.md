@@ -2105,8 +2105,8 @@ these steps to implement this activity:
 
     ### Note
 
-    The Tweets.csv dataset is located at this link:
-    <https://bit.ly/2NwRwP9>.
+    The Tweets.csv dataset is located at this location: 
+    `/home/jovyan/work/nlp-fundamentals/Lesson8\data\twitter-airline-sentiment`
 
 5.  Insert a new cell and add the following code to view the first
     `10` records of the DataFrame:

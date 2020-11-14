@@ -642,8 +642,8 @@ this exercise:
 
     ### Note
 
-    All three datasets can be found at this link:
-    <https://bit.ly/2VufVIb>.
+    All three datasets can be found at this location: 
+    `/home/jovyan/work/nlp-fundamentals/Lesson8\data\sentiment_labelled_sentences`
 
 4.  To load the IMDb reviews, insert a new cell and add the following
     code:

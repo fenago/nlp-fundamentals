@@ -1195,8 +1195,9 @@ whitespaces.
 
 ### Note
 
-The `data.csv` dataset used in this activity can be found at
-this link: [https://bit.ly/2CIkCa4](https://bit.ly/2CIkCa4).
+The `data.csv` dataset used in this activity can be found at this location:
+
+`/home/jovyan/work/nlp-fundamentals/Lesson2/data_ch2`
 
 Follow these steps to implement this activity:
 
@@ -1969,8 +1970,9 @@ of frequently occurring words.
 
 ### Note
 
-The text\_corpus.txt dataset used in this activity can found at this
-location: <https://bit.ly/2HQ2luS>.
+The text_corpus.txt dataset used in this activity can found at this location:
+
+`/home/jovyan/work/nlp-fundamentals/Lesson2/data_ch2`
 
 Follow these steps to implement this activity:
 

@@ -382,7 +382,7 @@ library. Follow these steps to implement this exercise:
 
     The Reuters news articles are contained in files with the \*.sgm
     extension and they can be found at this location:
-    <https://bit.ly/2YAQB5p>. Each file contains multiple articles and
+    <https://github.com/fenago/nlp-fundamentals/tree/master/Lesson5/data/reuters>. Each file contains multiple articles and
     the text is written within the \<BODY\>\</BODY\> XML element.
 
 4.  The Reuters news articles are in XML format, and to read the

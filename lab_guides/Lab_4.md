@@ -464,8 +464,7 @@ to implement this exercise:
 ### Note
 
 The preceding code also displays the performance of other models such as
-`Random Forest` and `XGBoost`. The updated output
-can be viewed at the following location: <https://bit.ly/2OxEJwu>.
+`Random Forest` and `XGBoost`.
 
 To collect data that\'s available online, we need to know how HTML pages
 can be scraped. For instance, if you come across an article on
@@ -513,7 +512,7 @@ emails. Follow these steps to implement this activity:
 
 1.  Import the necessary libraries.
 
-2.  Extract data from <https://bit.ly/2uw0Avf> the urllib3 library.
+2.  Extract data from the urllib3 library.
 
 3.  Fetch questions and answers from the data.
 
