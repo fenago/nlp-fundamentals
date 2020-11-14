@@ -81,7 +81,7 @@ activity, follow these steps:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_31.jpg)
+![](./images/C13142_01_31.jpg)
 
 
 
@@ -117,7 +117,7 @@ activity, follow these steps:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_32.jpg)
+![](./images/C13142_01_32.jpg)
 
 
 
@@ -135,7 +135,7 @@ activity, follow these steps:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_33.jpg)
+![](./images/C13142_01_33.jpg)
 
 
 
@@ -153,7 +153,7 @@ activity, follow these steps:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_34.jpg)
+![](./images/C13142_01_34.jpg)
 
 
 
@@ -171,7 +171,7 @@ activity, follow these steps:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_35.jpg)
+![](./images/C13142_01_35.jpg)
 
 
 
@@ -194,7 +194,7 @@ activity, follow these steps:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_36.jpg)
+![](./images/C13142_01_36.jpg)
 
 
 
@@ -219,7 +219,7 @@ activity, follow these steps:
     This code generates the following output:
 
     
-    ![](./images/C13142_01_37.jpg)
+![](./images/C13142_01_37.jpg)
 
 
 
@@ -247,7 +247,7 @@ activity, follow these steps:
     This code generates the following output:
 
     
-    ![](./images/C13142_01_38.jpg)
+![](./images/C13142_01_38.jpg)
 
 
 
@@ -327,7 +327,7 @@ to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_54.jpg)
+![](./images/C13142_02_54.jpg)
 
 
 
@@ -356,7 +356,7 @@ to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_55.jpg)
+![](./images/C13142_02_55.jpg)
 
 
 
@@ -375,7 +375,7 @@ to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_56.jpg)
+![](./images/C13142_02_56.jpg)
 
 
 
@@ -395,7 +395,7 @@ to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_57.jpg)
+![](./images/C13142_02_57.jpg)
 
 
 
@@ -415,7 +415,7 @@ to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_58.jpg)
+![](./images/C13142_02_58.jpg)
 
 
 
@@ -434,7 +434,7 @@ to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_59.jpg)
+![](./images/C13142_02_59.jpg)
 
 
 
@@ -453,7 +453,7 @@ to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_60.jpg)
+![](./images/C13142_02_60.jpg)
 
 
 
@@ -472,7 +472,7 @@ to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_61.jpg)
+![](./images/C13142_02_61.jpg)
 
 
 
@@ -491,7 +491,7 @@ to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_62.jpg)
+![](./images/C13142_02_62.jpg)
 
 
 
@@ -563,7 +563,7 @@ implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_64.jpg)
+![](./images/C13142_02_64.jpg)
 
 
 
@@ -597,7 +597,7 @@ implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_65.jpg)
+![](./images/C13142_02_65.jpg)
 
 
 
@@ -618,7 +618,7 @@ implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_66.jpg)
+![](./images/C13142_02_66.jpg)
 
 
 
@@ -638,7 +638,7 @@ implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_67.jpg)
+![](./images/C13142_02_67.jpg)
 
 
 
@@ -657,7 +657,7 @@ implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_02_68.jpg)
+![](./images/C13142_02_68.jpg)
 
 
 
@@ -675,7 +675,7 @@ implement this activity:
     The code generates the following code:
 
     
-    ![](./images/C13142_02_69.jpg)
+![](./images/C13142_02_69.jpg)
 
 
 
@@ -744,7 +744,7 @@ Activity 4: Text Visualization
     The code generates the following output:
 
     
-    ![](./images/C13142_02_71.jpg)
+![](./images/C13142_02_71.jpg)
 
 
 
@@ -776,7 +776,7 @@ Activity 4: Text Visualization
     The code generates the following output:
 
     
-    ![](./images/C13142_02_72.jpg)
+![](./images/C13142_02_72.jpg)
 
 
 
@@ -874,7 +874,7 @@ comments. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_03_63.jpg)
+![](./images/C13142_03_63.jpg)
 
 
 
@@ -955,7 +955,7 @@ comments. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_03_64.jpg)
+![](./images/C13142_03_64.jpg)
 
 
 
@@ -987,7 +987,7 @@ comments. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_03_65.jpg)
+![](./images/C13142_03_65.jpg)
 
 
 
@@ -1010,7 +1010,7 @@ comments. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_03_66.jpg)
+![](./images/C13142_03_66.jpg)
 
 
 
@@ -1030,7 +1030,7 @@ comments. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_03_67.jpg)
+![](./images/C13142_03_67.jpg)
 
 
 
@@ -1053,7 +1053,7 @@ comments. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_03_68.jpg)
+![](./images/C13142_03_68.jpg)
 
 
 
@@ -1128,7 +1128,7 @@ these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_41.jpg)
+![](./images/C13142_04_41.jpg)
 
 
 
@@ -1152,7 +1152,7 @@ these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_42.jpg)
+![](./images/C13142_04_42.jpg)
 
 
 
@@ -1203,7 +1203,7 @@ things. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_44.jpg)
+![](./images/C13142_04_44.jpg)
 
 
 
@@ -1221,7 +1221,7 @@ things. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_45.jpg)
+![](./images/C13142_04_45.jpg)
 
 
 
@@ -1245,7 +1245,7 @@ things. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_46.jpg)
+![](./images/C13142_04_46.jpg)
 
 
 
@@ -1266,7 +1266,7 @@ things. Follow these steps to implement this activity:
     The above code generates the following output:
 
     
-    ![](./images/C13142_04_47.jpg)
+![](./images/C13142_04_47.jpg)
 
 
 
@@ -1285,7 +1285,7 @@ things. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_48.jpg)
+![](./images/C13142_04_48.jpg)
 
 
 
@@ -1304,7 +1304,7 @@ things. Follow these steps to implement this activity:
     The above code generates the following output:
 
     
-    ![](./images/C13142_04_49.jpg)
+![](./images/C13142_04_49.jpg)
 
 
 
@@ -1326,7 +1326,7 @@ things. Follow these steps to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_50.jpg)
+![](./images/C13142_04_50.jpg)
 
 
 
@@ -1379,7 +1379,7 @@ Activity 8: Dealing with Online JSON Files
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_52.jpg)
+![](./images/C13142_04_52.jpg)
 
 
 
@@ -1403,7 +1403,7 @@ Activity 8: Dealing with Online JSON Files
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_53.jpg)
+![](./images/C13142_04_53.jpg)
 
 
 
@@ -1424,7 +1424,7 @@ Activity 8: Dealing with Online JSON Files
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_54.jpg)
+![](./images/C13142_04_54.jpg)
 
 
 
@@ -1516,7 +1516,7 @@ to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_56.jpg)
+![](./images/C13142_04_56.jpg)
 
 
 
@@ -1537,7 +1537,7 @@ to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_57.jpg)
+![](./images/C13142_04_57.jpg)
 
 
 
@@ -1554,7 +1554,7 @@ to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_58.jpg)
+![](./images/C13142_04_58.jpg)
 
 
 
@@ -1579,7 +1579,7 @@ to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_59.jpg)
+![](./images/C13142_04_59.jpg)
 
 
 
@@ -1599,7 +1599,7 @@ to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_60.jpg)
+![](./images/C13142_04_60.jpg)
 
 
 
@@ -1616,7 +1616,7 @@ to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_61.jpg)
+![](./images/C13142_04_61.jpg)
 
 
 
@@ -1635,7 +1635,7 @@ to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_62.jpg)
+![](./images/C13142_04_62.jpg)
 
 
 
@@ -1655,7 +1655,7 @@ to implement this activity:
     The preceding code generates the following output:
 
     
-    ![](./images/C13142_04_63.jpg)
+![](./images/C13142_04_63.jpg)
 
 
 
@@ -1843,7 +1843,7 @@ summarizer. Follow these steps to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_06_16.jpg)
+![](./images/C13142_06_16.jpg)
 
 
 
@@ -1866,7 +1866,7 @@ summarizer. Follow these steps to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_06_17.jpg)
+![](./images/C13142_06_17.jpg)
 
 
 
@@ -1886,7 +1886,7 @@ summarizer. Follow these steps to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_06_18.jpg)
+![](./images/C13142_06_18.jpg)
 
 
 
@@ -1906,7 +1906,7 @@ summarizer. Follow these steps to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_06_19.jpg)
+![](./images/C13142_06_19.jpg)
 
 
 9.  The `summarize()` function has a parameter called
@@ -1925,7 +1925,7 @@ summarizer. Follow these steps to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_06_20.jpg)
+![](./images/C13142_06_20.jpg)
 
 
 10. You can also pass the `word_count` parameter to limit the
@@ -2121,7 +2121,7 @@ these steps to implement this activity:
     The code generates the following output:
 
     
-    ![](./images/C13142_08_16.jpg)
+![](./images/C13142_08_16.jpg)
 
 
 
@@ -2191,7 +2191,7 @@ The expected output for first ten tweets should be as follows:
     handles should be as follows:
 
     
-    ![](./images/C13142_08_18.jpg)
+![](./images/C13142_08_18.jpg)
 
 
 
@@ -2249,7 +2249,7 @@ The expected output for first ten tweets should be as follows:
     The code generates the following output:
 
     
-    ![](./images/C13142_08_19.jpg)
+![](./images/C13142_08_19.jpg)
 
 
 
@@ -2280,7 +2280,7 @@ The expected output for first ten tweets should be as follows:
     follows:
 
     
-    ![](./images/C13142_08_20.jpg)
+![](./images/C13142_08_20.jpg)
 
 
 

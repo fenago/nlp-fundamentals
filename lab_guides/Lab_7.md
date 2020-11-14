@@ -1,7 +1,8 @@
+<img align="right" src="../logo.png">
 
-7. Vector Representation
+
+Lab 7. Vector Representation
 ========================
-
 
 
 
@@ -19,6 +20,18 @@ By the end of this lab, you will be able to:
 
 In this lab, you will be learning about various encoding techniques
 using which a text can be represented as vector.
+
+
+
+#### Pre-reqs:
+- Google Chrome (Recommended)
+
+#### Lab Environment
+Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
+
+All examples are present in `work/nlp-fundamentals/Lesson7` folder. 
+
+You can access lab at `http://<host-ip>/lab/workspaces/lab7_Vector`
 
 
 Introduction

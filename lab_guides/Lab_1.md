@@ -1,7 +1,8 @@
+<img align="right" src="../logo.png">
 
-1. Introduction to Natural Language Processing
+
+Lab 1. Introduction to Natural Language Processing
 ==============================================
-
 
 
 
@@ -21,6 +22,17 @@ processing and various preprocessing steps that are required to clean
 and analyze the data.
 
 
+#### Pre-reqs:
+- Google Chrome (Recommended)
+
+#### Lab Environment
+Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
+
+All examples are present in `work/nlp-fundamentals/Lesson1` folder. 
+
+You can access lab at `http://<host-ip>/lab/workspaces/lab1_Introduction`
+
+
 Introduction
 ============
 
@@ -31,17 +43,6 @@ It\'s a basic means of communication. To define more specifically,
 language is a mutually agreed set of protocols involving words/sounds we
 use to communicate with each other.
 
-In this era of digitization and computation, we tend to comprehend
-language scientifically. This is because we are constantly trying to
-make inanimate objects understand us. Thus, it has become essential to
-develop mechanisms by which language can be fed to inanimate objects
-such as computers. NLP helps us do this.
-
-Let\'s look at an example. You must have some emails in your mailbox
-that have been automatically labeled as spam. This is done with the help
-of NLP. Here, an inanimate object -- the email service -- analyzes the
-content of the emails, comprehends it, and then further decides whether
-these emails need to be marked as spam or not.
 
 
 History of NLP
@@ -55,12 +56,6 @@ increased availability of data, the way natural language is being
 processed has changed. Previously, a traditional rule-based system was
 used for computations. Today, computations on natural language are being
 done using machine learning and deep learning techniques.
-
-The major work on machine learning-based NLP started during the 1980s.
-During the 1980s, developments across various disciplines such as
-artificial intelligence, linguistics, formal languages, and computations
-led to the emergence of an interdisciplinary subject called NLP. In the
-next section, we\'ll look at text analytics and how it differs from NLP.
 
 
 Text Analytics and NLP
@@ -79,7 +74,6 @@ the following format:
 
 
 
-
 In the preceding figure, the first two fields represent the **date** and
 **time** at which the call was made or the SMS was sent. The third field
 represents the type of data. If the data is of the call type, then the
@@ -93,7 +87,6 @@ this field will be the **duration** of that call. If the type of data is
 **sms,** then the value in this field will be the text message.
 
 The following figure shows records of call data stored in a text file:
-
 
 
 ![](./images/C13142_01_02.jpg)
@@ -236,7 +229,7 @@ text data. Follow these steps to implement this exercise:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_03.jpg)
+![](./images/C13142_01_03.jpg)
 
 
 
@@ -264,7 +257,7 @@ text data. Follow these steps to implement this exercise:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_04.jpg)
+![](./images/C13142_01_04.jpg)
 
 
 
@@ -386,7 +379,7 @@ exercise:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_06.jpg)
+![](./images/C13142_01_06.jpg)
 
 
 
@@ -469,7 +462,7 @@ steps to implement this exercise:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_07.jpg)
+![](./images/C13142_01_07.jpg)
 
 
 
@@ -488,7 +481,7 @@ steps to implement this exercise:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_08.jpg)
+![](./images/C13142_01_08.jpg)
 
 
 
@@ -569,7 +562,7 @@ exercise:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_09.jpg)
+![](./images/C13142_01_09.jpg)
 
 
 
@@ -599,7 +592,7 @@ exercise:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_10.jpg)
+![](./images/C13142_01_10.jpg)
 
 
 
@@ -768,7 +761,7 @@ Python. Follow these steps in order to implement this exercise:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_13.jpg)
+![](./images/C13142_01_13.jpg)
 
 
 
@@ -797,7 +790,7 @@ Python. Follow these steps in order to implement this exercise:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_14.jpg)
+![](./images/C13142_01_14.jpg)
 
 
 
@@ -825,7 +818,7 @@ Python. Follow these steps in order to implement this exercise:
     The code generates the following output:
 
     
-    ![](./images/C13142_01_15.jpg)
+![](./images/C13142_01_15.jpg)
 
 
 
@@ -901,7 +894,7 @@ to implement this exercise:
     is generated:
 
     
-    ![](./images/C13142_01_17.jpg)
+![](./images/C13142_01_17.jpg)
 
 
 
@@ -917,7 +910,7 @@ to implement this exercise:
     generated:
 
     
-    ![](./images/C13142_01_18.jpg)
+![](./images/C13142_01_18.jpg)
 
 
 
@@ -933,7 +926,7 @@ to implement this exercise:
     generated:
 
     
-    ![](./images/C13142_01_19.jpg)
+![](./images/C13142_01_19.jpg)
 
 
 
@@ -949,7 +942,7 @@ to implement this exercise:
     generated:
 
     
-    ![](./images/C13142_01_20.jpg)
+![](./images/C13142_01_20.jpg)
 
 
 
