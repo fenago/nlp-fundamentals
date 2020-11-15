@@ -1202,7 +1202,7 @@ Similarly, machine learning models tend to understand only numeric data.
 As such, it becomes necessary to convert the text data into its
 equivalent numerical form. In our case, we represent the cleaned tweets
 using different kinds of matrices, such as bag of words and TF-IDF. We
-will be learning more about these matrices in later chapters.
+will be learning more about these matrices in later labs.
 
 Model Development
 -----------------

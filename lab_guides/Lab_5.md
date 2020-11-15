@@ -211,8 +211,7 @@ and the integer count of the occurrences of the word in the document.
 
 ### Note
 
-We will look at approaches that explicitly model sequences in later
-chapters.
+We will look at approaches that explicitly model sequences in later labs.
 
 
 Topic Modeling Algorithms
