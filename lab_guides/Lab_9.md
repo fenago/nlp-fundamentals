@@ -3,8 +3,6 @@ Appendix
 ========
 
 
-
-
 About
 -----
 
@@ -15,8 +13,6 @@ performed by the students to achieve the objectives of the activities.
 
 1. Introduction to Natural Language Processing
 ==============================================
-
-
 
 
 Activity 1: Preprocessing of Raw Text
@@ -71,8 +67,6 @@ activity, follow these steps:
 5.  To print the list of tokens, we insert a new cell and add the
     following code:
 
-
-
     ```
     print(words[0:20])
     ```
@@ -84,16 +78,12 @@ activity, follow these steps:
 ![](./images/C13142_01_31.jpg)
 
 
-
-
     In the preceding figure, we can see the initial 20 tokens of our
     text corpus.
 
 6.  To do the spelling correction in our given text corpus, we loop
     through each token and correct tokens that are wrongly spelled.
     Insert a new cell and add the following code to implement this:
-
-
 
     ```
     corrected_sentence = ""
@@ -120,12 +110,8 @@ activity, follow these steps:
 ![](./images/C13142_01_32.jpg)
 
 
-
-
 7.  To print the corrected text corpus, we add a new cell and write the
     following code:
-
-
 
     ```
     corrected_sentence
@@ -138,12 +124,8 @@ activity, follow these steps:
 ![](./images/C13142_01_33.jpg)
 
 
-
-
 8.  To print a list of the initial 20 tokens of the corrected words, we
     insert a new cell and add the following code:
-
-
 
     ```
     print(corrected_word_list[0:20])
@@ -156,12 +138,8 @@ activity, follow these steps:
 ![](./images/C13142_01_34.jpg)
 
 
-
-
 9.  We want to add a PoS tag to all the corrected words in the list. In
     order to do this, we insert a new cell and add the following code:
-
-
 
     ```
     print(nltk.pos_tag(corrected_word_list))
@@ -174,12 +152,8 @@ activity, follow these steps:
 ![](./images/C13142_01_35.jpg)
 
 
-
-
 10. From the list, we now want to remove the stop words. In order to do
     that, we insert a new cell and add the following code:
-
-
 
     ```
     stop_words = stopwords.words('english')
@@ -197,15 +171,11 @@ activity, follow these steps:
 ![](./images/C13142_01_36.jpg)
 
 
-
-
     In the preceding figure, we can see that the stop words are being
     removed and a new list is being returned.
 
 11. Now, with this list, if we want to apply the stemming process, then
     we insert a new cell and add the following code:
-
-
 
     ```
     stemmer = nltk.stem.PorterStemmer()
@@ -222,8 +192,6 @@ activity, follow these steps:
 ![](./images/C13142_01_37.jpg)
 
 
-
-
     In the preceding code, we looped through each word in the
     `corrected_word_list_without_stopwords` list and applied
     stemming to them. The preceding figure shows the list of the initial
@@ -232,8 +200,6 @@ activity, follow these steps:
 12. Also, if we want to apply the lemmatization process to the corrected
     word list, we do so by inserting a new cell and adding the following
     code:
-
-
 
     ```
     lemmatizer = WordNetLemmatizer()
@@ -250,8 +216,6 @@ activity, follow these steps:
 ![](./images/C13142_01_38.jpg)
 
 
-
-
     In the preceding code, we looped through each word in the
     `corrected_word_list_without_stopwords` list and applied
     lemmatization to them. The preceding figure shows the list of the
@@ -261,8 +225,6 @@ activity, follow these steps:
     use of the `sent_tokenize()` method. Insert a new cell and
     add the following code to implement this:
 
-
-
     ```
     print(sent_tokenize(corrected_sentence))
     ```
@@ -270,11 +232,7 @@ activity, follow these steps:
 
     The above code generates the following output:
 
-
-
 ![](./images/C13142_01_39.jpg)
-
-
 
 
 We have learned about and achieved the preprocessing of given data.
@@ -282,8 +240,6 @@ We have learned about and achieved the preprocessing of given data.
 
 2. Basic Feature Extraction Methods
 ===================================
-
-
 
 
 Activity 2: Extracting General Features from Text
@@ -316,8 +272,6 @@ to implement this activity:
 3.  Now let\'s see what different kinds of PoS nltk provides. Add the
     following code to do this:
 
-
-
     ```
     tagdict = load('help/tagsets/upenn_tagset.pickle')
     list(tagdict.keys())
@@ -330,14 +284,10 @@ to implement this activity:
 ![](./images/C13142_02_54.jpg)
 
 
-
-
 4.  The number of occurrences of each PoS is calculated by iterating
     through each document and annotating each word with the
     corresponding `pos` tag. Add the following code to
     implement this:
-
-
 
     ```
     data = pd.read_csv('data_ch2/data.csv', header = 0)
@@ -359,12 +309,8 @@ to implement this activity:
 ![](./images/C13142_02_55.jpg)
 
 
-
-
 5.  To calculate the number of punctuation marks present in each text of
     the DataFrame, add the following code:
-
-
 
     ```
     feature_df['num_of_unique_punctuations'] = data['text'].apply(lambda x : len(set(x).intersection(set(punctuation))))
@@ -378,12 +324,8 @@ to implement this activity:
 ![](./images/C13142_02_56.jpg)
 
 
-
-
 6.  To calculate the number of capitalized words, add the following
     code:
-
-
 
     ```
     feature_df['number_of_capital_words'] =data['text'].apply(lambda x : \
@@ -398,12 +340,8 @@ to implement this activity:
 ![](./images/C13142_02_57.jpg)
 
 
-
-
 7.  To calculate the number of uncapitalized words, add the following
     code:
-
-
 
     ```
     feature_df['number_of_small_words'] =data['text'].apply(lambda x : \
@@ -418,12 +356,8 @@ to implement this activity:
 ![](./images/C13142_02_58.jpg)
 
 
-
-
 8.  To calculate the number of letters in the DataFrame, use the
     following code:
-
-
 
     ```
     feature_df['number_of_alphabets'] = data['text'].apply(lambda x : len([ch for ch in str(x) if ch.isalpha()]))
@@ -437,12 +371,8 @@ to implement this activity:
 ![](./images/C13142_02_59.jpg)
 
 
-
-
 9.  To calculate the number of digits in the DataFrame, add the
     following code:
-
-
 
     ```
     feature_df['number_of_digits'] = data['text'].apply(lambda x : len([ch for ch in str(x) if ch.isdigit()]))
@@ -456,12 +386,8 @@ to implement this activity:
 ![](./images/C13142_02_60.jpg)
 
 
-
-
 10. To calculate the number of words in the DataFrame, add the following
     code:
-
-
 
     ```
     feature_df['number_of_words'] = data['text'].apply(lambda x : len(word_tokenize(str(x))))
@@ -475,12 +401,8 @@ to implement this activity:
 ![](./images/C13142_02_61.jpg)
 
 
-
-
 11. To calculate the number of whitespaces in the DataFrame, add the
     following code:
-
-
 
     ```
     feature_df['number_of_white_spaces'] = data['text'].apply(lambda x : len(str(x).split(' '))-1)
@@ -494,12 +416,8 @@ to implement this activity:
 ![](./images/C13142_02_62.jpg)
 
 
-
-
 12. Now let\'s view the full feature set we have just created. Add the
     following code to implement this:
-
-
 
     ```
     feature_df.head()
@@ -508,11 +426,7 @@ to implement this activity:
 
     The code generates the following output:
 
-
-
 ![](./images/C13142_02_63.jpg)
-
-
 
 
 
@@ -552,8 +466,6 @@ implement this activity:
 3.  In order to store the text data in a DataFrame, insert a new cell
     and add the following code:
 
-
-
     ```
     newsgroups_text_df = pd.DataFrame({'text' : newsgroups_data_sample['data']})
     newsgroups_text_df.head()
@@ -564,8 +476,6 @@ implement this activity:
 
     
 ![](./images/C13142_02_64.jpg)
-
-
 
 
 4.  The data present in the DataFrame is not clean. In order to clean
@@ -584,8 +494,6 @@ implement this activity:
 5.  Now that we have clean data, we add the following code to create a
     BoW model:
 
-
-
     ```
     bag_of_words_model = CountVectorizer(max_features= 20)
     bag_of_word_df = pd.DataFrame(bag_of_words_model.fit_transform(newsgroups_text_df['cleaned_text']).todense())
@@ -600,12 +508,8 @@ implement this activity:
 ![](./images/C13142_02_65.jpg)
 
 
-
-
 6.  To create a TF-IDF model, insert a new cell and add the following
     code:
-
-
 
     ```
     tfidf_model = TfidfVectorizer(max_features=20)
@@ -621,13 +525,9 @@ implement this activity:
 ![](./images/C13142_02_66.jpg)
 
 
-
-
 7.  Once both the models are created, we need to compare them. To check
     the most informative terms for the second document, as ascertained
     by the BoW model, we write the following code:
-
-
 
     ```
     rw = 2
@@ -641,12 +541,8 @@ implement this activity:
 ![](./images/C13142_02_67.jpg)
 
 
-
-
 8.  To check the most informative terms for the second document, as
     ascertained by the TF-IDF model, we write the following code:
-
-
 
     ```
     rw = 2
@@ -660,12 +556,8 @@ implement this activity:
 ![](./images/C13142_02_68.jpg)
 
 
-
-
 9.  To check the occurrence of the word \"line\" in the documents, we
     write the following code:
-
-
 
     ```
     bag_of_word_df[bag_of_word_df['line']!=0].shape[0]
@@ -678,12 +570,8 @@ implement this activity:
 ![](./images/C13142_02_69.jpg)
 
 
-
-
 10. To check the occurrence of the word \"edu\" in the documents, we
     write the following code:
-
-
 
     ```
     bag_of_word_df[bag_of_word_df['edu']!=0].shape[0]
@@ -692,11 +580,7 @@ implement this activity:
 
     The code generates the following output:
 
-
-
 ![](./images/C13142_02_70.jpg)
-
-
 
 
 As we can see from the last two steps, the difference arises because the
@@ -705,8 +589,6 @@ occurs in 7,393 documents only. Thus, the word \"edu\" is rarer and is
 more informative than the word \"line.\" Unlike the BoW model, the
 TF-IDF model is able to capture this meticulous detail. In most cases,
 TF-IDF is preferred over BoW.
-
-
 
 Activity 4: Text Visualization
 ------------------------------
@@ -733,8 +615,6 @@ Activity 4: Text Visualization
 
 3.  To fetch the dataset and read its content, add the following code:
 
-
-
     ```
     text = open('data_ch2/text_corpus.txt', 'r').read()
     text
@@ -745,8 +625,6 @@ Activity 4: Text Visualization
 
     
 ![](./images/C13142_02_71.jpg)
-
-
 
 
 4.  The text in the fetched data is not clean. In order to clean it, we
@@ -766,8 +644,6 @@ Activity 4: Text Visualization
     frequencies, to find the 50 most frequently occurring words. Add the
     following code to implement this:
 
-
-
     ```
     Counter(cleaned_lemmatized_tokens).most_common(50)
     ```
@@ -779,14 +655,10 @@ Activity 4: Text Visualization
 ![](./images/C13142_02_72.jpg)
 
 
-
-
 6.  Once we get the set of unique words along with their frequencies, we
     will remove the stop words. After that, we generate the word cloud
     for the top 50 most frequent words. Add the following code to
     implement this:
-
-
 
     ```
     stopwords = set(STOPWORDS)
@@ -804,11 +676,7 @@ Activity 4: Text Visualization
 
     The code generates the following output:
 
-
-
 ![](./images/C13142_02_73.jpg)
-
-
 
 
 As you can see in the figure, words that occur more frequently, such as
@@ -818,8 +686,6 @@ word cloud. Thus, the word cloud for the given text corpus is justified.
 
 3. Developing a Text classifier
 ===============================
-
-
 
 
 Activity 5: Developing End-to-End Text Classifiers
@@ -863,8 +729,6 @@ comments. Follow these steps to implement this activity:
     not toxic and label 1 denotes that a comment is toxic. Add the
     following code to do this:
 
-
-
     ```
     data = pd.read_csv('data_ch3/train_comment_small.csv')
     data.head()
@@ -875,8 +739,6 @@ comments. Follow these steps to implement this activity:
 
     
 ![](./images/C13142_03_63.jpg)
-
-
 
 
 4.  We\'ll now create a generic function for all classifiers, called
@@ -942,8 +804,6 @@ comments. Follow these steps to implement this activity:
 7.  Now, we\'ll create a tf-idf matrix representation of these cleaned
     texts. Add the following code to do this:
 
-
-
     ```
     tfidf_model = TfidfVectorizer(max_features=500)
     tfidf_df = pd.DataFrame(tfidf_model.fit_transform(data['cleaned_comment_text']).todense())
@@ -956,8 +816,6 @@ comments. Follow these steps to implement this activity:
 
     
 ![](./images/C13142_03_64.jpg)
-
-
 
 
 8.  Use sklearn\'s `train_test_split` function to divide the
@@ -974,8 +832,6 @@ comments. Follow these steps to implement this activity:
     `LogisticRegression()` function and evaluate it for the
     validation set. Add the following code:
 
-
-
     ```
     from sklearn.linear_model import LogisticRegression
     logreg = LogisticRegression()
@@ -990,13 +846,9 @@ comments. Follow these steps to implement this activity:
 ![](./images/C13142_03_65.jpg)
 
 
-
-
 10. We\'ll train a random forest model using sklearn\'s
     `RandomForestClassifier()` function and evaluate it for
     the validation set. Add the following code:
-
-
 
     ```
     from sklearn.ensemble import RandomForestClassifier 
@@ -1013,13 +865,9 @@ comments. Follow these steps to implement this activity:
 ![](./images/C13142_03_66.jpg)
 
 
-
-
 11. Moreover, we extract important features, which are the tokens or
     words that play a more vital role in determining whether a comment
     will be toxic. Add the following code:
-
-
 
     ```
     word_importances = pd.DataFrame({'word':X_train.columns,'importance':model_rfc.feature_importances_})
@@ -1033,13 +881,9 @@ comments. Follow these steps to implement this activity:
 ![](./images/C13142_03_67.jpg)
 
 
-
-
 12. We train an XGBoost model using the `XGBClassifier()`
     function and evaluate it for the validation set. Add the following
     code to do this:
-
-
 
     ```
     from xgboost import XGBClassifier
@@ -1056,13 +900,9 @@ comments. Follow these steps to implement this activity:
 ![](./images/C13142_03_68.jpg)
 
 
-
-
 13. Moreover, we extract the importance of features, that is, tokens or
     words that play a more vital role in determining whether a comment
     is toxic. Add the following code to do this:
-
-
 
     ```
     word_importances = pd.DataFrame({'word':X_train.columns,'importance':model_xgb.feature_importances_})
@@ -1072,18 +912,12 @@ comments. Follow these steps to implement this activity:
 
     The preceding code generates the following output:
 
-
-
 ![](./images/C13142_03_69.jpg)
-
-
 
 
 
 4. Collecting Text Data from the Web
 ====================================
-
-
 
 
 Activity 6: Extracting Information from an Online HTML Page
@@ -1115,8 +949,6 @@ these steps to implement this activity:
     `span` tag that has a `class` attribute with the
     following set of commands:
 
-
-
     ```
     for ele in soup.find_all('h3')[:6]:
         tx = BeautifulSoup(str(ele),'html.parser').find('span', attrs={'class':"mw-headline"})
@@ -1131,13 +963,9 @@ these steps to implement this activity:
 ![](./images/C13142_04_41.jpg)
 
 
-
-
 4.  To extract information regarding works by Tagore, look for the
     `table` tag. Traverse through the rows and columns of
     these tables and extract the texts by entering the following code:
-
-
 
     ```
     table = soup.find_all('table')[1]
@@ -1155,12 +983,8 @@ these steps to implement this activity:
 ![](./images/C13142_04_42.jpg)
 
 
-
-
 5.  To extract the list of universities named after Tagore, look for the
     `ol` tag. Add the following code to implement this:
-
-
 
     ```
     [BeautifulSoup(str(i),'html.parser').text.strip() for i in soup.find('ol') if i!='\n']
@@ -1169,11 +993,7 @@ these steps to implement this activity:
 
     The preceding code generates the following output:
 
-
-
 ![](./images/C13142_04_43.jpg)
-
-
 
 
 
@@ -1188,8 +1008,6 @@ things. Follow these steps to implement this activity:
 
 1.  To begin, let\'s try to collect data using `requests` with
     the following code:
-
-
 
     ```
     import urllib3
@@ -1206,12 +1024,8 @@ things. Follow these steps to implement this activity:
 ![](./images/C13142_04_44.jpg)
 
 
-
-
     To check the text data of the fetched content, type the following
     code:
-
-
 
     ```
     r.text
@@ -1224,15 +1038,11 @@ things. Follow these steps to implement this activity:
 ![](./images/C13142_04_45.jpg)
 
 
-
-
     Here, **403** means forbidden. Thus, we will be using
     `urllib3`.
 
 2.  Let\'s extract data using `urllib3` and store it in a soup
     with the following commands:
-
-
 
     ```
     http = urllib3.PoolManager()
@@ -1248,13 +1058,9 @@ things. Follow these steps to implement this activity:
 ![](./images/C13142_04_46.jpg)
 
 
-
-
 3.  A list of questions can be obtained by looking for a `div`
     tag that has a `class = faq-item-question-text float-left`
     attribute, as shown here:
-
-
 
     ```
     soup = BeautifulSoup(rr.data, 'html.parser')
@@ -1269,12 +1075,8 @@ things. Follow these steps to implement this activity:
 ![](./images/C13142_04_47.jpg)
 
 
-
-
     A list of answers can be obtained by looking for a `div`
     tag that has a `class = faq-item-answer `attribute:
-
-
 
     ```
     answers = [answer.text.strip() for answer in soup.find_all('div',attrs={"class":"faq-item-answer"})]
@@ -1288,12 +1090,8 @@ things. Follow these steps to implement this activity:
 ![](./images/C13142_04_48.jpg)
 
 
-
-
 4.  Next, we\'ll create a DataFrame consisting of these questions and
     answers:
-
-
 
     ```
     import pandas as pd
@@ -1307,12 +1105,8 @@ things. Follow these steps to implement this activity:
 ![](./images/C13142_04_49.jpg)
 
 
-
-
 5.  To extract email addresses, we make use of a regular expression.
     Insert a new cell and add the following code to implement this:
-
-
 
     ```
     rr_tc = http.request('GET', 'https://www.packtpub.com/books/info/packt/terms-and-conditions')
@@ -1329,12 +1123,8 @@ things. Follow these steps to implement this activity:
 ![](./images/C13142_04_50.jpg)
 
 
-
-
 6.  To extract phone numbers using a regular expression, insert a new
     cell and add the following code:
-
-
 
     ```
     re.findall(r"\+\d{2}\s{1}\(0\)\s\d{3}\s\d{3}\s\d{3}",soup2.text)
@@ -1343,11 +1133,7 @@ things. Follow these steps to implement this activity:
 
     The preceding code generates the following output:
 
-
-
 ![](./images/C13142_04_51.jpg)
-
-
 
 
 
@@ -1361,8 +1147,6 @@ Activity 8: Dealing with Online JSON Files
 
 2.  Import the necessary packages. Pass the given URL as an argument.
     Add the following code to implement this:
-
-
 
     ```
     import json
@@ -1382,15 +1166,11 @@ Activity 8: Dealing with Online JSON Files
 ![](./images/C13142_04_52.jpg)
 
 
-
-
     Here, the HTTP code **200**, indicates that the request was
     successful.
 
 3.  Load the `json` file and create a DataFrame from it. To
     implement this, insert a new cell and add the following code:
-
-
 
     ```
     data = json.loads(rr.data.decode('utf-8'))
@@ -1406,14 +1186,10 @@ Activity 8: Dealing with Online JSON Files
 ![](./images/C13142_04_53.jpg)
 
 
-
-
 4.  Since we can use the language translation function of
     `TextBlob` a limited number of times, we will restrict
     this DataFrame to 15 rows. The following code snippet can be used to
     translate text to English:
-
-
 
     ```
     df['body_english'] = df['body'].apply(lambda x: str(TextBlob('u'+str(x)).translate(to='en')))
@@ -1427,12 +1203,8 @@ Activity 8: Dealing with Online JSON Files
 ![](./images/C13142_04_54.jpg)
 
 
-
-
 5.  Now, we will use `TextBlob` to find out the sentiment
     score of each of these comments:
-
-
 
     ```
     df['sentiment_score'] = df['body_english'].apply(lambda x: str(TextBlob('u'+str(x)).sentiment.polarity))
@@ -1442,11 +1214,7 @@ Activity 8: Dealing with Online JSON Files
 
     The preceding code generates the following output:
 
-
-
 ![](./images/C13142_04_55.jpg)
-
-
 
 
 
@@ -1499,8 +1267,6 @@ to implement this activity:
     query. Insert a new cell and add the following code to implement
     this:
 
-
-
     ```
     tweet_list = []
     cnt = 0
@@ -1519,13 +1285,9 @@ to implement this activity:
 ![](./images/C13142_04_56.jpg)
 
 
-
-
 6.  Convert the Twitter `status` objects to `json`
     objects. Insert a new cell and add the following code to implement
     this:
-
-
 
     ```
     status = tweet_list[0]
@@ -1540,11 +1302,7 @@ to implement this activity:
 ![](./images/C13142_04_57.jpg)
 
 
-
-
 7.  To check the text of the fetched JSON file, add the following code:
-
-
 
     ```
     json.loads(json_str)['text']
@@ -1557,12 +1315,8 @@ to implement this activity:
 ![](./images/C13142_04_58.jpg)
 
 
-
-
 8.  Now we\'ll create a DataFrame consisting of the text of tweets. Add
     a new cell and write the following code to do this:
-
-
 
     ```
     tweet_text = []
@@ -1582,12 +1336,8 @@ to implement this activity:
 ![](./images/C13142_04_59.jpg)
 
 
-
-
 9.  To detect the language of all the tweets, we make use of the
     TextBlob library. Add the following code to do this:
-
-
 
     ```
     tweet_text_df['language_detected'] = tweet_text_df['tweet_text'].apply(lambda x : \
@@ -1602,11 +1352,7 @@ to implement this activity:
 ![](./images/C13142_04_60.jpg)
 
 
-
-
 10. To have a look at the non-English tweets, we add the following code:
-
-
 
     ```
     tweet_text_df[tweet_text_df['language_detected']!='en']
@@ -1619,12 +1365,8 @@ to implement this activity:
 ![](./images/C13142_04_61.jpg)
 
 
-
-
 11. To check the shape of the DataFrame consisting of tweets in the
     English language, add the following code:
-
-
 
     ```
     tweet_text_df_eng = tweet_text_df[tweet_text_df['language_detected']=='en']
@@ -1638,12 +1380,8 @@ to implement this activity:
 ![](./images/C13142_04_62.jpg)
 
 
-
-
 12. Now we\'ll extract the sentiment scores of the English tweets using
     the TextBlob library. Add the following code to do this:
-
-
 
     ```
     tweet_text_df_eng['sentiment_score'] = tweet_text_df_eng['tweet_text'].apply(lambda x: str(TextBlob('u'+str(x)).sentiment.polarity))
@@ -1658,13 +1396,9 @@ to implement this activity:
 ![](./images/C13142_04_63.jpg)
 
 
-
-
 13. Once we have calculated the sentiment score of each tweet, we create
     a word cloud. Insert a new cell and add the following code to
     implement this:
-
-
 
     ```
     other_stopwords_to_remove = ['https', 'amp','co']
@@ -1684,18 +1418,12 @@ to implement this activity:
 
     The preceding code generates the following output:
 
-
-
 ![](./images/C13142_04_64.jpg)
-
-
 
 
 
 5. Topic Modeling
 =================
-
-
 
 
 Activity 10: Topic Modelling Jeopardy Questions
@@ -1770,8 +1498,6 @@ Follow these steps to implement this activity:
 =========================================
 
 
-
-
 Activity 11: Summarizing a Downloaded Page Using the Gensim Text Summarizer
 ---------------------------------------------------------------------------
 
@@ -1833,8 +1559,6 @@ summarizer. Follow these steps to implement this activity:
     see the text as it is or see its sentences. Let\'s look at the
     article first. Add the following code:
 
-
-
     ```
     why_click
     ```
@@ -1846,8 +1570,6 @@ summarizer. Follow these steps to implement this activity:
 ![](./images/C13142_06_16.jpg)
 
 
-
-
     Note that we have lost the formatting of the original article since
     we extracted the text from HTML.
 
@@ -1855,8 +1577,6 @@ summarizer. Follow these steps to implement this activity:
     to show the sentences in the original article. There are
     `57` sentences in the article, as shown in the following
     figure:
-
-
 
     ```
     show_sentences(why_click)
@@ -1869,13 +1589,9 @@ summarizer. Follow these steps to implement this activity:
 ![](./images/C13142_06_17.jpg)
 
 
-
-
 7.  Now we create a `summary` using the
     `summarize()` function, and then look at the sentences.
     Note that we use the defaults for `summarize`:
-
-
 
     ```
     summary = summarize(why_click)
@@ -1889,13 +1605,9 @@ summarizer. Follow these steps to implement this activity:
 ![](./images/C13142_06_18.jpg)
 
 
-
-
 8.  The `summarize()` function can also break the text into
     sentences if we pass the optional `split` parameter. The
     following will print a list of sentences:
-
-
 
     ```
     summary = summarize(why_click, split=True)
@@ -1914,8 +1626,6 @@ summarizer. Follow these steps to implement this activity:
     original text to return in the summary. Here, we use
     `ratio=0.1` to return 10% of the original article:
 
-
-
     ```
     summary = summarize(why_click, ratio=0.1)
     show_sentences(summary)
@@ -1931,8 +1641,6 @@ summarizer. Follow these steps to implement this activity:
 10. You can also pass the `word_count` parameter to limit the
     number of words returned:
 
-
-
     ```
     summary = summarize(why_click, word_count=200)
     summary
@@ -1941,16 +1649,10 @@ summarizer. Follow these steps to implement this activity:
 
     The code generates the following output:
 
-
-
 ![](./images/C13142_06_21.jpg)
-
-
 
 7. Vector Representation
 ========================
-
-
 
 
 Activity 12: Finding Similar Movie Lines Using Document Vectors
@@ -2035,8 +1737,6 @@ one provided by the user. Follow these steps to complete this activity:
 6.  Now that we have created our functions, it is time to test them.
     Insert a new cell and add the following code to implement this:
 
-
-
     ```
     similar_movie_lines("Sure, that's easy.  You gotta insult somebody.")
     ```
@@ -2048,8 +1748,6 @@ one provided by the user. Follow these steps to complete this activity:
 
 8. Sentiment Analysis
 =====================
-
-
 
 
 Activity 13: Tweet Sentiment Analysis Using the TextBlob library
@@ -2091,8 +1789,6 @@ these steps to implement this activity:
     named \"`Tweet`\". Insert a new cell and add the following
     code to implement this:
 
-
-
     ```
     TWEET_DATA_FILE = '../data/twitter-airline-sentiment/Tweets.csv'
     tweets = pd.read_csv(TWEET_DATA_FILE, usecols=['text'])
@@ -2108,8 +1804,6 @@ these steps to implement this activity:
 5.  Insert a new cell and add the following code to view the first
     `10` records of the DataFrame:
 
-
-
     ```
     tweets.head(10)
     ```
@@ -2121,16 +1815,12 @@ these steps to implement this activity:
 ![](./images/C13142_08_16.jpg)
 
 
-
-
 6.  If we look at the preceding figure, we can see that the tweets
     contain Twitter handles, which start with the `@` symbol.
     It might be useful to extract those handles. The `string`
     column included in the DataFrame has an `extract()`
     function, which uses a regex to get parts of a string. Insert a new
     cell and add the following code to implement this:
-
-
 
     ```
     tweets['At'] = tweets.Tweet.str.extract(r'^(@\S+)')
@@ -2144,8 +1834,6 @@ these steps to implement this activity:
     records of the \"`tweets`\" DataFrame, we insert a new
     cell and write the following code:
 
-
-
     ```
     tweets.head(10)
     ```
@@ -2153,11 +1841,7 @@ these steps to implement this activity:
 
 The expected output for first ten tweets should be as follows:
 
-
-
 ![](./images/C13142_08_17.jpg)
-
-
 
 
 1.  Now, we want to remove the Twitter handles since they are irrelevant
@@ -2176,8 +1860,6 @@ The expected output for first ten tweets should be as follows:
 
 2.  To remove the handles, insert a new cell and add the following code:
 
-
-
     ```
     tweets.text = tweets.text.apply(remove_handles)
     tweets.head(10)
@@ -2191,8 +1873,6 @@ The expected output for first ten tweets should be as follows:
 ![](./images/C13142_08_18.jpg)
 
 
-
-
     From the preceding figure, we can see that the Twitter handles have
     been separated from the tweets.
 
@@ -2202,8 +1882,6 @@ The expected output for first ten tweets should be as follows:
     two new columns, `Polarity` and `Subjectivity`,
     which will show the sentiment scores of each tweet. Insert a new
     cell and add the following code to implement this:
-
-
 
     ```
     def get_sentiment(dataframe, column):
@@ -2226,8 +1904,6 @@ The expected output for first ten tweets should be as follows:
     DataFrame, `sentiment_frame`. Insert a new cell and add
     the following code to implement this:
 
-
-
     ```
     sentiment_frame = get_sentiment(tweets, 'text')
     ```
@@ -2235,8 +1911,6 @@ The expected output for first ten tweets should be as follows:
 
     To view the initial four values of the new DataFrame, type the
     following code:
-
-
 
     ```
     sentence_frame.head(4)
@@ -2249,14 +1923,10 @@ The expected output for first ten tweets should be as follows:
 ![](./images/C13142_08_19.jpg)
 
 
-
-
 5.  To join the original `tweet` DataFrame to the
     `sentiment_frame` DataFrame, we make use of the
     `concat()` function. Insert a new cell and add the
     following code to implement this:
-
-
 
     ```
     tweets = pd.concat([tweets, sentiment_frame], axis=1)
@@ -2265,8 +1935,6 @@ The expected output for first ten tweets should be as follows:
 
     To view the initial 10 rows of the new DataFrame, we add the
     following code:
-
-
 
     ```
     tweets.head(10)
@@ -2280,8 +1948,6 @@ The expected output for first ten tweets should be as follows:
 ![](./images/C13142_08_20.jpg)
 
 
-
-
     From the preceding figure, we can see that for each **tweet**,
     **polarity**, and **subjectivity** scores have been calculated.
 
@@ -2293,8 +1959,6 @@ The expected output for first ten tweets should be as follows:
     in the range of `-0.1` and `0.1`. Insert a new
     cell and add the following code to implement this:
 
-
-
     ```
     positive_tweets = tweets[tweets.Polarity > 0.5]
     negative_tweets = tweets[tweets.Polarity <= - 0.5]
@@ -2304,8 +1968,6 @@ The expected output for first ten tweets should be as follows:
 
     To view positive, negative, and neutral tweets, we add the following
     code:
-
-
 
     ```
     positive_tweets.head(15)

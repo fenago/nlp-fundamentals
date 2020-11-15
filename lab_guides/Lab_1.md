@@ -4,8 +4,6 @@
 Lab 1. Introduction to Natural Language Processing
 ==============================================
 
-
-
 Learning Objectives
 -------------------
 
@@ -43,8 +41,6 @@ It\'s a basic means of communication. To define more specifically,
 language is a mutually agreed set of protocols involving words/sounds we
 use to communicate with each other.
 
-
-
 History of NLP
 ==============
 
@@ -68,11 +64,7 @@ language. Let\'s understand this with an example. Suppose you have a
 text file that contains your outgoing phone calls and SMS log data in
 the following format:
 
-
-
 ![](./images/C13142_01_01.jpg)
-
-
 
 In the preceding figure, the first two fields represent the **date** and
 **time** at which the call was made or the SMS was sent. The third field
@@ -90,8 +82,6 @@ The following figure shows records of call data stored in a text file:
 
 
 ![](./images/C13142_01_02.jpg)
-
-
 
 
 Now, the data shown in the preceding figure is not exactly a human
@@ -125,8 +115,6 @@ These tasks, which are part of NLP, are not part of text analytics. Now
 we will look at an exercise that will give us a better understanding of
 text analytics.
 
-
-
 Exercise 1: Basic Text Analytics
 --------------------------------
 
@@ -148,8 +136,6 @@ text data. Follow these steps to implement this exercise:
 3.  Check whether the word \'`quick`\' belongs to that text
     using the following code:
 
-
-
     ```
     'quick' in sentence
     ```
@@ -159,8 +145,6 @@ text data. Follow these steps to implement this exercise:
 
 4.  Find out the `index` value of the word \'`fox`\'
     using the following code:
-
-
 
     ```
     sentence.index('fox')
@@ -172,8 +156,6 @@ text data. Follow these steps to implement this exercise:
 5.  To find out the rank of the word \'`lazy`\', use the
     following code:
 
-
-
     ```
     sentence.split().index('lazy')
     ```
@@ -183,8 +165,6 @@ text data. Follow these steps to implement this exercise:
 
 6.  For printing the third word of the given text, use the following
     code:
-
-
 
     ```
     sentence.split()[2]
@@ -196,8 +176,6 @@ text data. Follow these steps to implement this exercise:
 7.  To print the third word of the given sentence in reverse order, use
     the following code:
 
-
-
     ```
     sentence.split()[2][::-1]
     ```
@@ -208,8 +186,6 @@ text data. Follow these steps to implement this exercise:
 8.  To concatenate the first and last words of the given sentence, use
     the following code:
 
-
-
     ```
     words = sentence.split()first_word = words[0]last_word = words[len(words)-1]concat_word = first_word + last_word print(concat_word)
     ```
@@ -218,8 +194,6 @@ text data. Follow these steps to implement this exercise:
     The code will generate the output \'**Thedog**\'.
 
 9.  For printing words at even positions, use the following code:
-
-
 
     ```
     [words[i] for i in range(len(words)) if i%2 == 0]
@@ -232,11 +206,7 @@ text data. Follow these steps to implement this exercise:
 ![](./images/C13142_01_03.jpg)
 
 
-
-
 10. To print the last three letters of the text, use the following code:
-
-
 
     ```
     sentence[-3:]
@@ -246,8 +216,6 @@ text data. Follow these steps to implement this exercise:
     This will generate the output \'**dog**\'.
 
 11. To print the text in reverse order, use the following code:
-
-
 
     ```
     sentence[::-1]
@@ -260,12 +228,8 @@ text data. Follow these steps to implement this exercise:
 ![](./images/C13142_01_04.jpg)
 
 
-
-
 12. To print each word of the given text in reverse order, maintaining
     their sequence, use the following code:
-
-
 
     ```
     print(' '.join([word[::-1] for word in words]))
@@ -274,11 +238,7 @@ text data. Follow these steps to implement this exercise:
 
     The code generates the following output:
 
-
-
 ![](./images/C13142_01_05.jpg)
-
-
 
 
 We are now well acquainted with NLP. In the next section, let\'s dive
@@ -294,8 +254,6 @@ natural language. There are various standard NLP tasks. Apart from these
 tasks, you have the ability to design your own tasks as per your
 requirements. In the coming sections, we will be discussing various
 preprocessing tasks in detail and demonstrating them with an exercise.
-
-
 
 Tokenization
 ------------
@@ -329,8 +287,6 @@ make any sense here.
 
 To get a better understanding of tokenization, let\'s solve an exercise
 based on it in the next section.
-
-
 
 Exercise 2: Tokenization of a Simple Sentence
 ---------------------------------------------
@@ -368,8 +324,6 @@ exercise:
     using the `print()` function. Insert a new cell and add
     the following code to implement this:
 
-
-
     ```
     print(words)
     ```
@@ -381,13 +335,9 @@ exercise:
 ![](./images/C13142_01_06.jpg)
 
 
-
-
 Thus we can see the list of tokens generated with the help of the
 `word_tokenize()` method. In the next section, we will see
 another pre-processing step: **Parts-of-Speech (PoS) tagging**.
-
-
 
 PoS Tagging
 -----------
@@ -414,8 +364,6 @@ tag parts of speech to each word/token. This will look as follows:
 
 An exercise in the next section will definitely give a better
 understanding of this concept.
-
-
 
 Exercise 3: PoS Tagging
 -----------------------
@@ -451,8 +399,6 @@ steps to implement this exercise:
 4.  Print the tokens with the help of the `print()` function.
     To implement this, add a new cell and write the following code:
 
-
-
     ```
     print(words)
     ```
@@ -464,13 +410,9 @@ steps to implement this exercise:
 ![](./images/C13142_01_07.jpg)
 
 
-
-
 5.  In order to find the PoS for each word, we make use of the
     `pos_tag()` method of the `nltk` library. Insert
     a new cell and add the following code to implement this:
-
-
 
     ```
     nltk.pos_tag(words)
@@ -483,8 +425,6 @@ steps to implement this exercise:
 ![](./images/C13142_01_08.jpg)
 
 
-
-
 6.  In the preceding output, we can see that for each token, a PoS has
     been allotted. Here, **PRP** stands for **personal pronoun**,
     **VBP** stands for **verb present**, **VGB** stands for **verb
@@ -494,8 +434,6 @@ steps to implement this exercise:
 We have learned about labeling appropriate PoS to tokens in a sentence.
 In the next section, we will learn about **stop words** in sentences and
 ways to deal with them.
-
-
 
 Stop Word Removal
 -----------------
@@ -509,8 +447,6 @@ the sentence, they need to be removed.
 
 In the next section, we will look at the practical implementation of
 removing stop words from a given sentence.
-
-
 
 Exercise 4: Stop Word Removal
 -----------------------------
@@ -551,8 +487,6 @@ exercise:
     `print()` function. Insert a new cell and add the
     following code to view the list:
 
-
-
     ```
     print(stop_words)
     ```
@@ -562,8 +496,6 @@ exercise:
 
     
 ![](./images/C13142_01_09.jpg)
-
-
 
 
 5.  To remove the stop words from a sentence, we first assign a string
@@ -581,8 +513,6 @@ exercise:
 6.  To print the list of tokens, insert a new cell and add the following
     code:
 
-
-
     ```
     print(sentence_words)
     ```
@@ -592,8 +522,6 @@ exercise:
 
     
 ![](./images/C13142_01_10.jpg)
-
-
 
 
 7.  To remove the stopwords, first we need to loop through each word in
@@ -611,8 +539,6 @@ exercise:
     we print the `sentence_no_stops` variable. Insert a new
     cell and add the following code to print:
 
-
-
     ```
     print(sentence_no_stops)
     ```
@@ -620,11 +546,7 @@ exercise:
 
     The code generates the following output:
 
-
-
 ![](./images/C13142_01_11.jpg)
-
-
 
 
 As you can see in the preceding figure, stopwords such as \"**am,**\"
@@ -633,8 +555,6 @@ out and text without stop words is produced as output.
 
 We have learned how to remove stop words from given text. In the next
 section, we will focus on normalizing text.
-
-
 
 Text Normalization
 ------------------
@@ -653,8 +573,6 @@ stemming, and lemmatization, which will be covered later.
 
 For a better understanding of this topic, we will look into practical
 implementation in the next section.
-
-
 
 Exercise 5: Text Normalization
 ------------------------------
@@ -692,8 +610,6 @@ Follow these steps to implement this exercise:
 4.  Now, in order to check whether the text has been normalized, we
     insert a new cell and add the following code to print it:
 
-
-
     ```
     print(normalized_sentence)
     ```
@@ -701,19 +617,13 @@ Follow these steps to implement this exercise:
 
     The code generates the following output:
 
-
-
 ![](./images/C13142_01_12.jpg)
-
-
 
 
 In the preceding figure, we can see that our text has been normalized.
 
 Now that we have learned the basics of text normalization, in the next
 section, we explore various other ways that text can be normalized.
-
-
 
 Spelling Correction
 -------------------
@@ -723,8 +633,6 @@ project. It can be time consuming, but without it there are high chances
 of losing out on required information. We make use of the
 \"**autocorrect**\" Python library to correct spellings. Let\'s look at
 the following exercise to get a better understanding of this.
-
-
 
 Exercise 6: Spelling Correction of a Word and a Sentence
 --------------------------------------------------------
@@ -750,8 +658,6 @@ Python. Follow these steps in order to implement this exercise:
     word as a parameter to the `spell()` function. Insert a
     new cell and add the following code to implement this:
 
-
-
     ```
     spell('Natureal')
     ```
@@ -761,8 +667,6 @@ Python. Follow these steps in order to implement this exercise:
 
     
 ![](./images/C13142_01_13.jpg)
-
-
 
 
 4.  In order to correct the spelling of a sentence, we first need to
@@ -779,8 +683,6 @@ Python. Follow these steps in order to implement this exercise:
 5.  We make use of the `print()` function to print all tokens.
     Insert a new cell and add the following code to print tokens:
 
-
-
     ```
     print(sentence)
     ```
@@ -790,8 +692,6 @@ Python. Follow these steps in order to implement this exercise:
 
     
 ![](./images/C13142_01_14.jpg)
-
-
 
 
 6.  Now that we have got the tokens, we loop through each token in
@@ -807,8 +707,6 @@ Python. Follow these steps in order to implement this exercise:
 7.  To print the correct sentence, we insert a new cell and add the
     following code:
 
-
-
     ```
     print(sentence_corrected)
     ```
@@ -818,8 +716,6 @@ Python. Follow these steps in order to implement this exercise:
 
     
 ![](./images/C13142_01_15.jpg)
-
-
 
 
 8.  In the preceding figure, we can see that most of the wrongly spelled
@@ -833,8 +729,6 @@ Python. Follow these steps in order to implement this exercise:
     In the next section, we will look at **stemming**, which is another
     form of text normalization.
 
-
-
 Stemming
 --------
 
@@ -847,17 +741,11 @@ the same meaning. Stemming is a process that helps us in doing so. If we
 look at the following figure, we get a perfect idea about how words get
 transformed into their base forms:
 
-
-
 ![](./images/C13142_01_16.jpg)
-
-
 
 
 To get a better understanding about stemming, we shall look into an
 exercise in the next section.
-
-
 
 Exercise 7: Stemming
 --------------------
@@ -882,8 +770,6 @@ to implement this exercise:
     method. To implement this, insert a new cell and add the following
     code:
 
-
-
     ```
     stemmer.stem("production")
     ```
@@ -894,10 +780,6 @@ to implement this exercise:
 
     
 ![](./images/C13142_01_17.jpg)
-
-
-
-
 
 
     ```
@@ -912,10 +794,6 @@ to implement this exercise:
 ![](./images/C13142_01_18.jpg)
 
 
-
-
-
-
     ```
     stemmer.stem("firing")
     ```
@@ -926,10 +804,6 @@ to implement this exercise:
 
     
 ![](./images/C13142_01_19.jpg)
-
-
-
-
 
 
     ```
@@ -944,15 +818,11 @@ to implement this exercise:
 ![](./images/C13142_01_20.jpg)
 
 
-
-
 4.  From the preceding figures, we can see that the entered words are
     converted into their base forms.
 
 In the next section, we will focus on **lemmatization**, which is
 another form of text normalization.
-
-
 
 Lemmatization
 -------------
@@ -965,8 +835,6 @@ check is being made, by looking through the dictionary to extract the
 base form of a word. However, this additional check slows down the
 process. To get a better understanding about lemmatization, we will look
 at an exercise in the next section.
-
-
 
 Exercise 8: Extracting the base word using Lemmatization
 --------------------------------------------------------
@@ -1001,8 +869,6 @@ form of a given word. Follow these steps to implement this exercise:
     class. Insert a new cell and add the following code to implement
     this:
 
-
-
     ```
     lemmatizer.lemmatize('products')
     ```
@@ -1011,11 +877,7 @@ form of a given word. Follow these steps to implement this exercise:
     With the input \"`products`\", the following output is
     generated:
 
-
-
 ![](./images/C13142_01_21.jpg)
-
-
 
 
 ```
@@ -1025,11 +887,7 @@ lemmatizer.lemmatize('production')
 With the input \"`production`\", the following output is
 generated:
 
-
-
 ![](./images/C13142_01_22.jpg)
-
-
 
 
 ```
@@ -1038,11 +896,7 @@ lemmatizer.lemmatize('coming')
 
 With the input \"`coming`\", the following output is generated:
 
-
-
 ![](./images/C13142_01_23.jpg)
-
-
 
 
 ```
@@ -1052,11 +906,7 @@ lemmatizer.lemmatize('battle')
 With the input \"`battle`\", the following output is
 generated:
 
-
-
 ![](./images/C13142_01_24.jpg)
-
-
 
 
 We have learned how to use the lemmatization process to transform a
@@ -1064,8 +914,6 @@ given word into its base form.
 
 In the next section, we will look at another preprocessing step in NLP:
 **named entity recognition (NER)**.
-
-
 
 NER
 ---
@@ -1076,8 +924,6 @@ the named entities (such as proper nouns) and map them to the categories
 that are already defined. For example, the categories might include
 names of persons, places, and so on. To get a better understanding of
 this process, we\'ll look at an exercise.
-
-
 
 Exercise 9: Treating Named Entities
 -----------------------------------
@@ -1111,8 +957,6 @@ Follow these steps to implement this exercise:
 4.  To find the named entities from the preceding text, insert a new
     cell and the following code:
 
-
-
     ```
     i = nltk.ne_chunk(nltk.pos_tag(word_tokenize(sentence)), binary=True)
     [a for a in i if len(a)==1]
@@ -1121,11 +965,7 @@ Follow these steps to implement this exercise:
 
     The code generates the following output:
 
-
-
 ![](./images/C13142_01_25.jpg)
-
-
 
 
 In the preceding figure, we can see that the code identifies the named
@@ -1134,8 +974,6 @@ already-defined category such as \"**NNP**\".
 
 In the next section, we will focus on **word sense disambiguation**,
 which helps us identify the right sense of any word.
-
-
 
 Word Sense Disambiguation
 -------------------------
@@ -1151,17 +989,11 @@ being analyzed. The following figure displays a perfect example of how
 ambiguity is caused due to the usage of the same word in different
 sentences:
 
-
-
 ![](./images/C13142_01_26.jpg)
-
-
 
 
 To get a better understanding about this process, let\'s look at an
 exercise in the next section.
-
-
 
 Exercise 10: Word Sense Disambiguation
 --------------------------------------
@@ -1198,8 +1030,6 @@ different sentences. Follow these steps to implement this exercise:
     the `nltk.wsd` library. Insert a new cell and add the
     following code to implement this:
 
-
-
     ```
     print(lesk(word_tokenize(sentence1), 'bank'))
     ```
@@ -1207,11 +1037,7 @@ different sentences. Follow these steps to implement this exercise:
 
     The code generates the following output:
 
-
-
 ![](./images/C13142_01_27.jpg)
-
-
 
 
 Here, `savings_bank.n.02` refers to a container for keeping
@@ -1224,11 +1050,7 @@ print(lesk(word_tokenize(sentence2), 'bank'))
 
 The code generates the following output:
 
-
-
 ![](./images/C13142_01_28.jpg)
-
-
 
 
 Here, `bank.v.07` refers to a slope in the turn of a road.
@@ -1237,8 +1059,6 @@ Thus, with the help of the `lesk` algorithm, we are able to
 identify the sense of a word in whatever context. In the next section,
 we will focus on **sentence boundary detection**, which helps detect the
 start and end points of sentences.
-
-
 
 Sentence Boundary Detection
 ---------------------------
@@ -1251,8 +1071,6 @@ is because there can be instances wherein abbreviations are separated by
 full stops. Various analyses need to be performed at a sentence level,
 so detecting boundaries of sentences is essential. An exercise in the
 next section will provide a better understanding of this process.
-
-
 
 Exercise 11: Sentence Boundary Detection
 ----------------------------------------
@@ -1276,8 +1094,6 @@ these steps to implement this exercise:
     sentences in a given text. Insert a new cell and add the following
     code to implement this:
 
-
-
     ```
     sent_tokenize("We are reading a book. Do you know who is the publisher? It is Packt. Packt is based out of Birmingham.")
     ```
@@ -1285,11 +1101,7 @@ these steps to implement this exercise:
 
     The code generates the following output:
 
-
-
 ![](./images/C13142_01_29.jpg)
-
-
 
 
 As you can see in the figure, we are able to separate out the sentences
@@ -1298,8 +1110,6 @@ from given text.
 We have covered all the preprocessing steps that are involved in NLP.
 Now, based on the knowledge we\'ve gained, we will complete an activity
 in the next section.
-
-
 
 Activity 1: Preprocessing of Raw Text
 -------------------------------------
@@ -1339,7 +1149,7 @@ Follow these steps to implement this activity:
 
     ### Note
 
-    The solution for this activity can be found on page 254.
+    The solution for this activity can be found in the current directory.
 
 By now, you should be familiar with what NLP is and what basic
 pre-processing steps are needed to carry out any NLP project. In the
@@ -1357,18 +1167,12 @@ efficiency of the process as each phase is generally carried out by
 specialized resources. An NLP project has to go through six major
 phases, which are outlined in the following figure:
 
-
-
 ![](./images/C13142_01_30.jpg)
-
-
 
 
 Suppose you are working on a project in which you need to collect tweets
 and analyze their sentiments. We will explain how this is carried out by
 discussing each phase in the coming section.
-
-
 
 Data Collection
 ---------------
@@ -1379,8 +1183,6 @@ existing data, collect data from various online repositories, or create
 our own dataset by crawling the web. In our case, we will collect
 tweets.
 
-
-
 Data Preprocessing
 ------------------
 
@@ -1390,8 +1192,6 @@ used in this lab. It is necessary to clean the collected data, as
 dirty data tends to reduce effectiveness and accuracy. In our case, we
 will remove the unnecessary URLs, words, and more from the collected
 tweets.
-
-
 
 Feature Extraction
 ------------------
@@ -1404,8 +1204,6 @@ equivalent numerical form. In our case, we represent the cleaned tweets
 using different kinds of matrices, such as bag of words and TF-IDF. We
 will be learning more about these matrices in later chapters.
 
-
-
 Model Development
 -----------------
 
@@ -1414,8 +1212,6 @@ can be trained to gain knowledge from the data. These models are
 generally statistical, machine learning-based, deep learning-based, or
 reinforcement learning-based. In our case, we will build a model that is
 capable of extracting sentiments from numeric matrices.
-
-
 
 Model Assessment
 ----------------
@@ -1427,8 +1223,6 @@ can be done by using different parameters or metrics. These parameters
 include F1, precision, recall, and accuracy. In our case, we will
 evaluate the newly created model by checking how well it performs when
 extracting the sentiments of the tweets.
-
-
 
 Model Deployment
 ----------------
