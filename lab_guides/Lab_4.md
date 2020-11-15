@@ -398,7 +398,7 @@ to implement this exercise:
 
     The preceding code generates the following output:
 
-    ##### ![](./images/C13142_04_15.png)
+![](./images/C13142_04_15.png)
 
 
 

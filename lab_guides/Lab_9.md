@@ -1943,10 +1943,7 @@ summarizer. Follow these steps to implement this activity:
 
 
 
-![Figure 6.21: This figure shows the summary of the Why Click page when
-using summarize with word\_count=200 ](./images/C13142_06_21.jpg)
-
-
+![](./images/C13142_06_21.jpg)
 
 
 

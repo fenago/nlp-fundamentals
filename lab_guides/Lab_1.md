@@ -276,8 +276,7 @@ text data. Follow these steps to implement this exercise:
 
 
 
-![Figure 1.5: Printing the text in reverse order while preserving word
-sequence](./images/C13142_01_05.jpg)
+![](./images/C13142_01_05.jpg)
 
 
 
@@ -1210,8 +1209,7 @@ different sentences. Follow these steps to implement this exercise:
 
 
 
-![Figure 1.27: Sense carried by the word "bank" in
-sentence1](./images/C13142_01_27.jpg)
+![](./images/C13142_01_27.jpg)
 
 
 
@@ -1228,8 +1226,7 @@ The code generates the following output:
 
 
 
-![Figure 1.28: Sense carried by the word "bank" in
-sentence2](./images/C13142_01_28.jpg)
+![](./images/C13142_01_28.jpg)
 
 
 
