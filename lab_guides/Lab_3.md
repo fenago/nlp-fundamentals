@@ -1452,12 +1452,6 @@ dataset. Follow these steps to implement this exercise:
 ![](./images/64.PNG)
 
 
-
-    ##### Note
-
-    You can find high-quality color for the preceeding figure at:
-    <https://github.com/TrainingByPackt/Natural-Language-Processing-Fundamentals/blob/master/Graphics/Lesson%2003/Figure%203.50.png>.
-
 10. To identify a pair of terms with high correlation, we created an
     upper triangular matrix from the correlation matrix. We also created
     a stacked array out of it and traversed it. Add the following code

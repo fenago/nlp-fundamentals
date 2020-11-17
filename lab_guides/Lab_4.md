@@ -343,26 +343,6 @@ implement this activity:
 6.  Print the list of universities named after Tagore.
 
 
-Activity 7: Extracting and Analyzing Data Using Regular Expressions
--------------------------------------------------------------------
-
-In this activity, we will extract data from Packt\'s website. The data
-to be extracted includes FAQs and their answers, phone numbers, and
-emails. Follow these steps to implement this activity:
-
-1.  Import the necessary libraries.
-2.  Extract data from the urllib3 library.
-3.  Fetch questions and answers from the data.
-4.  Create a DataFrame consisting of questions and answers.
-5.  Fetch email addresses and phone numbers with the help of regular
-    expressions.
-
-
-In this section, we learned how to fetch data from online sources and
-analyze it in various ways. In the next section, we will discuss dealing
-with semi-structured data.
-
-
 Dealing with Semi-Structured Data
 =================================
 
@@ -387,9 +367,6 @@ file looks like:
 
 ![](./images/76.PNG)
 
-Often, the response we get when requesting a URL is in the form of JSON
-objects. To deal with a JSON file effectively, we need to know how to
-parse it. The following exercise throws light on this.
 
 Exercise 43: Dealing with JSON Files
 ------------------------------------
@@ -409,7 +386,6 @@ Follow these steps to implement this exercise:
     data = json.load(open('data_ch4/sample_json.json'))
     pprint(data)
     ```
-
 
     The preceding code generates the following output:
 

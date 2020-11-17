@@ -780,7 +780,7 @@ Follow these steps to implement this exercise:
 
 
     ```
-    sentence = "We are reading a book published by Packt which is based out of Birmingham."
+    sentence = "We are reading a book published by Fenago which is based out of Birmingham."
     ```
 
 
@@ -898,7 +898,7 @@ these steps to implement this exercise:
     code to implement this:
 
     ```
-    sent_tokenize("We are reading a book. Do you know who is the publisher? It is Packt. Packt is based out of Birmingham.")
+    sent_tokenize("We are reading a book. Do you know who is the publisher? It is Fenago. Fenago is based out of Birmingham.")
     ```
 
 
