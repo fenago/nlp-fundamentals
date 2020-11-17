@@ -26,22 +26,9 @@ formats.
 #### Lab Environment
 Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
 
-All examples are present in `work/nlp-fundamentals/Lesson4` folder. 
+All examples are present in `~/work/nlp-fundamentals/Lesson4` folder. 
 
 You can access lab at `http://<host-ip>/lab/workspaces/lab4_Data`
-
-Introduction
-============
-
-In the last lab, we learned about developing a simple classifier
-using feature extraction methods. We also covered different algorithms
-that fall under supervised and unsupervised learning. In this lab,
-you will learn about collecting data by scraping web pages and then
-processing it. You will also learn how to handle various kinds of
-semi-structured data, such as JSON and XML. We will cover different
-methods for extracting data using **Application Programming Interfaces**
-(**APIs**). Finally, we will explore different ways to extract data from
-different types of files.
 
 
 Exercise 40: Extraction of Tag-Based Information from HTML Files

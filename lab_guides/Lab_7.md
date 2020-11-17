@@ -25,7 +25,7 @@ using which a text can be represented as vector.
 #### Lab Environment
 Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
 
-All examples are present in `work/nlp-fundamentals/Lesson7` folder. 
+All examples are present in `~/work/nlp-fundamentals/Lesson7` folder. 
 
 You can access lab at `http://<host-ip>/lab/workspaces/lab7_Vector`
 

@@ -26,7 +26,7 @@ it to detect various sentiments in the data.
 #### Lab Environment
 Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
 
-All examples are present in `work/nlp-fundamentals/Lesson8` folder. 
+All examples are present in `~/work/nlp-fundamentals/Lesson8` folder. 
 
 You can access lab at `http://<host-ip>/lab/workspaces/lab8_Analysis`
 
