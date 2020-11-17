@@ -202,38 +202,10 @@ exercise:
     print(words)
     ```
 
-
-    The code generates the following output:
-
-    
-![](./images/C13142_01_06.jpg)
-
-
 Thus we can see the list of tokens generated with the help of the
 `word_tokenize()` method. In the next section, we will see
 another pre-processing step: **Parts-of-Speech (PoS) tagging**.
 
-PoS Tagging
------------
-
-If we look at the sentence,
-\"The sky is blue,\" we get four tokens -- \"The,\" \"sky,\" \"is,\" and
-\"blue\" with the help of tokenization. Now, using **PoS tagger**, we
-tag parts of speech to each word/token. This will look as follows:
-
-*\[(\'The\', \'DT\'), (\'sky\', \'NN\'), (\'is\', \'VBZ\'), (\'blue\',
-\'JJ\')\]*
-
-*DT = determiner*
-
-*NN = noun, common, singular or mass*
-
-*VBZ = verb, present tense, 3rd* *person singular*
-
-*JJ = Adjective*
-
-An exercise in the next section will definitely give a better
-understanding of this concept.
 
 Exercise 3: PoS Tagging
 -----------------------
@@ -273,11 +245,6 @@ steps to implement this exercise:
     print(words)
     ```
 
-
-    The code generates the following output:
-
-    
-![](./images/C13142_01_07.jpg)
 
 
 5.  In order to find the PoS for each word, we make use of the
