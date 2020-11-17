@@ -44,27 +44,6 @@ methods for extracting data using **Application Programming Interfaces**
 different types of files.
 
 
-Collecting Data by Scraping Web Pages
-=====================================
-
-The process of gathering data from web pages and extracting information
-from them is known as **web scraping**. More than 85% of websites are
-created using HTML, that is, **Hypertext Markup Language**. A markup
-language is one in which text content is embedded between tags. Apart
-from this, additional information can be added by using attributes
-within tags. A web page can be considered to be a document written using
-HTML. Thus, we need to know the basics of HTML to scrape web pages
-effectively. The following figure depicts the contents that are included
-within an HTML tag:
-
-![](./images/C13142_04_01.jpg)
-
-
-As you can see in the preceding figure, we can easily identify different
-elements within an HTML tag. In the next section, we will walk through
-an exercise in which we\'ll extract tag-based information from HTML
-files.
-
 Exercise 40: Extraction of Tag-Based Information from HTML Files
 ----------------------------------------------------------------
 
@@ -211,9 +190,7 @@ file. In the next section, we will focus on fetching content from web
 pages.
 
 
-Requesting Content from Web Pages
-=================================
-
+**Requesting Content from Web Pages**
 
 Whenever you visit a web page from your web browser, you actually send a
 request to fetch its content. This can be done using Python scripts.
@@ -243,17 +220,12 @@ implement this exercise:
 ![](./images/C13142_04_10.jpg)
 
 
-    ##### Note
-
-    Here, 200 indicates that we received a proper response from the URL.
-
 2.  To locate the text content of the fetched file, write the following
     code:
 
     ```
     r.text[:1000]
     ```
-
 
     The preceding code generates the following output:
 
@@ -274,40 +246,6 @@ implement this exercise:
     
 ![](./images/C13142_04_12.jpg)
 
-
-4.  Now we\'ll make use of the `urllib3` library to request
-    the content of the book, available online. Add the following code to
-    do so:
-
-    ```
-    import urllib3
-    http = urllib3.PoolManager()
-    rr = http.request('GET', 'https://www.gutenberg.org/files/766/766-0.txt')
-    rr.data[:1000]
-    ```
-
-
-    The preceding code generates the following output:
-
-    
-![](./images/C13142_04_13.jpg)
-
-
-5.  Once the content is fetched properly, we write it to a text file
-    using the following code:
-
-    ```
-    open("data_ch4/David_Copperfield_new.txt", 'wb').write(rr.data)
-    ```
-
-
-    The preceding code generates the following output:
-
-![](./images/C13142_04_14.jpg)
-
-
-We have just learned how to collect data from online sources with the
-help of requests and the urllib3 library.
 
 Exercise 42: Analyzing the Content of Jupyter Notebooks (in HTML Format)
 ------------------------------------------------------------------------
@@ -379,15 +317,8 @@ to implement this exercise:
 
 ### Note
 
-The preceding code also displays the performance of other models such as
-`Random Forest` and `XGBoost`.
+The preceding code also displays the performance of other models such as `Random Forest` and `XGBoost`.
 
-To collect data that\'s available online, we need to know how HTML pages
-can be scraped. For instance, if you come across an article on
-Wikipedia, you may want to extract certain information from it. Since
-the data is too huge to be processed manually, it would be difficult to
-deal with this situation. In the next section, we will fetch data from a
-Wikipedia page.
 
 Activity 6: Extracting Information from an Online HTML Page
 -----------------------------------------------------------
@@ -411,8 +342,6 @@ implement this activity:
 
 6.  Print the list of universities named after Tagore.
 
-    ##### Note
-    The solution for this activity can be found in the current directory.
 
 Activity 7: Extracting and Analyzing Data Using Regular Expressions
 -------------------------------------------------------------------
@@ -422,19 +351,12 @@ to be extracted includes FAQs and their answers, phone numbers, and
 emails. Follow these steps to implement this activity:
 
 1.  Import the necessary libraries.
-
 2.  Extract data from the urllib3 library.
-
 3.  Fetch questions and answers from the data.
-
 4.  Create a DataFrame consisting of questions and answers.
-
 5.  Fetch email addresses and phone numbers with the help of regular
     expressions.
 
-    ##### Note
-
-    The solution for this activity can be found in the current directory.
 
 In this section, we learned how to fetch data from online sources and
 analyze it in various ways. In the next section, we will discuss dealing
@@ -445,27 +367,12 @@ Dealing with Semi-Structured Data
 =================================
 
 
-We learned about various types of data in *Lab 2, Feature Extraction
-from Texts*. Let\'s quickly recapitulate what semi-structured data
-refers to. A dataset is said to be semi-structured if it is not in a
-row-column format but can be converted into a structured format that has
-a definite number of rows and columns. Often, we come across data that
-is stored as key-value pairs or embedded between tags, as is the case
-with **JSON** and **XML** files. These are instances of semi-structured
-data. The popular semi-structured data formats are JSON and XML.
-
 JSON
 ----
 
 JavaScript Object Notation, or JSON, files are used for storing and
-exchanging data. It is human-readable and easy to interpret. Just like
-text files and CSV files, JSON files are language independent. This
-means that different programming languages such as Python, Java, and so
-on can work with JSON files effectively. In Python, a built-in data
-structure called **dictionary** is capable of storing JSON objects as
-is. Generally, data in JSON objects is present in the form of key-value
-pairs. The datatype of values of JSON objects must be any of the
-following:
+exchanging data. It is human-readable and easy to interpret. 
+The datatype of values of JSON objects must be any of the following:
 
 -   A string
 -   A number
@@ -563,19 +470,12 @@ make use of the TextBlob library. Follow these steps to implement this
 activity:
 
 1.  Import the necessary libraries.
-
 2.  Fetch the data from <https://bit.ly/2TJ1T4H> the requests library.
-
 3.  Create a DataFrame from the fetched data.
-
 4.  Translate the comments in the data into English.
-
 5.  Make use of the TextBlob library to find the sentiment of each
     comment and display it.
 
-    ##### Note
-
-    The solution for this activity can be found in the current directory.
 
 We just learned how to detect the sentiments of comments present in a
 fetched JSON file. In the next section, we will learn about XML.
@@ -584,17 +484,7 @@ XML
 ---
 
 Just like HTML, XML is another kind of markup language that stores data
-in between tags. XML stands for Extensible Markup Language. It is
-human-readable and extensible, that is, we have the liberty to define
-our own tags. Attributes, elements, and tags in the case of XML are
-similar to those of HTML. An XML file may or may not have a declaration.
-But, if it has a declaration, then that must be the first line of the
-XML file. This declaration statement has three parts: **Version**,
-**Encoding**, and **Standalone**. Version states which version of the
-XML standard is being used; Encoding states the type of character
-encoding being used in this file; Standalone tells the parser whether
-external information is needed for interpreting the content of the XML
-file. The following figure depicts what an XML file looks like:
+in between tags.The following figure depicts what an XML file looks like:
 
 ![](./images/81.PNG)
 
@@ -607,9 +497,7 @@ XML file and a tree representation of an XML file:
 
 ![](./images/82.PNG)
 
-To deal with XML files effectively, we need to comprehend their
-structure. Let\'s learn how to parse XML files in the following
-exercise.
+
 
 Exercise 44: Dealing with a Local XML File
 ------------------------------------------
@@ -674,31 +562,7 @@ exercise:
 
 ![](./images/86.PNG)
 
-    The preceding code generates the following output:
 
-
-
-
-We just learned how to deal with a local XML file. When we request data,
-many URLs return XML files. Extracting information from a raw XML file
-is an art. In the next section, we will look at how APIs can be used to
-retrieve real-time data.
-
-Using APIs to Retrieve Real-Time Data
--------------------------------------
-
-API stands for Application Programming Interface. Let\'s understand what
-an API is, using a real-life example. Suppose you have a socket plug in
-the wall and you need to charge your cellphone using it. How will you do
-it? You will have to use a charger/adapter, which will enable you to
-connect the cellphone to the socket. Here, this adapter is acting as a
-mediator that connects the cellphone and the socket, thus enabling the
-smooth transfer of electricity between them. Similarly, some websites do
-not provide their data directly. Instead, they provide APIs, using which
-we can extract data from them. Just like the cellphone charger, an API
-acts as a mediator, enabling the smooth transfer of data between those
-websites and us. Let\'s do an exercise to get hands-on experience of
-collecting data using APIs.
 
 Exercise 45: Collecting Data Using APIs
 ---------------------------------------
@@ -720,7 +584,6 @@ this exercise:
                        headers = {'Accept': 'application/json'})
     rrq.status
     ```
-
 
     The preceding code generates the following output:
 
@@ -750,28 +613,12 @@ this exercise:
     pd.DataFrame(data['data'])
     ```
 
-
     The preceding code generates the following output:
 
 ![](./images/89.PNG)
 
 
 
-We just learned how to collect data using APIs. In the next section, we
-will see how to create an API.
-
-API Creation
-------------
-
-Often, we need to create our own APIs. The main utilities of APIs are
-for deploying models and exchanging information between heterogeneous
-platforms. Popular Python libraries that are used for creating APIs
-include Flask, Sanic, Bottle, and Django.
-
-Some websites, such as Twitter, provide ready-made APIs for extracting
-data from them. You just need to have a developer account. In the next
-section, let\'s see how we can collect data from Twitter using their
-Python API, Tweepy.
 
 Activity 9: Extracting Data from Twitter
 ----------------------------------------
@@ -803,9 +650,6 @@ Follow these to implement this activity:
 
 10. Visualize the tweets using a word cloud.
 
-    ##### Note
-
-    The solution for this activity can be found in the current directory.
 
 We just learned how to extract data from twitter, analyze tweets, and
 create a word cloud out of them. In the next section, we will look at
@@ -986,7 +830,6 @@ implement this exercise:
     ```
     fp.close()
     ```
-
 
 We just learned how to perform various operations on a local file.
 

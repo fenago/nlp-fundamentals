@@ -40,37 +40,22 @@ namely structured, semi-structured, and unstructured, as shown in the
 following diagram:
 
 
- ![](./images/1.PNG)
+![](./images/1.PNG)
  
  
-These three categories are explained in detail here:
+Three categories are:
 
--   **Structured Data:** This is the most organized form of data. It is
-    represented in tabular formats such as Excel files and
-    Comma-Separated Value (CSV) files. The following figure shows what
-    structured data usually looks like:
+- Structured Data:
 
-![](./images/2.PNG)
+    ![](./images/2.PNG)
 
+- Semi-Structured Data:
 
--   **Semi-Structured Data:** This type of data is not presented in a
-    tabular structure, but it can be represented in a tabular format
-    after transformation. Here, information is usually stored between
-    tags following a definite pattern. XML and HTML files can be
-    referred to as semi-structured data. The following figure shows how
-    semi-structured data can appear:
+    ![](./images/3.PNG)
 
-![](./images/3.PNG)
+- Unstructured Data
 
-
--   **Unstructured Data:** This type of data is the most difficult to
-    deal with. Machine learning algorithms would find it difficult to
-    comprehend unstructured data without any loss of information. Text
-    corpora and images are examples of unstructured data. The following
-    figure shows how unstructured data looks like:
-
-![](./images/4.PNG)
-
+    ![](./images/4.PNG)
 
 
 
@@ -82,57 +67,6 @@ shown in the following figure:
 
 ![](./images/5.PNG)
 
-Let\'s look at each category here:
-
--   **Text Data:** This refers to text corpora consisting of written
-    sentences. This type of data can only be read. An example would be
-    the text corpus of a book.
--   **Image Data:** This refers to pictures that are used to communicate
-    messages. This type of data can only be seen.
--   **Audio Data:** This refers to recordings of someone\'s voice,
-    music, and so on. This type of data can only be heard.
--   **Video Data:** A continuous series of images coupled with audio
-    forms a video. This type of data can be seen as well as heard.
-
-We have learned about the different types of data as well their
-categorization on the basis of structure and content. When dealing with
-unstructured data, it is necessary to clean it first. In the coming
-section, we will look into some pre-processing steps for cleaning data.
-
-
-Cleaning Text Data
-==================
-
-
-Most of the time, text data cannot be used as it is. This is because the
-presence of various unknown symbols or links makes it dirty or unfit for
-use. **Data cleaning** is the art of extracting meaningful portions from
-data by eliminating unnecessary details. Consider the sentence, *He
-tweeted, \'Live coverage of General Elections available at
-this.tv/show/ge2019. \_/\\\_ Please tune in :) \'*.
-
-Various symbols, such as \"\_/\\\_\" and \":),\" are present in the
-sentence. They do not contribute much to its meaning. We need to remove
-such unwanted details. This is done not only to focus more on the actual
-content but also to reduce computations. To achieve this, methods such
-as **tokenization** and **stemming** are used. We will learn about them
-one by one in the upcoming sections.
-
-Tokenization
-------------
-
-Tokenization and word tokenizers were briefly described in *Lab 1,
-Introduction to Natural Language Processing*. Tokenization is the
-process of splitting sentences into their constituents; that is, words.
-In this lab, we will see how tokenization is done using various
-packages.
-
-The cleaning of text data is essential before tokenization. **Regular
-expressions** are widely used for cleaning. A regular expression is a
-set of characters in a given order that represents a pattern. This
-pattern is searched for in the texts. In Python, the **re** package is
-used to develop regular expressions. To get a better understanding of
-this, we will carry out the exercise in the next section.
 
 Exercise 12: Text Cleaning and Tokenization
 -------------------------------------------
@@ -175,16 +109,6 @@ Follow these steps to implement this exercise:
 
 ![](./images/6.PNG)
 
-We have learned about how to extract the tokens from a text. Often,
-extracting each token separately does not help. For instance, consider
-the sentence, \"I don\'t hate you, but your behavior.\" Here, if we
-process each of the tokens, such as \"hate\" and \"behavior,\"
-separately, then the true meaning of the sentence would not be
-comprehended. In this case, the context in which these tokens are
-present becomes essential. Thus, we consider n consecutive tokens at a
-time. **n-grams** refers to the grouping of n consecutive tokens
-together. In the next section, we will look at an exercise where n-grams
-can be extracted from a given text.
 
 Exercise 13: Extracting n-grams
 -------------------------------
@@ -291,9 +215,8 @@ namely, via custom-defined functions, via `nltk`, and via
 **Keras** and **TextBlob** are two of the most popular Python libraries
 used for performing various NLP tasks. TextBlob provides a simple and
 easy-to-use interface to do so. Keras is used mainly for performing deep
-learning-based NLP tasks. In the next section, we will carry out an
-exercise where we use the Keras and TextBlob libraries to tokenize
-texts.
+learning-based NLP tasks.
+
 
 Exercise 14: Tokenizing Texts with Different Packages -- Keras and TextBlob
 ---------------------------------------------------------------------------
@@ -351,34 +274,6 @@ texts. Follow these steps to implement this exercise:
 ![](./images/15.PNG)
 
 
-We have learned how to tokenize texts using the Keras and TextBlob
-libraries. In the next section, we will discuss different types of
-tokenizers.
-
-Types of Tokenizers
--------------------
-
-There are different types of tokenizers that come in handy for specific
-tasks. Let\'s look at them one by one:
-
--   **Tweet tokenizer:** This is specifically designed for tokenizing
-    tweets. It is capable of dealing with emotions and expressions of
-    sentiment, which are used widely on Twitter.
--   **MWE tokenizer:** MWE stands for **Multi-Word Expression**. Here,
-    certain groups of multiple words are treated as one entity during
-    tokenization, such as \"United States of America,\" \"People\'s
-    Republic of China,\" \"not only,\" and \"but also.\"
--   **Regular expression tokenizer:** These tokenizers are developed
-    using regular expressions. Sentences are split based on the
-    occurrence of a particular pattern.
--   **Whitespace tokenizer:** This tokenizer splits a string whenever a
-    space, tab, or newline character is present.
--   **Word Punkt tokenizer** : This splits a text into a list of
-    alphabetical characters, digits, and non-alphabetical characters.
-
-Now that we have learned about the different types of tokenizers, in the
-next section, we will carry out an exercise to get a better
-understanding of them.
 
 Exercise 15: Tokenizing Text Using Various Tokenizers
 -----------------------------------------------------
@@ -504,27 +399,6 @@ tokenize text. Follow these steps to implement this exercise:
 
 We have learned how to tokenize text using different tokenizers.
 
-Issues with Tokenization
-------------------------
-
-Although tokenization appears to be an easy task, in reality, it is not
-so. This is primarily because of ambiguities that arise due to the
-presence of whitespaces and hyphens. Moreover, sentences in certain
-languages, such as Chinese and Japanese, do not have words separated by
-whitespaces, thus making it difficult to tokenize them. In the next
-section, we will discuss another pre-processing step: stemming.
-
-Stemming
---------
-
-In languages such as English, the original forms of words get changed
-when used in sentences. The process of restoring the original form of a
-word is known as **stemming**. It is essential to restore words back to
-their base form, because without this, compilers and computing machines
-would treat two or more different forms of the same word as different
-entities, despite them having the same meaning. **RegexpStemmer** and
-the **Porter stemmer** are the most widely used stemmers. Let\'s learn
-about them one by one.
 
 RegexpStemmer
 -------------
@@ -574,15 +448,11 @@ implement this exercise:
 
 In the next section, we will discuss the Porter stemmer.
 
-The Porter Stemmer
-------------------
+#### The Porter Stemmer
 
 The Porter stemmer is the most common stemmer for dealing with English
 words. It removes various morphological and inflectional endings (such
-as suffixes and prefixes) from English words. In doing so, it helps us
-to extract the base form of a word from its variations. To get a better
-understanding of this, we will carry out an exercise in the next
-section.
+as suffixes and prefixes) from English words.
 
 Exercise 17: The Porter Stemmer
 -------------------------------
@@ -601,7 +471,6 @@ these steps to implement this exercise:
     from nltk.stem.porter import *
     ```
 
-
 3.  Now we\'ll make use of the Porter stemmer to stem each word of the
     `sentence` variable:
 
@@ -615,20 +484,10 @@ these steps to implement this exercise:
 
 ![](./images/27.PNG)
 
-In the next section, we will learn about another pre-processing step:
-lemmatization.
+In the next section, we will learn about another pre-processing step: lemmatization.
 
-Lemmatization
--------------
 
-A problem that occurs while stemming is that, often, stemmed words do
-not carry any meaning. For instance, if we use the Porter stemmer on the
-word \"independence,\" we get \"independ.\" Now, the word \"independ\"
-is not present in the English dictionary; it does not carry any meaning.
-Lemmatization deals with such cases by using a vocabulary and analyzing
-the words\' morphologies. It returns the base forms of words that can
-actually be found in dictionaries. To get a better understanding of
-this, let\'s look at an exercise in the next section.
+
 
 Exercise 18: Lemmatization
 --------------------------
@@ -768,8 +627,6 @@ exercise:
 
 ![](./images/32.PNG)
 
-In the next section, we will look at another pre-processing task:
-stop-word removal.
 
 Stop-Word Removal
 -----------------
@@ -815,39 +672,7 @@ We have learned how to remove the stop words from a given sentence. In
 the next section, we will explore the concept of extracting features
 from texts.
 
-Feature Extraction from Texts
-=============================
 
-Let's understand feature extraction with real-life examples. Features
-represent the characteristics of a person or a thing. These
-characteristics may or may not uniquely represent a person or a thing.
-For instance, the general characteristics that a person possesses, such
-as the number of ears, hands, and legs, are generally not enough to
-identify that person uniquely. But characteristics such as fingerprints
-and DNA sequences can be used to recognize that person distinctly.
-Similarly, in feature extraction, we try to extract attributes from
-texts that represent those texts uniquely. These attributes are called
-features. Machine learning algorithms take only numeric features as
-input. So, it is of utmost importance to represent texts as numeric
-features. When dealing with texts, we extract both general and specific
-features. Sometimes, individual words constituting texts do not affect
-some features directly, such as the language of the text and the total
-number of words. These features can be referred to as general features.
-Specific features include bag of words, and TF-IDF representations of
-texts. Let's understand these in the coming sections.
-
-Extracting General Features from Raw Text
------------------------------------------
-
-General features refer to those that are not directly dependent on the
-individual tokens constituting a text corpus, such as the number of
-words, the number of occurrences of each part of speech, and the number
-of uppercase and lowercase words.
-
-Let's consider two sentences: "The sky is blue." and "The pillar is
-yellow.". Here, both sentences have the same number of words (a general
-feature), that is, four. But the individual constituent tokens are
-different. Let's complete an exercise to understand this better.
 
 Exercise 22: Extracting General Features from Raw Text
 ------------------------------------------------------
@@ -863,7 +688,6 @@ these steps to implement this exercise:
     `DataFrame` with four sentences. Add the following code to
     implement this:
 
-    Copy
 
     ```
     import pandas as pd
@@ -881,7 +705,6 @@ these steps to implement this exercise:
     the column text, convert them to TextBlob objects, and extract words
     from them. Add the following code to implement this:
 
-    Copy
 
     ```
     from textblob import TextBlob
@@ -899,7 +722,6 @@ these steps to implement this exercise:
     objects, and extract the words from them to check whether any of the
     words belong to the list of *wh* words that has been declared:
 
-    Copy
 
     ```
     wh_words = set(['why', 'who', 'which', 'what', 'where', 'when', 'how'])
@@ -916,7 +738,6 @@ these steps to implement this exercise:
     the column text, convert them to TextBlob objects, and extract their
     sentiment scores:
 
-    Copy
 
     ```
     df['polarity'] = df['text'].apply(lambda x : TextBlob(str(x)).sentiment.polarity)
@@ -931,7 +752,6 @@ these steps to implement this exercise:
     the column text, convert them to TextBlob objects, and extract their
     subjectivity scores:
 
-    Copy
 
     ```
     df['subjectivity'] = df['text'].apply(lambda x : TextBlob(str(x)).sentiment.subjectivity)
@@ -950,7 +770,6 @@ these steps to implement this exercise:
 7.  Use the apply function to iterate through each row of the column
     text, convert them to TextBlob objects, and detect their languages:
 
-    Copy
 
     ```
     df['language'] = df['text'].apply(lambda x : TextBlob(str(x)).detect_language())
@@ -997,9 +816,7 @@ Follow these steps to implement this activity:
 9.  Find the amount of words.
 10. Find the amount of whitespaces for each sentence.
 
-    ##### Note
-
-    The solution for this activity can be found in the current directory.
+    Note: The solution for this activity can be found in the current directory.
 
 We have learned how to extract general features from a given text. In
 the next section, we will explore special features that can be extracted
@@ -1020,17 +837,15 @@ text documents:
 
 *Document 2: Byomkesh Bakshi is not a detective, he is a truth seeker.*
 
-The corresponding BoW representation would be as follows:
 
-
-The tabular representation of the BoW model would be as follows:
-
+The representation of the BoW model would be as follows:
 
 ![](./images/40.PNG)
 
 Let's see how BoW can be implemented using Python.
 
 ![](./images/41.PNG)
+
 
 Exercise 23: Creating a BoW
 ---------------------------
@@ -1043,7 +858,6 @@ steps to implement this exercise:
 2.  Import the necessary libraries and declare a list corpus. Add the
     following code to implement this:
 
-    Copy
 
     ```
     import pandas as pd
@@ -1058,7 +872,6 @@ steps to implement this exercise:
 3.  Now we'll make use of the `CountVectorizer` function to
     create the BoW model. Add the following code to do this:
 
-    Copy
 
     ```
     bag_of_words_model = CountVectorizer()
@@ -1075,7 +888,6 @@ steps to implement this exercise:
 4.  Now we create a BoW model for the 10 most frequent terms. Add the
     following code to implement this:
 
-    Copy
 
     ```
     bag_of_words_model_small = CountVectorizer(max_features=10)
@@ -1114,7 +926,6 @@ documents. Follow these steps to implement this exercise:
     provided by `sklearn`, that is,
     `fetch_20newsgroups`. Add the following code to do this:
 
-    Copy
 
     ```
     from pylab import *
@@ -1134,7 +945,6 @@ documents. Follow these steps to implement this exercise:
 3.  Now we'll add individual printable characters to get a list of stop
     words. Add the following code to implement this:
 
-    Copy
 
     ```
     stop_words = stopwords.words('english')
@@ -1143,7 +953,6 @@ documents. Follow these steps to implement this exercise:
 
 4.  To tokenize the corpus, add the following code:
 
-    Copy
 
     ```
     tokenized_corpus = [word.lower() for sentence in newsgroups_data_sample['data'] \
@@ -1153,7 +962,6 @@ documents. Follow these steps to implement this exercise:
 
 5.  Add the following code to calculate the frequency of each token:
 
-    Copy
 
     ```
     token_count_di = Counter(tokenized_corpus)
@@ -1168,7 +976,6 @@ documents. Follow these steps to implement this exercise:
     with the expected ranks and frequencies as per Zipf's law, we add
     the following code:
 
-    Copy
 
     ```
     frequencies = [b for (a,b) in token_count_di.most_common(10000)]
@@ -1194,28 +1001,9 @@ documents. Follow these steps to implement this exercise:
 
 ![](./images/45.PNG)
 
+
 TF-IDF
 ------
-
-Previously, we looked at the BoW model. That model has a severe
-drawback. The frequency of occurrence of a token does not fully
-represent how much information it carries about a document. This is
-because a term occurring multiple times in many documents does not
-convey much information. Rare terms can carry much more information
-about the documents they are present in. TF-IDF, or Term
-Frequency-Inverse Document Frequency, is a method of representing text
-data in a matrix format (row-column/table format) using numbers that
-quantify how much information these terms carry in the given documents.
-Just like the BoW model, each row, i, represents a text document from
-the given set of text documents. Each column, j, corresponds to a word
-from the vocabulary.
-
-The Term Frequency (TF) for a given term, j, in a document, i, is equal
-to the number of times term j occurs in document i. Rarely occurring
-terms are more informative than frequently occurring general terms. To
-account for this, we need to multiply another factor by T. This factor
-denotes how specific a term is to a given document. This is called the
-Inverse Document Frequency (IDF).
 
 The IDF for a given term is given by the following formula:
 
@@ -1230,6 +1018,7 @@ will be as follows:
 Let's do an exercise in the next section and learn how TF-IDF can be
 implemented in Python.
 
+
 Exercise 25: TF-IDF Representation
 ----------------------------------
 
@@ -1241,7 +1030,6 @@ frequent terms. Follow these steps to implement this exercise:
 2.  Import all the necessary libraries and create a DataFrame consisting
     of the sentences. Add the following code to implement this:
 
-    Copy
 
     ```
     import pandas as pd
@@ -1255,7 +1043,6 @@ frequent terms. Follow these steps to implement this exercise:
 
 3.  Now, to create a TF-IDF model, we write the following code:
 
-    Copy
 
     ```
     tfidf_model = TfidfVectorizer()
@@ -1269,7 +1056,6 @@ frequent terms. Follow these steps to implement this exercise:
 4.  Now, to create a DataFrame from the generated `tf-idf`
     matrix, we write the following code:
 
-    Copy
 
     ```
     tfidf_df = pd.DataFrame(tfidf_model.fit_transform(corpus).todense())
@@ -1285,7 +1071,6 @@ frequent terms. Follow these steps to implement this exercise:
     the 10 most frequent terms. Add the following code to implement
     this:
 
-    Copy
 
     ```
     tfidf_model_small = TfidfVectorizer(max_features=10)
@@ -1331,42 +1116,13 @@ Feature Engineering
 
 
 Feature engineering is a method for extracting new features from
-existing features. These new features are extracted as they tend to
-effectively explain variability in data. One application of feature
-engineering could be to calculate how similar different pieces of text
-are. There are various ways of calculating the similarity between two
+existing features. There are various ways of calculating the similarity between two
 texts. The most popular methods are cosine similarity and Jaccard
 similarity. Let\'s learn about each of them:
 
--   **Cosine similarity**: The cosine similarity between two texts is
-    the cosine of the angle between their vector representations. BoW
-    and TF-IDF matrices can be regarded as vector representations of
-    texts.
+- Cosine similarity
+- Jaccard similarity
 
--   **Jaccard similarity**: This is the ratio of the number of terms
-    common between two text documents to the total number of unique
-    terms present in those texts.
-
-    Let\'s understand this with the help of an example. Suppose there
-    are two texts:
-
-    Text 1: I like detective Byomkesh Bakshi.
-
-    Text 2: Byomkesh Bakshi is not a detective, he is a truth seeker.
-
-    The common terms are \"Byomkesh,\" \"Bakshi,\" and \"detective.\"
-
-    The number of common terms in the texts is three.
-
-    The unique terms present in the texts are \"I,\" \"like,\" \"is,\"
-    \"not,\" \"a,\" \"he,\" \"is,\" \"truth,\" \"seeker.\"
-
-    The number of unique terms is nine.
-
-    Therefore, the Jaccard similarity is 3/9 = 0.3.
-
-To get a better understanding of text similarity, we will solve an
-exercise in the next section.
 
 Exercise 26: Feature Engineering (Text Similarity)
 --------------------------------------------------
@@ -1592,16 +1348,9 @@ Other Visualizations
 Apart from word clouds, there are various other ways of visualizing
 texts. Some of the most popular ways are listed here:
 
--   **Visualizing sentences using a dependency parse tree:** Generally,
-    the phrases constituting a sentence depend on each other. We depict
-    these dependencies by using a tree structure known as a dependency
-    parse tree. For instance, the word \"*helps*\" in the sentence \"God
-    helps those who help themselves\" depends on two other words. These
-    words are \"*God*\" (the one who helps) and \"*those*\" (the ones
-    who are helped).
--   **Visualizing named entities in a text corpus:** In this case, we
-    extract the named entities from texts and highlight them by using
-    different colors.
+- Visualizing sentences using a dependency parse tree
+- Visualizing named entities in a text corpus
+
 
 Let\'s go through the following exercise to understand this better.
 
@@ -1693,9 +1442,7 @@ Follow these steps to implement this activity:
 6.  Justify the word cloud by comparing it with the word frequency
     calculated.
 
-    ##### Note
-
-    The solution for this activity can be found in the current directory.
+    Note: The solution for this activity can be found in the current directory.
 
 
 #### Summary

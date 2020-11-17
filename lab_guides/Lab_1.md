@@ -31,90 +31,6 @@ All examples are present in `work/nlp-fundamentals/Lesson1` folder.
 You can access lab at `http://<host-ip>/lab/workspaces/lab1_Introduction`
 
 
-Introduction
-============
-
-
-To start with looking at NLP, let\'s understand what natural language
-is. In simple terms, it\'s the language we use to express ourselves.
-It\'s a basic means of communication. To define more specifically,
-language is a mutually agreed set of protocols involving words/sounds we
-use to communicate with each other.
-
-History of NLP
-==============
-
-
-NLP is an area that overlaps with others. It has emerged from fields
-such as artificial intelligence, linguistics, formal languages, and
-compilers. With the advancement of computing technologies and the
-increased availability of data, the way natural language is being
-processed has changed. Previously, a traditional rule-based system was
-used for computations. Today, computations on natural language are being
-done using machine learning and deep learning techniques.
-
-
-Text Analytics and NLP
-======================
-
-
-**Text analytics** is the method of extracting meaningful insights and
-answering questions from text data. This text data need not be a human
-language. Let\'s understand this with an example. Suppose you have a
-text file that contains your outgoing phone calls and SMS log data in
-the following format:
-
-![](./images/C13142_01_01.jpg)
-
-In the preceding figure, the first two fields represent the **date** and
-**time** at which the call was made or the SMS was sent. The third field
-represents the type of data. If the data is of the call type, then the
-value for this field will be set as **voice\_call**. If the type of data
-is **sms**, the value of this field will be set to **sms**. The fourth
-field is for the phone number and name of the contact. If the number of
-the person is not in the contact list, then the **name** value will be
-left blank. The last field is for the duration of the call or text
-message. If the type of the data is **voice\_call**, then the value in
-this field will be the **duration** of that call. If the type of data is
-**sms,** then the value in this field will be the text message.
-
-The following figure shows records of call data stored in a text file:
-
-
-![](./images/C13142_01_02.jpg)
-
-
-Now, the data shown in the preceding figure is not exactly a human
-language. But it contains various information that can be extracted by
-analyzing it. A couple of questions that can be answered by looking at
-this data are as follows:
-
--   How many New Year greetings were sent by SMS on 1st January?
--   How many people were contacted whose name is not in the contact
-    list?
-
-The art of extracting useful insights from any given text data can be
-referred to as text analytics. NLP, on the other hand, is not just
-restricted to text data. Voice (speech) recognition and analysis also
-come under the domain of NLP. NLP can be broadly categorized into two
-types: Natural Language Understanding (NLU) and Natural Language
-Generation (NLG). A proper explanation of these terms is provided as
-follows:
-
--   **NLU**: NLU refers to a process by which an inanimate object with
-    computing power is able to comprehend spoken language.
--   **NLG**: NLG refers to a process by which an inanimate object with
-    computing power is able to manifest its thoughts in a language that
-    humans are able to understand.
-
-For example, when a human speaks to a machine, the machine interprets
-the human language with the help of the NLU process. Also, by using the
-NLG process, the machine generates an appropriate response and shares
-that with the human, thus making it easier for humans to understand.
-These tasks, which are part of NLP, are not part of text analytics. Now
-we will look at an exercise that will give us a better understanding of
-text analytics.
-
 Exercise 1: Basic Text Analytics
 --------------------------------
 
@@ -245,48 +161,6 @@ We are now well acquainted with NLP. In the next section, let\'s dive
 deeper into the various steps involved in it.
 
 
-Various Steps in NLP
-====================
-
-
-Earlier, we talked about the types of computations that are done on
-natural language. There are various standard NLP tasks. Apart from these
-tasks, you have the ability to design your own tasks as per your
-requirements. In the coming sections, we will be discussing various
-preprocessing tasks in detail and demonstrating them with an exercise.
-
-Tokenization
-------------
-
-**Tokenization** refers to the procedure of splitting a sentence into
-its constituent words. For example, consider this sentence: \"I am
-reading a book.\" Here, our task is to extract words/tokens from this
-sentence. After passing this sentence to a tokenization program, the
-extracted words/tokens would be \"I\", \"am\", \"reading\", \"a\",
-\"book\", and \".\". This example extracts one token at a time. Such
-tokens are called **unigrams**. However, we can also extract two or
-three tokens at a time. We need to extract tokens because, for the sake
-of convenience, we tend to analyze natural language word by word. If we
-extract two tokens at a time, it is called **bigrams**. If three tokens,
-it is called **trigrams**. Based on the requirements, n-grams can be
-extracted (where \"n\" is a natural number).
-
-### Note
-
-**n-gram** refers to a sequence of n items from a given text.
-
-Let\'s now try extracting trigrams from the following sentence: \"The
-sky is blue.\" Here, the first trigram would be \"The sky is\". The
-second would be \"sky is blue\". This might sound easy. However,
-tokenization can be difficult at times. For instance, consider this
-sentence: \"I would love to visit the United States\". The tokens
-generated are \"I\", \"would\", \"love\", \"to\", \"visit\", \"the\",
-and \"United States\". Here, \"United States\" has to be treated as a
-single entity. Individual words such as \"United\" and \"States\" do not
-make any sense here.
-
-To get a better understanding of tokenization, let\'s solve an exercise
-based on it in the next section.
 
 Exercise 2: Tokenization of a Simple Sentence
 ---------------------------------------------
@@ -342,13 +216,9 @@ another pre-processing step: **Parts-of-Speech (PoS) tagging**.
 PoS Tagging
 -----------
 
-PoS refers to parts of speech. PoS tagging refers to the process of
-tagging words within sentences into their respective parts of speech and
-then finally labeling them. We extract Part of Speech of tokens
-constituting a sentence, so that we can filter out the PoS that are of
-interest and analyze them. For example, if we look at the sentence,
+If we look at the sentence,
 \"The sky is blue,\" we get four tokens -- \"The,\" \"sky,\" \"is,\" and
-\"blue\" -- with the help of tokenization. Now, using **PoS tagger**, we
+\"blue\" with the help of tokenization. Now, using **PoS tagger**, we
 tag parts of speech to each word/token. This will look as follows:
 
 *\[(\'The\', \'DT\'), (\'sky\', \'NN\'), (\'is\', \'VBZ\'), (\'blue\',
@@ -435,18 +305,7 @@ We have learned about labeling appropriate PoS to tokens in a sentence.
 In the next section, we will learn about **stop words** in sentences and
 ways to deal with them.
 
-Stop Word Removal
------------------
 
-Stop words are common words that are just used to support the
-construction of sentences. We remove stop words from our analysis as
-they do not impact the meaning of sentences they are present in.
-Examples of stop words include a, am, and the. Since they occur very
-frequently and their presence doesn\'t have much impact on the sense of
-the sentence, they need to be removed.
-
-In the next section, we will look at the practical implementation of
-removing stop words from a given sentence.
 
 Exercise 4: Stop Word Removal
 -----------------------------
@@ -556,23 +415,6 @@ out and text without stop words is produced as output.
 We have learned how to remove stop words from given text. In the next
 section, we will focus on normalizing text.
 
-Text Normalization
-------------------
-
-There are some words that are spelt, pronounced, and represented
-differently, for example, words such as Mumbai and Bombay, and US and
-United States. Although they are different, they mean the same thing.
-There are also different forms words that need to be converted into base
-forms. For example, words such as \"does\" and \"doing,\" when converted
-to their base form, become \"do\". Along these lines, **text
-normalization** is a process wherein different variations of text get
-converted into a standard form. We need to perform text normalization as
-there are some words that can mean the same thing as each other. There
-are various ways of normalizing text, such as spelling correction,
-stemming, and lemmatization, which will be covered later.
-
-For a better understanding of this topic, we will look into practical
-implementation in the next section.
 
 Exercise 5: Text Normalization
 ------------------------------
@@ -854,7 +696,6 @@ form of a given word. Follow these steps to implement this exercise:
     from nltk.stem.wordnet import WordNetLemmatizer
     ```
 
-
 3.  Create object of the `WordNetLemmatizer` class. Insert a
     new cell and add the following code to implement this:
 
@@ -912,18 +753,7 @@ generated:
 We have learned how to use the lemmatization process to transform a
 given word into its base form.
 
-In the next section, we will look at another preprocessing step in NLP:
-**named entity recognition (NER)**.
 
-NER
----
-
-Named entities are usually not present in dictionaries. So, we need to
-treat them separately. The main objective of this process is to identify
-the named entities (such as proper nouns) and map them to the categories
-that are already defined. For example, the categories might include
-names of persons, places, and so on. To get a better understanding of
-this process, we\'ll look at an exercise.
 
 Exercise 9: Treating Named Entities
 -----------------------------------
@@ -963,26 +793,10 @@ Follow these steps to implement this exercise:
     ```
 
 
-    The code generates the following output:
-
-![](./images/C13142_01_25.jpg)
-
-
-In the preceding figure, we can see that the code identifies the named
-entities \"**Packt**\" and \"**Birmingham**\" and maps them to an
-already-defined category such as \"**NNP**\".
-
-In the next section, we will focus on **word sense disambiguation**,
-which helps us identify the right sense of any word.
-
 Word Sense Disambiguation
 -------------------------
 
-There\'s a popular saying, \"A man is known by the company he keeps\".
-Similarly, a word\'s meaning depends on its association with other words
-in the sentence. This means two or more words with the same spelling may
-have different meanings in different contexts. This often leads to
-ambiguity. Word sense disambiguation is the process of mapping a word to
+Word sense disambiguation is the process of mapping a word to
 the correct sense it carries. We need to disambiguate words based on the
 sense they carry so that they can be treated as different entities when
 being analyzed. The following figure displays a perfect example of how
@@ -991,9 +805,6 @@ sentences:
 
 ![](./images/C13142_01_26.jpg)
 
-
-To get a better understanding about this process, let\'s look at an
-exercise in the next section.
 
 Exercise 10: Word Sense Disambiguation
 --------------------------------------
@@ -1055,20 +866,12 @@ The code generates the following output:
 
 Here, `bank.v.07` refers to a slope in the turn of a road.
 
-Thus, with the help of the `lesk` algorithm, we are able to
-identify the sense of a word in whatever context. In the next section,
-we will focus on **sentence boundary detection**, which helps detect the
-start and end points of sentences.
 
-Sentence Boundary Detection
+#### Sentence Boundary Detection
 ---------------------------
 
 Sentence boundary detection is the method of detecting where one
-sentence ends and where another sentence begins. If you are thinking
-that it is pretty easy, as a full stop (.) denotes the end of any
-sentence and the beginning of another sentence, then you are wrong. This
-is because there can be instances wherein abbreviations are separated by
-full stops. Various analyses need to be performed at a sentence level,
+sentence ends and where another sentence begins. Various analyses need to be performed at a sentence level,
 so detecting boundaries of sentences is essential. An exercise in the
 next section will provide a better understanding of this process.
 
@@ -1104,12 +907,6 @@ these steps to implement this exercise:
 ![](./images/C13142_01_29.jpg)
 
 
-As you can see in the figure, we are able to separate out the sentences
-from given text.
-
-We have covered all the preprocessing steps that are involved in NLP.
-Now, based on the knowledge we\'ve gained, we will complete an activity
-in the next section.
 
 Activity 1: Preprocessing of Raw Text
 -------------------------------------
@@ -1118,9 +915,7 @@ We have a text corpus that is in an improper format. In this activity,
 we will perform all the pre-processing steps that were discussed earlier
 to get some meaning out of the text.
 
-### Note
-
-The `file.txt` file can be found at this location:
+**Note:** The `file.txt` file can be found at this location:
 
 `/home/jovyan/work/nlp-fundamentals/Lesson1/data_ch1`
 
@@ -1157,9 +952,7 @@ next section, we will focus on different phases that are included in an
 NLP project.
 
 
-Kick Starting an NLP Project
-============================
-
+#### Kick Starting an NLP Project
 
 We can divide an NLP project into several sub-projects or phases. These
 phases are followed sequentially. This tends to increase the overall

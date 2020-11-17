@@ -34,84 +34,6 @@ All examples are present in `work/nlp-fundamentals/Lesson3` folder.
 
 You can access lab at `http://<host-ip>/lab/workspaces/lab3_Classifier`
 
-Introduction
-============
-
-
-In the previous lab, you learned about various extraction methods,
-such as tokenization, stemming, lemmatization, and stop-word removal,
-which are used to extract features from unstructured text. We also
-discussed Bag-of-Words and Term Frequency-Inverse Document Frequency
-(TF-IDF).
-
-In this lab, you will learn how to use these extracted features to
-develop machine learning models. These models are capable of solving
-real-world problems such as detecting whether sentiments carried by
-texts are positive or negative, predicting whether emails are spam or
-not, and so on. We will also cover concepts such as supervised and
-unsupervised learning, classifications and regressions, the sampling and
-splitting of data, along with evaluating the performance of a model in
-depth. This lab also discusses how to load and save these models for
-future use.
-
-
-Machine Learning
-================
-
-
-Machine learning refers to the process of comprehending the patterns
-present in a dataset. It helps machines to learn from any given data and
-produce appropriate results, without being programmed explicitly.
-Basically, machine learning algorithms are fed with large amounts of
-data that they can work on and build a model. This model is later used
-by businesses to generate solutions that help them with analysis and
-building strategies for the future.
-
-Machine learning is further categorized into **unsupervised** and
-**supervised** learning. Let\'s understand these in detail in the next
-section.
-
-Unsupervised Learning
----------------------
-
-Unsupervised learning is the method by which algorithms tend to learn
-patterns within data that is not labeled. Since labels (supervisors) are
-absent, it is referred to as unsupervised learning. In unsupervised
-learning, you provide the algorithm with the feature data and it learns
-patterns from the data on its own.
-
-Unsupervised learning is further classified into clustering and
-association:
-
--   **Clustering**
-
-    The data that is used for unsupervised learning is not labeled. For
-    example, if there are 50 students who need to be categorized based
-    on their attributes, we do not use any specific attribute(s) to
-    create segments. Rather, we try to learn the hidden patterns that
-    exist in their attributes and categorize them accordingly. This
-    process is known as cluster analysis or clustering (one of the most
-    popular types of unsupervised learning). When handed a set of text
-    documents, we can divide them into groups that are similar with the
-    help of clustering. A real-world example of clustering could be when
-    you search for something in a search engine like Google, similar
-    pages or links are recommended. These recommendations are powered by
-    document clustering.
-
--   **Association**
-
-    Another type of unsupervised learning is association rule mining. We
-    use association rule mining to obtain groups of items that occur
-    together frequently. The most common use case of association rule
-    mining is to identify customers\' buying patterns. For example, in a
-    particular supermarket, customers who tend to buy milk and bread,
-    generally tend to buy cheese. This information can then be used to
-    design supermarket layouts. The detailed theoretical explanations of
-    these algorithms are beyond the scope of this lab.
-
-Now that you understand what unsupervised learning is and its types, in
-the next section, you will learn about different types of clustering.
-
 Hierarchical Clustering
 -----------------------
 
@@ -124,19 +46,6 @@ representation of clusters in the form of a tree based on the distances
 between them. We truncate the tree at a location corresponding to the
 number of clusters we need.
 
-For example, if you have 10 documents, want to group them into a number
-of categories based on their attributes (the number of words they
-contain, the number of paragraphs, punctuation, and so on), and don\'t
-have any fixed number of categories in mind, it is a use case of
-hierarchical clustering. Firstly, the distances between each pair of
-documents from the set of 10 documents are calculated. Distance can be
-referred to as the inverse of similarity between documents. After that,
-we use either agglomerative (bottom-up) or divisive (top-down) to
-construct a dendrogram. Finally, we truncate the dendrogram at different
-places to get a suitable number of clusters.
-
-In the next section, we will solve an exercise to get a better
-understanding of **hierarchical clustering**.
 
 Exercise 29: Hierarchical Clustering
 ------------------------------------
@@ -390,9 +299,6 @@ exercise:
 ![](./images/C13142_03_09.jpg)
 
 
-You learned how to create clusters with the help of hierarchical
-clustering. In the next section, we will look at another form of
-clustering, that is, **K-means clustering**.
 
 K-Means Clustering
 ------------------
@@ -401,24 +307,6 @@ In this algorithm, we segregate the given instances (data points) into k
 groups (here, k is a natural number). Firstly, we choose k centroids. We
 assign each instance to its nearest centroid, thereby creating k groups.
 This is the assignment phase. It is followed by the update phase.
-
-In the update phase, new centroids for each of these k groups are
-calculated. The data points are reassigned to their nearest newly
-calculated centroids. The assignment phase and the update phase are
-carried on repeatedly until the assignment of data points no longer
-changes.
-
-For example, suppose you have 10 documents. You want to group them into
-3 categories based on their attributes, such as the number of words they
-contain, the number of paragraphs, punctuation, and so on. In this case,
-k is 3. Firstly, 3 centroids (means) need to be chosen. In the
-initialization phase, each of these 10 documents is assigned to one of
-these 3 categories, thereby forming 3 groups. In the update phase, the
-centroids of the 3 newly formed groups are calculated. To decide the
-optimal number of clusters, that is, k, we execute k-means clustering
-for various values of k and note down their performances (sum of squared
-errors). We try to select a small value for k having the lowest sum of
-squared errors. This method is called the **elbow method**.
 
 In the next section, we will solve an exercise to get a better
 understanding of k-means clustering.
@@ -590,94 +478,8 @@ Supervised Learning
 
 Supervised learning algorithms need labeled data. They learn how to
 automatically generate labels or predict values by analyzing various
-features of the data provided. If you have already starred important
-text messages in your phone and want to automate the task of going
-through all your messages daily, considering they are important and
-marked already, then this is a use case for supervised learning. Here,
-messages starred previously can be used as labeled data. Using this
-data, we can create two types of models that are:
+features of the data provided.
 
--   Capable of classifying whether new messages are important
--   Capable of predicting the probability of new messages being
-    important
-
-The first type is called classification, and the second type is called
-regression. You will learn more about them in the next section.
-
-Classification
---------------
-
-If you have two types of food---type 1 tastes sweet, and type 2 tastes
-salty---and you need to determine how an unknown food will taste---using
-various attributes of the food, such as color, fragrance, shape, and
-ingredients---this is an instance of classification.
-
-Here, the two classes are: class 1, which tastes sweet, and class 2,
-which tastes salty. Features used in this classification are color,
-fragrance, the ingredients used to prepare the dish, and so on. These
-features are called independent variables. The class (according to
-whether the taste is sweet or salty) is called a dependent variable.
-
-Formally, classification algorithms are those that learn patterns from a
-given dataset to determine classes of unknown datasets. Some of the most
-widely used classification algorithms are logistic regression, Naive
-Bayes, K-nearest neighbor, and tree methods. Let\'s learn about each of
-them in the next section.
-
-Logistic Regression
--------------------
-
-Despite having the term \"regression\" in it, logistic regression is
-used for probabilistic classification. In this case, the dependent
-variable that is the outcome is qualitative. Generally, its values can
-be represented by 0 or 1. For example, you need to decide whether an
-email is spam or not. Here, the value of the decision (the dependent
-variable, that is, the outcome) can be considered to be 1 if the email
-is spam, otherwise it will be 0. The independent variables (that is, the
-features) will consist of various attributes of the email, such as the
-number of occurrences of certain keywords and so on.
-
-Naive Bayes Classifiers
------------------------
-
-Just like logistic regression, a naive Bayes classifier is another kind
-of probabilistic classifier. It is based on Bayes\' Theorem, which is
-shown here:
-
-![](./images/C13142_03_12a.jpg)
-
-
-In the preceding formula, A and B are events and P(B) is not equal to 0.
-P(A/B) is the probability of event A occurring given that event B is
-true. P(B) is the probability of occurrence of event B.
-
-Say there is an online platform where students register themselves and
-opt for elective books and these activities are handled by two different
-departments, a student facing difficulty with either of these two steps
-can raise an issue. The issues raised by students are raw texts that
-need to be classified into two classes (namely, registration issues and
-book-related issues) to assign them to the concerned department. This is
-a use case for a Naive Bayes classifier.
-
-K-Nearest Neighbors
--------------------
-
-K-nearest neighbors is a type of non-parametric instance-based lazy
-learning. There is a saying that goes \"birds of a feather flock
-together.\" This means that people who have similar interests prefer to
-stay close to each other and form groups. This characteristic is called
-**homophily**. We can make use of this fact for classification.
-
-To classify an unknown object, k number of other objects located nearest
-to it with class labels will be looked into. The class occurring in
-majority among them will be assigned to it that is the object with
-unknown class. When dealing with text data, for a given document, we
-interpret \"nearest neighbors\" as other documents that are the most
-similar to it.
-
-Now that we have an understanding of different types of classification,
-in the next section, we will solve an exercise based on text
-classification.
 
 Exercise 31: Text Classification (Logistic regression, Naive Bayes, and KNN)
 ----------------------------------------------------------------------------
@@ -891,36 +693,6 @@ classified and **729** such instances wrongly classified. Furthermore,
 **6563** instances with the target label as **1** are correctly
 classified, whereas 375 such instances are wrongly classified.
 
-You have just learned how to perform text classification with the help
-of various classification algorithms. In the next section, you will
-learn about regression, which is another type of supervised learning.
-
-Regression
-----------
-
-Let\'s understand regression with a practical example. If you have
-photos of several people, along with their age, and need to predict the
-ages of some other people from their photos, this is a use case for
-regression.
-
-In the case of regression, the dependent variable, that is, the age in
-this example, is continuous. The independent variables, that is,
-features, consist of attributes of the images such as the color
-intensity of each pixel. Formally, regression analysis refers to the
-process of learning a mapping function, which relates features or
-predictors (inputs) to the dependent variable (output).
-
-There are various types of regression: **univariate**, **multivariate**,
-**simple**, **multiple**, **linear**, **non-linear**, **polynomial
-regression**, **stepwise regression**, **ridge regression**, **lasso
-regression**, and **elastic net regression**.
-
-If there is just one dependent variable, then it is referred to as
-univariate regression. On the other hand, two or more dependent
-variables constitute multivariate regression. Simple regression has only
-one predictor variable, that is, a feature. Multivariate regression has
-more than one predictor variable. In the next section, we will cover
-linear regression in detail.
 
 Linear Regression
 -----------------
@@ -1098,71 +870,25 @@ Tree Methods
 There are several algorithms that have both classification and
 regression forms. Tree-based methods are instances of such cases. What
 does tree mean here? In the context of machine learning, tree refers to
-a structure that aids decision-making. Thus, it is known as **decision
-tree**.
-
-As before, if there is an online platform where students register
-themselves and opt for elective books, and these activities are handled
-by two different departments, a student facing difficulties with either
-of those two steps can raise an issue. The issues raised by students are
-raw texts that need be classified into two classes, namely, registration
-issues and book-related issues, to assign them to the concerned
-department. The following figure depicts a decision tree:
+a structure that aids decision-making. Thus, it is known as **decision tree**.
+The following figure depicts a decision tree:
 
 ![](./images/C13142_03_29.jpg)
 
 
-In the preceding figure, the first decision is made based on the length
-of sentence. If the length of the sentence is short it is classified as
-Registration and if it is medium then it is classified as Book.
-Similarly, if the length is long, we look for keywords present in it. If
-the \'elective\' keyword is present, it belongs to **Course**,
-otherwise, it belongs to **Registration**.
-
 Random Forest
 -------------
 
-Imagine you have to decide whether to join a particular university or
-not. In one scenario, you ask only one person about the quality of
-education the university provides. In another scenario, you ask several
-career counselors and academicians about this. Which scenario do you
-think would help you to make a better and the most stable decision? The
-second one, right? This is because, in the first case, the only person
-you are consulting may be biased. \"Wisdom of the crowd\" tends to
-remove biases, thereby aiding better decision-making.
-
-In general terms, a forest is a collection of different types of trees.
+-In general terms, a forest is a collection of different types of trees.
 The same definition holds true in the case of machine learning as well.
 Instead of using a single decision tree for prediction, we use several
 of them.
+- An advantage of the random forest algorithm is that it uses a sampling
+technique called bagging, which prevents **overfitting**.
 
-In the scenario described earlier, the first case is equivalent to using
-a single decision tree, whereas the second one is equivalent to using
-several, that is, using a forest. In a random forest, an individual
-tree\'s vote impacts the final decision. Just like decision trees,
-random forest is capable of carrying out classification and regression
-tasks.
-
-An advantage of the random forest algorithm is that it uses a sampling
-technique called bagging, which prevents **overfitting**. Overfitting
-refers to cases where a model learns the training dataset so well that
-it is unable to generalize or perform well on a validation/test dataset.
-They also aid in understanding the importance of predictor variables and
-features. However, building a random forest often takes a huge amount of
-time and memory.
 
 GBM and XGBoost
 ---------------
-
-There are various other tree-based algorithms, such as **gradient
-boosting machines** (GBM) and **extreme gradient boosting** (XGBoost).
-In GBM, weak learners are identified. It consists of key elements such
-as loss function and decision trees. Here, loss function needs to be
-optimized. Decision trees act as weak learners. More and more decision
-trees (weak learners) are added to the existing model, which often
-results in overfitting. To avoid this, an enhanced version of it, called
-XGBoost, is used. XGBoost uses various regularization parameters to
-avoid overfitting.
 
 The main reasons for the popularity of XGBoost are the following:
 
@@ -1425,11 +1151,6 @@ steps to implement this exercise:
 ![](./images/C13142_03_38.jpg)
 
 
-    Here, we see **4222** instances with a target label of **0**
-    correctly classified, and **2013** such instances wrongly
-    classified. Furthermore, **4949** instances with a target label of
-    **1** are correctly classified, whereas **2088** such instances are
-    wrongly classified.
 
 15. Now, we\'ll define a generic function for all regression models. Add
     the following code to do this:
@@ -1507,51 +1228,7 @@ From the preceding table, we can see how the actual and predicted score
 varies for different instances. We will use this table later to evaluate
 the performance of the model.
 
-You have learned how to use tree-based methods to predict scores in
-data. In the next section, you will learn about sampling.
 
-Sampling
---------
-
-Sampling is the process of creating a subset from a given set of
-instances. If you have 1,000 sentences in an article, out of which you
-choose 100 sentences for analysis, the subset of 100 sentences will be
-called a sample of the original article. This process is referred to as
-sampling. There are different kinds of sampling methods, such as the
-following:
-
--   **Simple random sampling**
-
-    In this process, each instance of the set has equal probability of
-    being selected. For example, you have 10 balls of 10 different
-    colors in a box. You need to select 4 out of 10 balls without
-    looking at their color. In this case, each ball is equally likely to
-    be selected. This is an instance of simple random sampling.
-
--   **Stratified sampling**
-
-    In this type of sampling, the original set is first divided into
-    parts called \"strata\" based on a given criteria. Random samples
-    are chosen from each of these \"stratum.\" For example, you have 100
-    sentences, out of which 80 are non-sarcastic and 20 are sarcastic.
-    To extract a stratified sample of 10 sentences, you need to select 8
-    from 80 non-sarcastic sentences and 2 from 20 sarcastic sentences.
-    This will ensure that the ratio of non-sarcastic to sarcastic
-    sentences, that is, 80:20, remains unaltered in the sample selected.
-
--   **Multi-Stage Sampling**
-
-    If you are analyzing social media posts of all the people in a
-    particular country related to the current weather, the text data
-    will be huge, as it will consist of the weather conditions of
-    different cities. Drawing a stratified sample would be difficult. In
-    this case, it is recommended to first extract a stratified sample by
-    region, and then further sample it within regions, that is, by
-    cities. This is basically performing stratified sampling at each and
-    every stage.
-
-In the next section, we will look at an exercise based on sampling, to
-get a better understanding of it.
 
 Exercise 34: Sampling (Simple Random, Stratified, Multi-Stage)
 --------------------------------------------------------------
@@ -1640,40 +1317,6 @@ multi-stage sampling. Follow these steps to implement this exercise:
 
 ![](./images/C13142_03_46.jpg)
 
-
-
-Developing a Text Classifier
-============================
-
-
-A text classifier is a machine learning model that is capable of
-labeling texts based on their content. For instance, a text classifier
-will help you understand whether a random text statement is sarcastic or
-not. Presently, text classifiers are gaining importance as manually
-classifying huge amounts of text data is impossible.
-
-Feature Extraction
-------------------
-
-When dealing with text data, features denote its different attributes.
-Generally, they are numeric representations of the text. As discussed in
-*Lab 2- Extraction Methods from Unstructured text*, TF-IDF
-representations of texts are one of the most popular ways of extracting
-features from them.
-
-Feature Engineering
--------------------
-
-Feature engineering is the art of extracting new features from existing
-ones. Extracting novel features, which tend to capture variation in data
-better, requires sound domain expertise.
-
-Removing Correlated Features
-----------------------------
-
-Regression models, including logistic regression, are unable to perform
-well when correlation between features exists. Thus, features with
-correlation beyond a certain threshold need to be removed.
 
 Exercise 35: Removing Highly Correlated Features (Tokens)
 ---------------------------------------------------------
@@ -1852,23 +1495,7 @@ dataset. Follow these steps to implement this exercise:
 After removing the highly correlated words from the TF-IDF DataFrame, it
 appears like this.
 
-Dimensionality Reduction
-------------------------
 
-There are some optional steps that are followed on a case-to-case basis.
-For example, sometimes the tf-idf matrix or bag-of-words representation
-of a text corpus is so big that it doesn\'t fit in memory. In this case,
-it would be necessary to reduce its dimension, that is, the number of
-columns in the feature matrix. The most popular method for dimension
-reduction is principal component analysis (PCA).
-
-PCA uses orthogonal transformation to convert a list of features (which
-may be correlated) into a list of variables that are linearly
-uncorrelated. These linearly uncorrelated variables are known as
-principal components. These principal components are arranged in
-descending order of the amount of variability they capture in the
-dataset. In the next section, let\'s look at an exercise, to get a
-better understanding of this.
 
 Exercise 36: Dimensionality Reduction (PCA)
 -------------------------------------------
@@ -2012,120 +1639,6 @@ colored differently. Follow these steps to implement this exercise:
 From the preceding figure, we can see that a scatter plot is created,
 where each category is represented by a different color.
 
-### Note
-
-You can find high-quality color for the preceeding figure at:
-<https://github.com/TrainingByPackt/Natural-Language-Processing-Fundamentals/blob/master/Graphics/Lesson%2003/Figure%203.56.png>.
-
-Deciding on a Model Type
-------------------------
-
-Once the feature set is ready, it\'s necessary to decide on the type of
-model that will be used to deal with the problem. Usually, unsupervised
-models are chosen when data is not labeled. If we have a predefined
-number of clusters in mind, we go for clustering algorithms such as
-k-means, otherwise, we opt for hierarchical clustering. For labeled
-data, we generally follow supervised learning methods such as regression
-and classification.
-
-If the outcome is continuous and numeric, we use regression. If it is
-discrete or categorical, we use classification. The Naive Bayes
-algorithm comes in handy for the fast development of simple
-classification models. More complex tree-based methods (such as decision
-trees, random forests, and so on) are needed when we want to achieve
-higher accuracy. In such cases, we sometimes compromise on model
-explainability and the time required to develop it. When the outcome of
-a model has to be the probability of the occurrence of a certain class,
-we use logistic regression.
-
-Evaluating the Performance of a Model
--------------------------------------
-
-Once a model is ready, it is necessary to evaluate its performance. This
-is because, without benchmarking it, we cannot be confident of how well
-or how badly it is functioning. It is not advisable to put a model into
-production without evaluating its efficiency. There are various ways to
-evaluate a model\'s performance. Let\'s work through them one by one.
-
--   **Confusion Matrix**
-
-    This is a two-dimensional matrix mainly used for evaluating the
-    performance of classification models. Its columns consist of
-    predicted values, and its rows consist of actual values. In other
-    words, for a given confusion matrix, it is a crosstab between actual
-    and predicted values. Entries of cells denote how many of the
-    predicted values match with the actual values and how many don\'t.
-
--   **Accuracy**
-
-    Accuracy is defined as the ratio of correctly classified instances
-    to the total number of instances. Whenever accuracy is used for
-    model evaluation, we need to ensure that the data is balanced in
-    terms of classes, meaning it should have an almost equal number of
-    instances of each class. If a dataset is unbalanced, a model
-    predicting that all instances have labels the same as the label of
-    the class with the highest frequency of occurrence would be highly
-    accurate. However, such a model does not serve any purpose.
-
--   **Precision and Recall**
-
-    Let\'s understand precision and recall with a real-life example. If
-    your mother tells you to explore the kitchen of your house, find
-    items that need to be replenished, and bring them back from the
-    market, you will bring P number of items from the market and show it
-    to your mother. Out of P items, she finds Q items to be relevant.
-    The ratio Q/P is called precision. However, in this scenario, she
-    was expecting you to bring R items relevant to her. The ratio, Q/R
-    is referred to as recall.
-
-    *Precision = True Positive / (True Positive + False Positive)*
-
-    *Recall = True Positive / (True Positive + False Negative)*
-
--   **F1-score**
-
-    For a given classification model, F1 score is the harmonic mean of
-    precision and recall.
-
-    *F1 score = 2 \* ((Precision \* Recall) / (Precision + Recall))*
-
--   **Receiver Operating Characteristic (ROC) Curve**
-
-    To understand ROC curve, we need to get acquainted with True
-    Positive Rate (TPR) and False Positive Rate (FPR).
-
-    *TPR = True Positive / (True Positive + False Negative)*
-
-    *FPR = False Positive / (False Positive + True Negative)*
-
-    The output of a classification model can be probabilities. In that
-    case, we need to set a threshold to obtain classes from those
-    probabilities. ROC curve is a plot between the TPR and FPR for
-    various values of the threshold. Area under the ROC curve (AUROC)
-    represents the efficiency of the model. The higher the AUROC, the
-    better the model is. The maximum value of AUROC is 1.
-
--   **Root Mean Square Error (RMSE)**
-
-    This is mainly used for evaluating the accuracy of regression
-    models. We define it as described in the following formula:
-
-![](./images/71.PNG)
-
-Here, n is the number of samples, Pi is the predicted value of the ith
-observation, and Oi is the observed value of the ith observation.
-
--   **Maximum Absolute Percentage Error (MAPE)**
-
-    Just like RMSE, this is another way to evaluate a regression
-    model\'s performance. It is described in the following formula:
-
-
-![](./images/72.PNG)
-
-Here, n is the number of samples, Pi is the predicted value (that is,
-the forecast value) of the ith observation, andOi is the observed value
-(that is, the actual value) of the ith observation.
 
 Exercise 37: Calculate the RMSE and MAPE
 ----------------------------------------
@@ -2182,9 +1695,7 @@ toxic or not. Follow these steps to implement this activity:
 
 1.  Import the necessary packages.
 
-2.  Read the dataset from
-    <https://github.com/TrainingByPackt/Natural-Language-Processing-Fundamentals/blob/master/Lesson3/data_ch3/train_comment_small.csv.zip>
-    and clean it.
+2.  Read the dataset and clean it.
 
 3.  Create a TF-IDF matrix out of it.
 
@@ -2196,20 +1707,7 @@ toxic or not. Follow these steps to implement this activity:
 6.  Evaluate the models developed using parameters such as confusion
     matrix, accuracy, precision, recall, F1 plot curve, and ROC curve.
 
-    ##### Note
-
-    The solution for this activity can be found in the current directory.
-
-You have learned how to build end-to-end classifiers.
-Developing
-an end-to-end classifier was done in phases. Firstly, the text corpus
-was cleaned and tokenized, features were extracted using TF-IDF, then
-the dataset was divided into training and validation sets. Several
-machine learning algorithms, such as logistic regression, random forest,
-and XGBoost were used to develop classification models. Finally, their
-performances were measured using parameters such as confusion matrix,
-accuracy, precision, recall, F1 plot curve, and ROC curve. In the next
-section, you will learn how to build pipelines for NLP projects.
+    Note: The solution for this activity can be found in the current directory.
 
 
 Building Pipelines for NLP Projects
@@ -2292,18 +1790,7 @@ representation of the text data that has been passed to it as an
 argument.
 
 
-Saving and Loading Models
-=========================
 
-
-After a model has been built and its performance matches our
-expectations, we may want to save it for future use. This eliminates the
-time needed for rebuilding it. Models can be saved in the hard disk by
-using **joblib** and **pickle**.
-
-To deploy saved models, we need to load them from the hard disk to the
-memory. In the next section, we will solve an exercise based on this to
-get a better understanding.
 
 Exercise 39: Saving and Loading Models
 --------------------------------------
@@ -2317,13 +1804,11 @@ from the disk. Follow these steps to implement this exercise:
 2.  Insert a new cell and the following code to import the necessary
     packages:
 
-
     ```
     import pickle
     from joblib import dump, load
     from sklearn.feature_extraction.text import TfidfVectorizer
     ```
-
 
 3.  Defining a corpus consisting of four sentences, add the following
     code:
@@ -2336,7 +1821,6 @@ from the disk. Follow these steps to implement this exercise:
     'Excelling in both Arts and Science at a time becomes difficult',
     'Natural Language Processing is a part of Data Science']
     ```
-
 
 4.  Then, we\'ll fit a tf-idf model to it. Add the following code to do
     this:
@@ -2405,7 +1889,6 @@ You have learned how to save and load models.
 
 #### Summary
 
-
 In this lab, you learned about different types of machine learning
 techniques, such as supervised and unsupervised learning. Various kinds
 of supervised learning algorithms, such as K-Nearest Neighbor and a
@@ -2414,13 +1897,4 @@ sampling techniques for splitting a given dataset into training and
 validation sets have also been elucidated with examples. This lab
 focused mainly on developing machine learning models using features
 extracted from text data.
-
-As you progressed through the lab, you were introduced to various
-metrics used for evaluating the performance of these models. Finally, we
-covered the process of saving a model on the hard disk and loading it
-back to the memory for future use.
-
-In the next lab, you will learn several techniques with which data
-can be collected from various sources.
-
 
