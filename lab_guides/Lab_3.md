@@ -144,10 +144,6 @@ exercise:
 ![](./images/C13142_03_02.jpg)
 
 
-    Here, **0** refers to \'`misc.forsale`\', **1** refers to
-    \'`sci.electronics`\', and **2** refers to category
-    \'`talk.religion.misc`\'.
-
 8.  To check the categories we are dealing with, add the following code:
 
     ```

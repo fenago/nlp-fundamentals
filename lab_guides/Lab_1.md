@@ -190,7 +190,7 @@ exercise:
 
 
     ```
-    words = word_tokenize("I am reading NLP Fundamentals")
+    words = word_tokenize("I am reading NLP Course")
     ```
 
 
@@ -239,7 +239,7 @@ Exercise 3: PoS Tagging
 -----------------------
 
 In this exercise, we will find out the PoS for each word in the
-sentence, \"`I am reading NLP Fundamentals`\". We first make
+sentence, \"`I am reading NLP Course`\". We first make
 use of tokenization in order to get the tokens. Later, we use a PoS
 tagger, which will help us find PoS for each word/token. Follow these
 steps to implement this exercise:
@@ -262,7 +262,7 @@ steps to implement this exercise:
 
 
     ```
-    words = word_tokenize("I am reading NLP Fundamentals")
+    words = word_tokenize("I am reading NLP Course")
     ```
 
 
@@ -464,8 +464,6 @@ Follow these steps to implement this exercise:
 
 In the preceding figure, we can see that our text has been normalized.
 
-Now that we have learned the basics of text normalization, in the next
-section, we explore various other ways that text can be normalized.
 
 Spelling Correction
 -------------------
@@ -568,26 +566,13 @@ Python. Follow these steps in order to implement this exercise:
     required. To rectify this, we need to use other kinds of spelling
     correctors that are aware of context.
 
-    In the next section, we will look at **stemming**, which is another
-    form of text normalization.
 
 Stemming
 --------
 
-In languages such as English, words get transformed into various forms
-when being used in a sentence. For example, the word \"product\" might
-get transformed into \"production\" when referring to the process of
-making something or transformed into \"products\" in plural form. It is
-necessary to convert these words into their base forms, as they carry
-the same meaning. Stemming is a process that helps us in doing so. If we
-look at the following figure, we get a perfect idea about how words get
-transformed into their base forms:
-
 ![](./images/C13142_01_16.jpg)
 
 
-To get a better understanding about stemming, we shall look into an
-exercise in the next section.
 
 Exercise 7: Stemming
 --------------------
