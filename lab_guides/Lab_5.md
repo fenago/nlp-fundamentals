@@ -340,7 +340,7 @@ library. Follow these steps to implement this exercise:
     ```
 
 
-    ### Note
+    ##### Note
 
     The Reuters news articles are contained in files with the \*.sgm
     extension and they can be found at this location:
@@ -359,7 +359,7 @@ library. Follow these steps to implement this exercise:
     ```
 
 
-    ### Note
+    ##### Note
 
     We can also use **ElementTree**, which is the built-in Python module
     for reading XML. As the Reuters SGM files have some characters that
@@ -1181,8 +1181,7 @@ The solution for this activity can be found in the current directory.
 We have learned how to apply topic modeling on any given dataset.
 
 
-Summary
-=======
+#### Summary
 
 
 In this lab, we discussed topic modeling in detail. We learned about

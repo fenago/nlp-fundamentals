@@ -243,7 +243,7 @@ implement this exercise:
 ![](./images/C13142_04_10.jpg)
 
 
-    ### Note
+    ##### Note
 
     Here, 200 indicates that we received a proper response from the URL.
 
@@ -411,8 +411,7 @@ implement this activity:
 
 6.  Print the list of universities named after Tagore.
 
-    ### Note
-
+    ##### Note
     The solution for this activity can be found in the current directory.
 
 Activity 7: Extracting and Analyzing Data Using Regular Expressions
@@ -433,7 +432,7 @@ emails. Follow these steps to implement this activity:
 5.  Fetch email addresses and phone numbers with the help of regular
     expressions.
 
-    ### Note
+    ##### Note
 
     The solution for this activity can be found in the current directory.
 
@@ -577,7 +576,7 @@ activity:
 5.  Make use of the TextBlob library to find the sentiment of each
     comment and display it.
 
-    ### Note
+    ##### Note
 
     The solution for this activity can be found in the current directory.
 
@@ -809,7 +808,7 @@ Follow these to implement this activity:
 
 10. Visualize the tweets using a word cloud.
 
-    ### Note
+    ##### Note
 
     The solution for this activity can be found in the current directory.
 
@@ -1001,8 +1000,7 @@ implement this exercise:
 We just learned how to perform various operations on a local file.
 
 
-Summary
-=======
+#### Summary
 
 
 In this lab, you have learned ways to collect data by scraping web

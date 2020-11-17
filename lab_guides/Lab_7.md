@@ -626,7 +626,7 @@ exercise:
     we are encoding at the character level, in the constructor, we need
     to set `char_level` to `True`.
 
-    ### Note
+    ##### Note
 
     By default, `char_level` is set to `False`, if
     we are encoding words.
@@ -898,7 +898,7 @@ lines. Follow these steps to implement this exercise:
     From the code, we can see that the file details are stored in the
     `movie_lines_file` variable.
 
-    ### Note
+    ##### Note
 
     The `100lines.txt` file can be found at this location:
     <https://bit.ly/2tC5VAs>.
@@ -1002,7 +1002,7 @@ lines. Follow these steps to implement this exercise:
     **1** column. Each row is a word in the original
     `movie_lines` file.
 
-    ### Note
+    ##### Note
 
     NumPy arrays are more specific to NLP algorithms than Python lists.
     It is the format that is required for the scikit-learn library,
@@ -1194,7 +1194,7 @@ implement this exercise:
     ```
 
 
-    ### Note
+    ##### Note
 
     The book catalog file can be found at the following link:
     <https://bit.ly/2U2jAR4>.
@@ -1486,7 +1486,7 @@ Follow these steps to implement this exercise:
     ```
 
 
-    ### Note
+    ##### Note
 
     The preceding ZIP file can be found at the following link:
     <https://bit.ly/2RG7VpX>.
@@ -2037,8 +2037,7 @@ After implementing these steps, the expected output should look as follows:
 
 
 
-Summary
-=======
+#### Summary
 
 
 In this lab, we learned about the motivations behind converting

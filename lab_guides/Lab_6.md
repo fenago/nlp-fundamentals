@@ -642,7 +642,7 @@ Summarizer package. Follow these steps to implement this activity:
     `ratio`, and `word_count`, to limit the amount
     of text returns.
 
-    ### Note
+    ##### Note
 
     The solution for this activity can be found in the current directory.
 
@@ -846,8 +846,7 @@ text document using the criteria of word frequency. In the next section,
 we will learn about Markov chains.
 
 
-Summary
-=======
+#### Summary
 
 
 In this lab, you have learned about text summarization and text

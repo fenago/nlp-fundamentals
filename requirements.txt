@@ -17,6 +17,7 @@ pip install pytesseract
 
 
 pip install -U textblob
+python -m textblob.download_corpora
 
 pip install keras==2.0.9
 

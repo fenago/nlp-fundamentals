@@ -582,7 +582,7 @@ this exercise:
     Each of the data files has two columns: one for the review text and
     a numeric column for the sentiment.
 
-    ### Note
+    ##### Note
 
     All three datasets can be found at this location: 
     `/home/jovyan/work/nlp-fundamentals/Lesson8\data\sentiment_labelled_sentences`
@@ -939,8 +939,7 @@ For a positive test sentence, it returns a score of **1**. For a
 negative test sentence, it returns a score of **0**.
 
 
-Summary
-=======
+#### Summary
 
 
 During the book of this lab, we defined
