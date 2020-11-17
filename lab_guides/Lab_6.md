@@ -32,10 +32,8 @@ All examples are present in `~/work/nlp-fundamentals/Lesson6` folder.
 You can access lab at `http://<host-ip>/lab/workspaces/lab6_Text`
 
 
-
 High-Level View of Text Summarization
 =====================================
-
 
 We can look at the topic of text summarization from different angles.
 The following figure shows how we will proceed:
